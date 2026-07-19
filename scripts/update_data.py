@@ -136,6 +136,48 @@ LANG_COLORS = {
     "C++": "#f34b7d", "HTML": "#e34f26", "CSS": "#563d7c", "Java": "#b07219",
 }
 
+# Content safety filter: keep the public site focused on technical/product/design tools.
+# Exclude repos/descriptions/topics that are political, activist, adult, hate, violent, or otherwise unsuitable for ad-supported public distribution.
+BLOCKLIST_TERMS = [
+    "politics", "political", "government", "election", "president", "congress", "senate",
+    "communism", "capitalism", "socialism", "protest", "activism", "activist", "censorship",
+    "china", "taiwan", "hong kong", "xinjiang", "tibet", "uyghur", "ccp", "996.icu",
+    "war", "military", "weapon", "weapons", "gun", "terror", "terrorism", "nazi",
+    "porn", "adult", "nsfw", "sex", "hentai", "hanime",
+    "政治", "政党", "政府", "选举", "总统", "国会", "抗议", "示威", "维权", "审查",
+    "中国", "台湾", "香港", "新疆", "西藏", "中共", "996", "战争", "军事", "武器",
+    "恐怖", "纳粹", "色情", "成人", "黄色", "本子", "里番",
+]
+
+BLOCKLIST_REPOS = {
+    "996icu/996.icu",
+}
+
+
+def repo_safety_text(repo: dict) -> str:
+    return " ".join(str(x) for x in [
+        repo.get("name", ""), repo.get("owner", ""), repo.get("description", ""),
+        repo.get("cn_name", ""), repo.get("cn_desc", ""), repo.get("purpose", ""), repo.get("value", ""),
+        *(repo.get("topics") or [])
+    ]).lower()
+
+
+def contains_blocked_term(text: str, term: str) -> bool:
+    term_l = term.lower()
+    # Latin words use word boundaries to avoid false positives like "war" in "software".
+    if re.fullmatch(r"[a-z0-9_. -]+", term_l):
+        pattern = r"(?<![a-z0-9])" + re.escape(term_l) + r"(?![a-z0-9])"
+        return re.search(pattern, text) is not None
+    return term_l in text
+
+
+def is_safe_repo(repo: dict) -> bool:
+    name = str(repo.get("name", "")).lower()
+    if name in BLOCKLIST_REPOS:
+        return False
+    text = repo_safety_text(repo)
+    return not any(contains_blocked_term(text, term) for term in BLOCKLIST_TERMS)
+
 
 def http_json(url: str, headers: dict | None = None, timeout: int = 25, method: str = "GET", body: bytes | None = None):
     final_headers = {"User-Agent": "GitHubDailyFinder/2.0", "Accept": "application/vnd.github+json"}
@@ -287,6 +329,9 @@ def build_category(cat_id: str, existing_translations: dict) -> tuple[dict, dict
             repo = parse_repo(raw)
             if not repo["name"] or repo["name"] in seen:
                 continue
+            if not is_safe_repo(repo):
+                print(f"SKIP unsafe repo: {repo['name']}")
+                continue
             seen.add(repo["name"])
             score, sub = score_repo(repo, cat_id)
             repo["sub_category"] = sub
@@ -306,7 +351,6 @@ def build_category(cat_id: str, existing_translations: dict) -> tuple[dict, dict
         t.setdefault("parent_category", cat_id)
         t.setdefault("sub_category", sub_id)
         t.setdefault("category_reason", "规则分类")
-        translations_delta[name] = t
         enriched = {k: v for k, v in repo.items() if k != "score"}
         enriched.update({
             "cn_name": t.get("cn_name", ""),
@@ -317,6 +361,10 @@ def build_category(cat_id: str, existing_translations: dict) -> tuple[dict, dict
             "sub_category": t.get("sub_category", sub_id),
             "category_reason": t.get("category_reason", ""),
         })
+        if not is_safe_repo(enriched):
+            print(f"SKIP unsafe enriched repo: {name}")
+            continue
+        translations_delta[name] = t
         enriched_repos.append(enriched)
     meta = PARENT_CATEGORIES[cat_id]
     return {
