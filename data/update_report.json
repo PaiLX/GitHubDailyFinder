@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-19T11:18:08.615905",
+  "categories": {
+    "dev": {
+      "title": "开发工具",
+      "count": 20,
+      "sub_counts": {
+        "ai-coding": 20
+      }
+    },
+    "design": {
+      "title": "设计创意",
+      "count": 4,
+      "sub_counts": {
+        "ui": 2,
+        "security": 1,
+        "growth": 1
+      }
+    },
+    "product": {
+      "title": "产品运营",
+      "count": 4,
+      "sub_counts": {
+        "assistant": 4
+      }
+    },
+    "test": {
+      "title": "测试安全",
+      "count": 18,
+      "sub_counts": {
+        "learning": 3,
+        "inspiration": 1,
+        "security": 14
+      }
+    }
+  },
+  "ai_enabled": true
+}

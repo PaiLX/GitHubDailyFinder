@@ -297,7 +297,10 @@
     "cn_name": "Superpowers",
     "cn_desc": "AI 智能体技能框架和软件开发方法论",
     "purpose": "提供一套完整的 AI 智能体开发方法论和技能框架",
-    "value": "系统化组织 AI 技能，提升开发效率和代码质量"
+    "value": "系统化组织 AI 技能，提升开发效率和代码质量",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "规则分类"
   },
   "react/react": {
     "cn_name": "React",
@@ -346,5 +349,392 @@
     "cn_desc": "操作系统分类和知识图谱工具",
     "purpose": "整理和分类各类操作系统及其关系",
     "value": "操作系统学习者和研究者的参考工具"
+  },
+  "x1xhlol/system-prompts-and-models-of-ai-tools": {
+    "cn_name": "AI工具系统提示词库",
+    "cn_desc": "汇总Cursor、Claude等主流AI编程工具的系统提示词",
+    "purpose": "收集并整理各类AI编程助手的内部提示词与模型配置",
+    "value": "帮助用户优化AI工具使用效果，掌握最佳实践",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "内容为AI编程工具的核心配置，直接关联代码生成与开发效率"
+  },
+  "DietrichGebert/ponytail": {
+    "cn_name": "Ponytail",
+    "cn_desc": "让AI代理像资深开发者一样思考的极简主义工具",
+    "purpose": "通过YAGNI原则指导AI代理编写更少但更优的代码",
+    "value": "减少冗余代码生成，提升代码质量与开发效率",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI代理的开发方法论工具，直接优化编码过程"
+  },
+  "thedotmack/claude-mem": {
+    "cn_name": "Claude Mem",
+    "cn_desc": "跨会话持久化AI代理上下文记忆的工具",
+    "purpose": "压缩并存储AI代理的历史交互，实现上下文延续",
+    "value": "解决AI代理无状态问题，提升复杂任务处理能力",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "增强AI编程代理的记忆能力，属于开发工具链的一部分"
+  },
+  "addyosmani/agent-skills": {
+    "cn_name": "Agent Skills",
+    "cn_desc": "面向AI编程代理的生产级工程技能库",
+    "purpose": "提供标准化的工程技能供AI代理调用",
+    "value": "提升AI代理在复杂工程场景下的代码生成质量",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "直接为AI编程代理提供技能支持，属于开发基础设施"
+  },
+  "bytedance/deer-flow": {
+    "cn_name": "Deer Flow",
+    "cn_desc": "字节跳动开源的长周期超级智能体框架",
+    "purpose": "支持研究、编码等多步骤复杂任务的自主执行",
+    "value": "实现多智能体协作与长期任务规划，提升自动化水平",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI编码与研究的智能体框架，核心服务于开发流程"
+  },
+  "earendil-works/pi": {
+    "cn_name": "Pi",
+    "cn_desc": "统一的LLM API与AI代理开发工具箱",
+    "purpose": "提供AI代理循环、TUI及编码CLI的统一接口",
+    "value": "简化多模型AI代理的开发与集成难度",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "面向AI代理开发的底层工具库，服务于编程场景"
+  },
+  "code-yeongyu/oh-my-openagent": {
+    "cn_name": "Oh My OpenAgent",
+    "cn_desc": "针对大型代码库的AI编码代理编排工具",
+    "purpose": "优化AI代理在复杂代码库中的编码效率",
+    "value": "降低Token消耗，提升大型项目AI辅助开发体验",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "专门用于优化AI编程代理在代码库中的表现"
+  },
+  "ruvnet/ruflo": {
+    "cn_name": "Ruflo",
+    "cn_desc": "领先的AI代理元框架，支持多智能体协作",
+    "purpose": "部署多玩家智能体集群，协调自主工作流",
+    "value": "提供自适应记忆与RAG集成，增强AI代理智能性",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI代理的开发与部署框架，直接关联编码工作流"
+  },
+  "Leonxlnx/taste-skill": {
+    "cn_name": "Taste Skill",
+    "cn_desc": "赋予AI代理良好审美品味的技能插件",
+    "purpose": "防止AI生成平庸、通用的代码与设计",
+    "value": "提升前端与低代码生成的设计感与独特性",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI编程的技能扩展，优化代码与设计输出质量"
+  },
+  "headroomlabs-ai/headroom": {
+    "cn_name": "Headroom",
+    "cn_desc": "压缩AI代理上下文窗口的工具库",
+    "purpose": "在LLM处理前压缩日志、文件与RAG数据",
+    "value": "显著降低Token消耗，提升编码代理运行效率",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "优化AI编程代理的资源使用，属于开发效能工具"
+  },
+  "shanraisshan/claude-code-best-practice": {
+    "cn_name": "Claude Code最佳实践",
+    "cn_desc": "从氛围编码到智能体工程的实践指南",
+    "purpose": "总结Claude Code的高效使用技巧与工作流",
+    "value": "帮助用户掌握AI辅助编程的高级技巧，提升产出",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "内容聚焦于AI编程工具的使用方法与工程化实践"
+  },
+  "aaif-goose/goose": {
+    "cn_name": "Goose",
+    "cn_desc": "超越代码建议的开源AI代理，支持安装与测试",
+    "purpose": "提供可执行、编辑和测试代码的通用AI代理",
+    "value": "实现端到端的代码生成与验证闭环",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为全功能AI编程代理，直接参与代码开发与测试"
+  },
+  "danny-avila/LibreChat": {
+    "cn_name": "LibreChat",
+    "cn_desc": "增强型开源ChatGPT克隆，支持多模型与代理",
+    "purpose": "提供自托管的多模型AI聊天与代码解释器界面",
+    "value": "集成多种AI能力，满足开发者对多模型切换的需求",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI编程助手的统一入口，支持代码解释与多模型开发"
+  },
+  "coreyhaines31/marketingskills": {
+    "cn_name": "Marketing Skills",
+    "cn_desc": "面向AI代理的营销技能库（SEO、文案等）",
+    "purpose": "为Claude Code等代理提供营销领域的专业技能",
+    "value": "扩展AI代理在非编码领域的应用能力",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "虽然涉及营销，但本质是AI编程代理的技能扩展包"
+  },
+  "calesthio/OpenMontage": {
+    "cn_name": "OpenMontage",
+    "cn_desc": "开源的Agentic视频制作系统",
+    "purpose": "将AI编码助手转化为视频生产工作室",
+    "value": "自动化视频制作流程，整合500+代理技能",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于AI代理技能的自动化工作流，属于开发工具范畴"
+  },
+  "continuedev/continue": {
+    "cn_name": "Continue",
+    "cn_desc": "开源的AI编码代理IDE插件",
+    "purpose": "在IDE中提供实时的AI代码补全与代理交互",
+    "value": "无缝集成AI能力到开发环境，提升编码速度",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "典型的AI辅助编程工具，直接服务于代码开发"
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "cn_name": "AI网站克隆模板",
+    "cn_desc": "利用AI代理一键克隆网站的模板工具",
+    "purpose": "通过命令快速复制网站结构与代码",
+    "value": "加速前端开发与逆向工程，提供现成样板",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "使用AI代理进行代码生成与网站构建，属于开发工具"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "cn_name": "Scientific Agent Skills",
+    "cn_desc": "将AI代理转化为科学家的专业技能库",
+    "purpose": "提供生物、化学等领域的148+种科研技能",
+    "value": "扩展AI代理在科学研究中的专业能力",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI代理的技能扩展，服务于科研代码与数据分析"
+  },
+  "iOfficeAI/AionUi": {
+    "cn_name": "AionUi",
+    "cn_desc": "免费的本地AI代理协作应用",
+    "purpose": "为多种AI代理提供统一的聊天与协作界面",
+    "value": "集中管理多个AI助手，提升日常办公与开发效率",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "作为AI代理的交互与管理工具，服务于开发工作流"
+  },
+  "VoltAgent/awesome-design-md": {
+    "cn_name": "Awesome Design MD",
+    "cn_desc": "汇集知名品牌设计系统的DESIGN.md文件，供AI编程代理生成匹配UI。",
+    "purpose": "为AI编程工具提供标准化的设计系统描述文件，实现UI快速生成。",
+    "value": "桥接设计系统与代码生成，提升AI辅助前端开发的效率与一致性。",
+    "parent_category": "design",
+    "sub_category": "ui",
+    "category_reason": "项目核心在于提供设计系统描述文件以辅助UI生成，属于界面体验范畴。"
+  },
+  "cirosantilli/china-dictatorship": {
+    "cn_name": "反中共政治宣传库",
+    "cn_desc": "反共宣传FAQ、新闻、建议及敏感历史事件资料库",
+    "purpose": "提供反共政治宣传材料、常见问题解答及敏感话题讨论",
+    "value": "汇集大量敏感政治内容与历史事件资料，供特定立场用户参考",
+    "parent_category": "test",
+    "sub_category": "learning",
+    "category_reason": "内容涉及大量政治敏感话题、历史事件评论及反政府宣传，属于安全研究与政治学习范畴"
+  },
+  "gege-circle/.github": {
+    "cn_name": "戈戈圈交流社区",
+    "cn_desc": "动漫、游戏、科技、人文等话题的交流社区",
+    "purpose": "为戈戈圈爱好者提供动漫、游戏、科技等话题的交流平台",
+    "value": "聚集特定兴趣群体，促进二次元及泛文化内容的交流与分享",
+    "parent_category": "design",
+    "sub_category": "inspiration",
+    "category_reason": "主要涉及动漫、游戏等创意文化内容的交流与灵感分享"
+  },
+  "VoltAgent/awesome-claude-design": {
+    "cn_name": "Awesome Claude Design",
+    "cn_desc": "68个即用型设计系统灵感，支持通过DESIGN.md一键生成完整UI。",
+    "purpose": "提供现成的设计系统模板，帮助开发者快速搭建用户界面。",
+    "value": "简化UI开发流程，通过标准化设计描述加速前端构建。",
+    "parent_category": "design",
+    "sub_category": "ui",
+    "category_reason": "项目旨在提供设计灵感与模板以辅助UI构建，属于界面体验类别。"
+  },
+  "OpenSenseNova/SenseNova-Skills": {
+    "cn_name": "SenseNova 技能集",
+    "cn_desc": "模块化技能库，用于构建AI驱动的办公助手与生产力工作流。",
+    "purpose": "提供可插拔的AI技能模块，帮助用户快速搭建智能办公应用。",
+    "value": "降低AI办公应用开发门槛，提升日常文档处理与演示制作效率。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "该项目专注于构建AI助手及办公自动化工作流，属于产品运营类中的AI助手范畴。"
+  },
+  "kevinluosl/deepbot": {
+    "cn_name": "DeepBot",
+    "cn_desc": "面向个人与企业的一站式AI助手，支持飞书集成与一键部署。",
+    "purpose": "提供系统级AI代理能力，整合多平台工具以优化企业及个人工作流。",
+    "value": "无缝集成飞书等主流协作平台，实现高效的企业级AI自动化体验。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "作为系统级AI助手并强调企业工作流整合，符合产品类AI助手的定位。"
+  },
+  "IRISX-AI/IRIS-AI": {
+    "cn_name": "IRIS AI",
+    "cn_desc": "桌面端全能AI助手，集成语音、记忆、视觉搜索及自动化功能。",
+    "purpose": "打造本地化的桌面AI伴侣，通过多模态交互提升个人生产力。",
+    "value": "将多种AI能力聚合于单一桌面应用，提供沉浸式且高效的个人助理体验。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "明确标识为桌面AI助手，旨在通过综合工具提升用户日常工作效率。"
+  },
+  "kcosr/assistant": {
+    "cn_name": "Assistant",
+    "cn_desc": "基于面板架构的个人AI助手，支持插件扩展与多模型协同。",
+    "purpose": "提供一个可扩展的工作空间，让AI代理与用户共同管理笔记与任务。",
+    "value": "灵活的插件架构支持Claude、Codex等多模型，满足个性化生产力需求。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "核心功能为个人生产力辅助与多代理协作，属于产品类的AI助手工具。"
+  },
+  "cirosantilli/china-dictatroship-7": {
+    "cn_name": "反中共政治宣传库备份",
+    "cn_desc": "反共宣传库的备份版本，含敏感政治内容与历史资料",
+    "purpose": "作为反共政治宣传库的备份，保存敏感政治宣传材料与历史评论",
+    "value": "确保敏感政治宣传内容在原始库失效时仍可访问，维持信息留存",
+    "parent_category": "test",
+    "sub_category": "learning",
+    "category_reason": "内容为原反共宣传库的备份，涉及大量政治敏感话题与历史事件评论，属安全研究范畴"
+  },
+  "mRFWq7LwNPZjaVv5v6eo/cihna-dictattorshrip-8": {
+    "cn_name": "反中共政治宣传库备份8",
+    "cn_desc": "反共宣传库的又一备份版本，含敏感政治宣传材料",
+    "purpose": "作为反共政治宣传库的多个备份之一，保存敏感政治宣传内容",
+    "value": "通过多重备份确保敏感政治宣传材料的持久可用性",
+    "parent_category": "test",
+    "sub_category": "learning",
+    "category_reason": "内容为反共宣传库的备份，涉及大量政治敏感话题与历史事件评论，属安全研究范畴"
+  },
+  "nomi-sec/PoC-in-GitHub": {
+    "cn_name": "GitHub PoC自动收集",
+    "cn_desc": "自动从GitHub收集漏洞利用代码（PoC）的工具",
+    "purpose": "自动化收集GitHub上的漏洞利用代码（PoC）",
+    "value": "帮助安全研究人员快速发现和利用已知漏洞，提升安全测试效率",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专注于漏洞利用代码的收集，直接服务于安全研究与渗透测试"
+  },
+  "XiaomingX/data-cve-poc": {
+    "cn_name": "CVE漏洞利用工具集",
+    "cn_desc": "收集GitHub上所有CVE漏洞利用工具的仓库",
+    "purpose": "汇集GitHub上所有可用的CVE漏洞利用工具",
+    "value": "为安全研究人员提供全面的漏洞利用工具资源，便于漏洞验证与修复",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专门收集CVE漏洞利用工具，直接服务于安全研究与漏洞验证"
+  },
+  "Threekiii/CVE": {
+    "cn_name": "CVE漏洞预警知识库",
+    "cn_desc": "CVE安全漏洞知识库，含修复方案，无PoC/Exp",
+    "purpose": "提供CVE漏洞预警信息及修复方案的知识库",
+    "value": "帮助开发者和安全人员及时了解漏洞风险并采取修复措施，提升系统安全性",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供CVE漏洞信息与修复方案，服务于安全研究与漏洞管理"
+  },
+  "trickest/cve": {
+    "cn_name": "CVE PoC聚合库",
+    "cn_desc": "收集并更新所有最新CVE及其PoC的仓库",
+    "purpose": "聚合并实时更新所有可用的CVE漏洞利用代码（PoC）",
+    "value": "为安全研究人员提供最新的漏洞利用代码，加速漏洞验证与修复过程",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专注于CVE漏洞利用代码的收集与更新，直接服务于安全研究与渗透测试"
+  },
+  "Chocapikk/CVE-2026-21858": {
+    "cn_name": "n8n CVE-2026-21858利用工具",
+    "cn_desc": "n8n未授权任意文件读取至RCE漏洞利用工具",
+    "purpose": "利用n8n平台的CVE-2026-21858漏洞实现远程代码执行",
+    "value": "展示该严重漏洞的实际利用方式，帮助安全人员理解漏洞危害",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供特定CVE漏洞的利用代码，用于安全研究与漏洞验证"
+  },
+  "wioui/n8n-CVE-2025-68613-exploit": {
+    "cn_name": "n8n CVE-2025-68613利用工具",
+    "cn_desc": "n8n远程代码执行漏洞利用工具及文档",
+    "purpose": "利用n8n平台的CVE-2025-68613漏洞实现远程代码执行",
+    "value": "提供漏洞利用代码与文档，帮助安全人员验证和修复该漏洞",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供特定CVE漏洞的利用代码，用于安全研究与漏洞验证"
+  },
+  "EQSTLab/CVE-2024-5932": {
+    "cn_name": "GiveWP PHP对象注入利用工具",
+    "cn_desc": "GiveWP PHP对象注入漏洞利用工具",
+    "purpose": "利用GiveWP插件的CVE-2024-5932漏洞实现PHP对象注入",
+    "value": "展示该漏洞的实际利用方式，帮助安全人员理解漏洞危害并修复",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供特定CVE漏洞的利用代码，用于安全研究与漏洞验证"
+  },
+  "k8gege/PowerLadon": {
+    "cn_name": "PowerLadon渗透测试工具",
+    "cn_desc": "基于PowerShell的漏洞扫描、爆破与检测工具",
+    "purpose": "提供漏洞扫描、爆破、检测及MS17010等漏洞利用功能",
+    "value": "集成多种渗透测试功能，提升网络安全评估与漏洞利用效率",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供漏洞扫描、爆破及利用功能，直接服务于安全研究与渗透测试"
+  },
+  "AjayAntoIsDev/WaSonar": {
+    "cn_name": "WhatsApp情报与安全测试工具",
+    "cn_desc": "WhatsApp设备追踪、RTT探测与协议压力测试工具",
+    "purpose": "提供WhatsApp设备追踪、沉默RTT探测及协议压力测试功能",
+    "value": "帮助安全研究人员进行WhatsApp协议安全分析与隐私保护研究",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供WhatsApp协议安全测试与隐私研究工具，服务于安全研究"
+  },
+  "trickest/find-gh-poc": {
+    "cn_name": "GitHub CVE PoC查找工具",
+    "cn_desc": "在GitHub上查找CVE漏洞利用代码（PoC）的工具",
+    "purpose": "自动化在GitHub上搜索和发现CVE漏洞利用代码",
+    "value": "帮助安全研究人员快速定位漏洞利用代码，加速安全测试流程",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专门用于查找CVE漏洞利用代码，直接服务于安全研究与渗透测试"
+  },
+  "tintinweb/pub": {
+    "cn_name": "tintinweb漏洞利用与笔记",
+    "cn_desc": "tintinweb披露的安全问题漏洞笔记、PoC及利用代码",
+    "purpose": "分享tintinweb发现的安全问题的漏洞笔记、PoC及利用代码",
+    "value": "提供详细的安全问题分析与利用代码，帮助安全人员理解漏洞机制",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供安全问题的漏洞笔记与利用代码，服务于安全研究与漏洞验证"
+  },
+  "joshuavanderpoll/CVE-2021-3129": {
+    "cn_name": "Laravel CVE-2021-3129利用工具",
+    "cn_desc": "Laravel远程代码执行漏洞利用工具，自动检测日志路径",
+    "purpose": "利用Laravel框架的CVE-2021-3129漏洞实现远程代码执行",
+    "value": "提供用户友好的漏洞利用工具，帮助安全人员验证和修复该漏洞",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供特定CVE漏洞的利用代码，用于安全研究与漏洞验证"
+  },
+  "ivan-sincek/malware-apk": {
+    "cn_name": "恶意APK漏洞利用示例",
+    "cn_desc": "用于漏洞赏金报告的恶意APK示例，含Deep Link劫持等",
+    "purpose": "提供恶意APK示例，用于漏洞赏金报告中的漏洞利用演示",
+    "value": "帮助安全研究人员生成有效的漏洞利用代码，提高漏洞赏金报告通过率",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供恶意APK示例用于漏洞利用演示，服务于安全研究与漏洞验证"
+  },
+  "EQSTLab/CVE-2024-46538": {
+    "cn_name": "PfSense CVE-2024-46538利用工具",
+    "cn_desc": "PfSense存储型XSS导致任意代码执行漏洞利用工具",
+    "purpose": "利用PfSense的CVE-2024-46538漏洞实现任意代码执行",
+    "value": "展示该漏洞的实际利用方式，帮助安全人员理解漏洞危害并修复",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "提供特定CVE漏洞的利用代码，用于安全研究与漏洞验证"
   }
 }
