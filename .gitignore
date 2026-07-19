@@ -1,6 +1,7 @@
 node_modules/
 __pycache__/
 *.pyc
+.private/
 .DS_Store
 Thumbs.db
 *.log
