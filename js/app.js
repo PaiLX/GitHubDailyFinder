@@ -5,6 +5,27 @@ let currentCat = 'dev';
 let currentSubcat = 'all';
 let searchQuery = '';
 
+const contentBlocklist = [
+  'politics','political','government','election','president','congress','senate','protest','activism','activist','censorship',
+  'china','taiwan','hong kong','xinjiang','tibet','uyghur','ccp','996.icu','war','military','weapon','terror','nazi',
+  'porn','adult','nsfw','sex','hentai','hanime','政治','政党','政府','选举','总统','国会','抗议','示威','维权','审查',
+  '中国','台湾','香港','新疆','西藏','中共','996','战争','军事','武器','恐怖','纳粹','色情','成人','黄色','本子','里番'
+];
+const blockedRepos = new Set(['996icu/996.icu']);
+function hasBlockedTerm(text, term) {
+  const lower = String(term).toLowerCase();
+  if (/^[a-z0-9_. -]+$/.test(lower)) {
+    return new RegExp(`(^|[^a-z0-9])${lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z0-9]|$)`).test(text);
+  }
+  return text.includes(lower);
+}
+function isSafeRepo(r) {
+  const name = String(r?.name || '').toLowerCase();
+  if (blockedRepos.has(name)) return false;
+  const text = [r?.name, r?.owner, r?.description, r?.cn_name, r?.cn_desc, r?.purpose, r?.value, ...(r?.topics || [])].filter(Boolean).join(' ').toLowerCase();
+  return !contentBlocklist.some(term => hasBlockedTerm(text, term));
+}
+
 const roleSubcats = {
   dev: {
     label: '开发者关注点',
@@ -238,7 +259,7 @@ function render() {
   const cat = allData?.categories[currentCat];
   if (!cat) return;
 
-  let repos = [...cat.repos];
+  let repos = [...cat.repos].filter(isSafeRepo);
 
   // Update category description
   const descEl = document.getElementById('catDesc');
