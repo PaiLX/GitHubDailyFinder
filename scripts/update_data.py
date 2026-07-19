@@ -339,7 +339,7 @@ def build_category(cat_id: str, existing_translations: dict) -> tuple[dict, dict
             candidates.append(repo)
         time.sleep(0.8)
     candidates.sort(key=lambda r: (r.get("score", 0), r.get("stars", 0)), reverse=True)
-    selected = candidates[:20]
+    selected = candidates[:50]
     sub_map = {r["name"]: r.get("sub_category", "") for r in selected}
     ai_data = ai_enrich_batch(selected, cat_id, sub_map)
     translations_delta = {}
@@ -366,6 +366,8 @@ def build_category(cat_id: str, existing_translations: dict) -> tuple[dict, dict
             continue
         translations_delta[name] = t
         enriched_repos.append(enriched)
+        if len(enriched_repos) >= 20:
+            break
     meta = PARENT_CATEGORIES[cat_id]
     return {
         "id": cat_id,
