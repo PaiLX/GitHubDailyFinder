@@ -1,0 +1,350 @@
+{
+  "PostmanReminisce/Wisp-VPN": {
+    "cn_name": "Wisp VPN",
+    "cn_desc": "基于 WireGuard 的免费开源 VPN 客户端",
+    "purpose": "提供免费、无限制、开源的 VPN 服务",
+    "value": "Windows 平台首选开源 VPN 方案，无日志无流量限制"
+  },
+  "oi88boi/hanime-viewer1.0.0": {
+    "cn_name": "Hanime Viewer",
+    "cn_desc": "hanime1 的第三方观看客户端",
+    "purpose": "提供 hanime1 内容的第三方观看工具",
+    "value": "方便用户直接通过客户端浏览内容"
+  },
+  "AmunM9/glyf": {
+    "cn_name": "Glyf",
+    "cn_desc": "手写字体转 .ttf/.otf 字体生成器，100% 浏览器端运行",
+    "purpose": "将你的手写笔迹转换为标准字体文件，全程在浏览器内完成",
+    "value": "无需上传文件到云端，保护隐私，零成本生成自定义字体"
+  },
+  "xai-org/grok-build": {
+    "cn_name": "Grok Build",
+    "cn_desc": "xAI 的编程智能体框架与终端界面，全屏交互可扩展",
+    "purpose": "为 AI 编程智能体提供统一的运行环境和终端界面",
+    "value": "支持鼠标交互和扩展，是构建 AI 编程工具的强大基础框架"
+  },
+  "Fei-Away/Codex-Dream-Skin": {
+    "cn_name": "Codex 梦想皮肤",
+    "cn_desc": "Codex 编码工具的精美 UI 皮肤",
+    "purpose": "美化 Codex 开发工具的界面外观",
+    "value": "提升编码体验的视觉享受"
+  },
+  "CluvexStudio/Aether": {
+    "cn_name": "Aether",
+    "cn_desc": "基于 Rust 开发的匿名通信隧道工具",
+    "purpose": "提供安全的网络代理和匿名通信能力",
+    "value": "Rust 编写，性能优异，适合需要隐私保护的用户"
+  },
+  "pixel-point/aval": {
+    "cn_name": "AVAL",
+    "cn_desc": "交互式视频的开源新格式，内置状态机与帧精确过渡",
+    "purpose": "定义一种新的 Web 交互式视频格式标准",
+    "value": "支持状态机控制和帧精确过渡，为互动视频创作者提供全新工具"
+  },
+  "littledivy/mimic": {
+    "cn_name": "Mimic",
+    "cn_desc": "拦截任意应用，然后在 Python 中像调用库一样使用它",
+    "purpose": "将任何桌面应用包装为 Python 可调用的模块",
+    "value": "极大简化 Python 与桌面应用的集成，无需逆向工程"
+  },
+  "tandpfun/wardrobe": {
+    "cn_name": "Wardrobe",
+    "cn_desc": "用 AI 自动提取和组织你的衣物照片",
+    "purpose": "通过 AI 图像识别技术整理个人衣柜",
+    "value": "告别手动整理，AI 帮你自动分类衣物，方便日常穿搭搭配"
+  },
+  "oil-oil/beautify-github-readme": {
+    "cn_name": "Beautify GitHub README",
+    "cn_desc": "自动生成美观的 GitHub 项目介绍页",
+    "purpose": "帮助开发者轻松创建专业的 GitHub README 文档",
+    "value": "SVG 标题、真实预览、可维护的 Markdown，让项目首页更吸引人"
+  },
+  "nethical6/conversation-steganography": {
+    "cn_name": "对话隐写术",
+    "cn_desc": "利用大语言模型将消息隐藏在正常对话中",
+    "purpose": "研究如何用 AI 实现信息隐蔽传输",
+    "value": "探索 LLM 在信息隐藏领域的应用，具有学术和实用价值"
+  },
+  "KubeezMedia/kubeez-scroll-world-video": {
+    "cn_name": "Kubeez Scroll World",
+    "cn_desc": "滚动驱动的 3D 世界漫游视频演示",
+    "purpose": "展示基于滚动的 3D 场景导航技术",
+    "value": "为品牌营销提供创新的滚动视频体验，适合产品展示"
+  },
+  "MatinSenPai/Aether-GUI": {
+    "cn_name": "Aether GUI",
+    "cn_desc": "Aether 匿名隧道的桌面图形界面，基于 Tauri + React",
+    "purpose": "为 Aether 网络工具提供易用的桌面客户端",
+    "value": "一键配置，无需命令行，降低反审查工具的使用门槛"
+  },
+  "pablostanley/yoinks": {
+    "cn_name": "Yoinks",
+    "cn_desc": "从终端直接下载任何视频，无广告骚扰",
+    "purpose": "提供一个干净的命令行视频下载工具",
+    "value": "无广告、无 shady 行为，终端用户的首选视频下载方案"
+  },
+  "Blueturboguy07/cue": {
+    "cn_name": "Cue",
+    "cn_desc": "开源 macOS AI 助手，悬浮于屏幕之上",
+    "purpose": "为 macOS 用户提供 AI 协作者，可监听会议和屏幕内容",
+    "value": "自带密钥、不泄露数据，是 Cluely 的开源替代方案"
+  },
+  "PengZhang64/circuit-framework": {
+    "cn_name": "Circuit Framework",
+    "cn_desc": "多智能体 LLM 量化交易系统",
+    "purpose": "使用多个 AI 智能体进行金融交易研究和策略回测",
+    "value": "多智能体协作模式，适合量化交易和 AI 金融研究"
+  },
+  "stackblitz/bolt-slides": {
+    "cn_name": "Bolt Slides",
+    "cn_desc": "用任意 AI 智能体创建精美的交互式演示文稿",
+    "purpose": "让 AI 自动生成专业的 PPT 演示文稿",
+    "value": "降低演示文稿制作门槛，智能体驱动内容生成"
+  },
+  "pyang5166/gbro-collage-broll": {
+    "cn_name": "拼贴 B-roll 生成器",
+    "cn_desc": "半调纸拼贴风格的 B-roll 视频生成 AI 技能",
+    "purpose": "用 AI 自动生成艺术风格的视频素材",
+    "value": "独特的拼贴艺术风格，为视频创作者提供差异化内容"
+  },
+  "vshulcz/deja-vu": {
+    "cn_name": "Deja Vu",
+    "cn_desc": "编程智能体的记忆层：搜索、回忆、自动上下文",
+    "purpose": "为 AI 编码助手提供跨会话的记忆和上下文管理能力",
+    "value": "支持 Claude Code、Codex 等多种工具，零依赖单二进制文件"
+  },
+  "QuantumByteOSS/quantumbyte": {
+    "cn_name": "QuantumByte",
+    "cn_desc": "开源应用构建引擎——从意图到可运行的应用",
+    "purpose": "通过 AI 将用户的想法直接转化为可运行的应用程序",
+    "value": "降低应用开发门槛，非技术人员也能快速构建应用"
+  },
+  "Wan-Video/Wan-Dancer": {
+    "cn_name": "Wan Dancer",
+    "cn_desc": "万维视频的智能舞蹈生成模型",
+    "purpose": "利用 AI 生成高质量的舞蹈视频",
+    "value": "为视频创作和娱乐行业提供新的 AI 生成能力"
+  },
+  "TobiasLee/Rebuttal-Skill": {
+    "cn_name": "Rebuttal Skill",
+    "cn_desc": "学术论文回复信生成技能",
+    "purpose": "帮助研究者撰写专业的论文审稿回复",
+    "value": "提升学术沟通效率，减少回复审稿意见的时间成本"
+  },
+  "PromptPartner/agentsmith": {
+    "cn_name": "AgentSmith",
+    "cn_desc": "通用 AI 智能体运行框架，支持多种模型",
+    "purpose": "为 Claude、Codex、Gemini 等 AI 智能体提供统一运行环境",
+    "value": "模型无关、轻量核心，一套脚本即可配置不同工作类型"
+  },
+  "JustVugg/colibri": {
+    "cn_name": "Colibri",
+    "cn_desc": "在 25GB 内存的消费级机器上运行 GLM-5.2 (744B MoE)",
+    "purpose": "让超大参数模型能在普通电脑上运行",
+    "value": "纯 C 语言零依赖，专家流式加载，极大降低大模型使用门槛"
+  },
+  "langchain-ai/openwiki": {
+    "cn_name": "OpenWiki",
+    "cn_desc": "CLI 工具，自动为你的代码库编写和维护智能体文档",
+    "purpose": "让 AI 智能体自动理解并记录你的项目代码",
+    "value": "解决代码库文档维护难题，特别适合 AI 智能体使用"
+  },
+  "deepseek-ai/DeepSpec": {
+    "cn_name": "DeepSpec",
+    "cn_desc": "完整的投机解码算法训练和评估代码库",
+    "purpose": "为 LLM 推理加速提供完整的算法研究基础设施",
+    "value": "DeepSeek 出品，涵盖训练到评估的全链路，加速 AI 推理优化"
+  },
+  "x4gKing/X4G": {
+    "cn_name": "X4G",
+    "cn_desc": "游戏开发框架/工具集",
+    "purpose": "提供游戏开发和部署的一站式解决方案",
+    "value": "高星项目，适合游戏开发者快速构建和发布游戏"
+  },
+  "Yu9191/wloc": {
+    "cn_name": "wloc",
+    "cn_desc": "修改 Apple 网络定位的实用工具",
+    "purpose": "支持 Surge/Quantumult X/Loon 等修改 Apple 设备的网络定位",
+    "value": "快捷指令一键设置，方便 iOS 用户切换地理位置"
+  },
+  "elder-plinius/T3MP3ST": {
+    "cn_name": "T3MP3ST",
+    "cn_desc": "自主红队攻防平台，多智能体安全测试框架",
+    "purpose": "为安全研究人员提供自动化的渗透测试工具",
+    "value": "多智能体协作攻击模拟，全面评估系统安全性"
+  },
+  "bikini/exploitarium": {
+    "cn_name": "Exploitarium",
+    "cn_desc": "公开漏洞 PoC 和安全研究论文的单一归档",
+    "purpose": "集中整理公开可用的漏洞利用代码和研究资料",
+    "value": "安全研究者的知识库，一站式获取漏洞利用样本"
+  },
+  "baairon/torlink": {
+    "cn_name": "TorLink",
+    "cn_desc": "优雅的终端种子查找和下载工具",
+    "purpose": "在终端内完成种子搜索和下载的全流程",
+    "value": "界面简洁，零配置，终端用户的 BT 下载利器"
+  },
+  "oso95/scroll-world": {
+    "cn_name": "Scroll World",
+    "cn_desc": "将任意品牌转化为可滚动的 3D 世界",
+    "purpose": "为品牌营销提供沉浸式 3D 滚动体验",
+    "value": "创新的展示方式，适合品牌宣传和产品展示"
+  },
+  "oomol-lab/open-connector": {
+    "cn_name": "Open Connector",
+    "cn_desc": "开源认证网关，连接 1000+ SaaS 提供商到 AI 智能体",
+    "purpose": "为 AI 智能体提供统一的 SaaS 认证和接入能力",
+    "value": "支持 SDK/CLI/MCP/HTTP 多种接入方式，大幅扩展 AI 智能体的能力边界"
+  },
+  "davidondrej/skills": {
+    "cn_name": "David Ondrej Skills",
+    "cn_desc": "David Ondrej 的个人 AI 智能体技能集合",
+    "purpose": "分享个人常用的 AI 智能体技能和配置",
+    "value": "参考价值高，展示如何构建实用的 AI 技能"
+  },
+  "synthetic-sciences/openscience": {
+    "cn_name": "OpenScience",
+    "cn_desc": "开源 AI 科研工作台，用于科学研究",
+    "purpose": "为科研人员提供 AI 驱动的研究工具和环境",
+    "value": "降低科研门槛，加速科学发现过程"
+  },
+  "mekos2772/ios-location-spoofer": {
+    "cn_name": "iOS 定位伪造器",
+    "cn_desc": "独立的 iOS 应用，无需越狱即可伪造 GPS 位置",
+    "purpose": "为 iOS 用户提供无需越狱的位置修改方案",
+    "value": "支持 Shadowrocket/Surge/Loon 等工具，功能全面"
+  },
+  "Younesfdj/gitfut": {
+    "cn_name": "GitFut",
+    "cn_desc": "将你的 GitHub 统计数据变成世界杯球员卡风格",
+    "purpose": "用趣味方式展示 GitHub 贡献数据",
+    "value": "独特的数据可视化形式，让代码贡献变得有趣"
+  },
+  "Krishnagangwal/CS-Fundamentals": {
+    "cn_name": "CS 基础速成",
+    "cn_desc": "面向求职面试的计算机科学基础速成指南",
+    "purpose": "整理 DSA、计算机网络、数据库、操作系统等核心知识点",
+    "value": "求职者的必备复习材料，覆盖面试高频考点"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "cn_name": "从零构建万物",
+    "cn_desc": "通过重建你喜欢的技术来精通编程",
+    "purpose": "提供数据库、操作系统、编译器等的重建教程",
+    "value": "最好的编程学习方式之一，通过实践深入理解核心技术原理"
+  },
+  "freeCodeCamp/freeCodeCamp": {
+    "cn_name": "freeCodeCamp",
+    "cn_desc": "免费编程课程和学习平台",
+    "purpose": "提供数学、编程、计算机科学的免费系统化学习路径",
+    "value": "全球最受欢迎的免费编程教育平台，社区驱动，内容全面"
+  },
+  "public-apis/public-apis": {
+    "cn_name": "公共 API 合集",
+    "cn_desc": "免费 API 的集合列表",
+    "purpose": "整理所有可免费使用的公共 API 服务",
+    "value": "开发者的宝藏资源库，快速找到可用的 API 服务"
+  },
+  "EbookFoundation/free-programming-books": {
+    "cn_name": "免费编程书籍",
+    "cn_desc": " freely available programming books 合集",
+    "purpose": "收集和整理所有免费可下载的编程书籍",
+    "value": "学习编程的最佳资源之一，涵盖各语言和领域"
+  },
+  "nilbuild/developer-roadmap": {
+    "cn_name": "开发者路线图",
+    "cn_desc": "交互式开发者成长路线图和指南",
+    "purpose": "为开发者提供清晰的职业成长路径指引",
+    "value": "交互式学习地图，覆盖前端、后端、DevOps 等各个方向"
+  },
+  "donnemartin/system-design-primer": {
+    "cn_name": "系统设计入门",
+    "cn_desc": "学习如何设计大规模系统的资源集合",
+    "purpose": "帮助开发者掌握大型系统架构设计能力",
+    "value": "面试准备必备，包含 Anki 记忆卡片，系统化学习分布式系统"
+  },
+  "jwasham/coding-interview-university": {
+    "cn_name": "编程面试大学",
+    "cn_desc": "成为软件工程师的完整计算机科学学习计划",
+    "purpose": "提供从零基础到高级工程师的系统化学习路径",
+    "value": "业界公认的面试准备圣经，涵盖算法、系统、数据库等"
+  },
+  "vinta/awesome-python": {
+    "cn_name": "Awesome Python",
+    "cn_desc": "Python 框架、库、资源的精选列表",
+    "purpose": "整理 Python 生态中最优秀的工具和资源",
+    "value": "Python 开发者的必备参考，快速找到合适的库和框架"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+    "cn_name": "Awesome Selfhosted",
+    "cn_desc": "可自行托管的自由软件列表",
+    "purpose": "收集所有可以在自己服务器上运行的自由软件",
+    "value": "隐私保护爱好者的天堂，摆脱云服务依赖"
+  },
+  "996icu/996.ICU": {
+    "cn_name": "996.ICU",
+    "cn_desc": "反对 996 工作制，为开发者权益发声",
+    "purpose": "记录和声援被 996 加班制度伤害的开发者",
+    "value": "具有社会意义的里程碑项目，推动劳动法意识觉醒"
+  },
+  "practical-tutorials/project-based-learning": {
+    "cn_name": "项目式学习",
+    "cn_desc": "通过实际项目学习编程的教程合集",
+    "purpose": "整理所有以项目为导向的编程学习资源",
+    "value": "比纯理论学习更有效，动手实践才是硬道理"
+  },
+  "obra/superpowers": {
+    "cn_name": "Superpowers",
+    "cn_desc": "AI 智能体技能框架和软件开发方法论",
+    "purpose": "提供一套完整的 AI 智能体开发方法论和技能框架",
+    "value": "系统化组织 AI 技能，提升开发效率和代码质量"
+  },
+  "react/react": {
+    "cn_name": "React",
+    "cn_desc": "用于构建用户界面的 JavaScript 库",
+    "purpose": "由 Meta 维护的前端 UI 开发框架",
+    "value": "全球最流行的前端框架，组件化开发理念深刻影响了整个行业"
+  },
+  "torvalds/linux": {
+    "cn_name": "Linux 内核",
+    "cn_desc": "Linux 操作系统的核心源代码",
+    "purpose": "世界上最重要的开源操作系统的核心",
+    "value": "支撑着互联网、云计算、Android 等几乎所有现代技术基础设施"
+  },
+  "affaan-m/ECC": {
+    "cn_name": "ECC",
+    "cn_desc": "智能体框架性能优化系统",
+    "purpose": "优化 AI 智能体框架的性能表现",
+    "value": "涵盖技能、本能、记忆、安全等多个维度的优化方案"
+  },
+  "TheAlgorithms/Python": {
+    "cn_name": "Python 算法大全",
+    "cn_desc": "所有经典算法的 Python 实现",
+    "purpose": "用 Python 实现各种常见算法作为学习参考",
+    "value": "算法学习者的最佳实践库，每个算法都有清晰注释"
+  },
+  "NousResearch/hermes-agent": {
+    "cn_name": "Hermes Agent",
+    "cn_desc": "随你一起成长的智能代理框架",
+    "purpose": "提供可扩展的 AI 智能体能力框架",
+    "value": "支持工具调用、记忆管理、技能系统等，是强大的 AI 开发平台"
+  },
+  "BozhouDev/codex-orange-book": {
+    "cn_name": "Codex 橙皮书",
+    "cn_desc": "从安装到实战的全链路 Codex 使用指南",
+    "purpose": "系统性地教授 Codex 工具的使用方法",
+    "value": "含可下载 PDF，非官方开源指南，适合 Codex 新手入门"
+  },
+  "isjiamu/gzh-design-skill": {
+    "cn_name": "公众号排版技能",
+    "cn_desc": "Markdown 一键排版为公众号精致 HTML",
+    "purpose": "将 Markdown 内容自动转换为可直接粘贴到公众号编辑器的 HTML",
+    "value": "6 套精选主题 + 主题生成器 + 双关卡校验，大幅提升公众号排版效率"
+  },
+  "withmarbleapp/os-taxonomy": {
+    "cn_name": "OS Taxonomy",
+    "cn_desc": "操作系统分类和知识图谱工具",
+    "purpose": "整理和分类各类操作系统及其关系",
+    "value": "操作系统学习者和研究者的参考工具"
+  }
+}

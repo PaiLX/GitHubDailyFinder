@@ -1,0 +1,530 @@
+{
+  "iluvx/go-tg-api": {
+    "cn_name": "Go Telegram Bot API",
+    "cn_desc": "用 Go 构建 Telegram 机器人和用户客户端，无需纠结 MTProto 协议",
+    "value": "降低 Telegram 开发门槛，适合快速搭建聊天机器人",
+    "category": "即时通讯"
+  },
+  "xai-org/grok-build": {
+    "cn_name": "xAI Grok Build",
+    "cn_desc": "SpaceX旗下xAI的编程Agent框架和终端界面",
+    "value": "全屏鼠标交互的AI编程助手，代表未来编程方式",
+    "category": "AI编程"
+  },
+  "JustVugg/colibri": {
+    "cn_name": "Colibri 大模型引擎",
+    "cn_desc": "用纯C在25GB内存的消费级机器上运行GLM-5.2（744B MoE）大模型",
+    "value": "让普通人也能本地运行超大模型，打破GPU壁垒",
+    "category": "大模型"
+  },
+  "langchain-ai/openwiki": {
+    "cn_name": "OpenWiki",
+    "cn_desc": "CLI工具，自动为代码库编写和维护文档",
+    "value": "解决开发者最头疼的文档问题，AI自动生成Wiki",
+    "category": "开发工具"
+  },
+  "deepseek-ai/DeepSpec": {
+    "cn_name": "DeepSpec",
+    "cn_desc": "DeepSeek出品的推测解码算法训练和评估全栈代码库",
+    "value": "探索AI推理加速的前沿技术",
+    "category": "AI研究"
+  },
+  "elder-plinius/T3MP3ST": {
+    "cn_name": "T3MP3ST 红队平台",
+    "cn_desc": "自主红队测试平台，多Agent攻击性安全元框架",
+    "value": "自动化安全测试，多个AI Agent协同渗透测试",
+    "category": "网络安全"
+  },
+  "bikini/exploitarium": {
+    "cn_name": "Exploitarium 漏洞库",
+    "cn_desc": "公开漏洞PoC和安全研究写作的归档集合",
+    "value": "学习网络安全的绝佳资源库",
+    "category": "网络安全"
+  },
+  "baairon/torlink": {
+    "cn_name": "TorLink 种子下载",
+    "cn_desc": "终端内的种子文件查找和下载工具",
+    "value": "简洁的命令行BT下载方案，零配置开箱即用",
+    "category": "网络工具"
+  },
+  "oomol-lab/open-connector": {
+    "cn_name": "Open Connector",
+    "cn_desc": "连接1000+ SaaS到AI Agent的开源认证网关",
+    "value": "解决AI Agent接入各类SaaS的认证难题",
+    "category": "AI基础设施"
+  },
+  "synthetic-sciences/openscience": {
+    "cn_name": "OpenScience",
+    "cn_desc": "开源AI科学研究工作台",
+    "value": "让科学研究也能用上AI工具",
+    "category": "科研工具"
+  },
+  "isjiamu/gzh-design-skill": {
+    "cn_name": "公众号排版助手",
+    "cn_desc": "把Markdown一键排版成微信公众号精美HTML",
+    "value": "解决中文写作者排版痛点，6套精选主题",
+    "category": "内容创作"
+  },
+  "Younesfdj/gitfut": {
+    "cn_name": "GitFut 球星卡",
+    "cn_desc": "把你的GitHub统计变成世界杯球员卡",
+    "value": "有趣的GitHub数据可视化工具",
+    "category": "趣味工具"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "cn_name": "自制XXX系列",
+    "cn_desc": "从零开始重建数据库、操作系统、编译器等核心技术",
+    "value": "最好的编程学习实践项目",
+    "category": "学习资源"
+  },
+  "sindresorhus/awesome": {
+    "cn_name": "Awesome 列表合集",
+    "cn_desc": "各种有趣主题的Awesome列表合集",
+    "value": "发现新工具的最佳入口",
+    "category": "学习资源"
+  },
+  "freeCodeCamp/freeCodeCamp": {
+    "cn_name": "freeCodeCamp",
+    "cn_desc": "免费学习编程、数学、计算机科学的开源课程",
+    "value": "全球最大的免费编程教育社区",
+    "category": "学习资源"
+  },
+  "public-apis/public-apis": {
+    "cn_name": "Public APIs",
+    "cn_desc": "免费API合集",
+    "value": "开发者找API的第一站",
+    "category": "学习资源"
+  },
+  "EbookFoundation/free-programming-books": {
+    "cn_name": "免费编程书籍",
+    "cn_desc": "免费编程书籍合集",
+    "value": "最全的免费编程电子书资源",
+    "category": "学习资源"
+  },
+  "openclaw/openclaw": {
+    "cn_name": "OpenClaw AI助手",
+    "cn_desc": "你的个人AI助手，任何系统任何平台",
+    "value": "跨平台的个人AI助手框架",
+    "category": "AI工具"
+  },
+  "nilbuild/developer-roadmap": {
+    "cn_name": "开发者路线图",
+    "cn_desc": "交互式开发者成长路线图",
+    "value": "告诉你该学什么、怎么学",
+    "category": "学习资源"
+  },
+  "donnemartin/system-design-primer": {
+    "cn_name": "系统设计入门",
+    "cn_desc": "系统设计面试准备指南",
+    "value": "大厂面试必备，系统设计的圣经",
+    "category": "学习资源"
+  },
+  "vinta/awesome-python": {
+    "cn_name": "Awesome Python",
+    "cn_desc": "Python框架、库、工具合集",
+    "value": "Python生态全景图",
+    "category": "学习资源"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+    "cn_name": "Awesome Selfhosted",
+    "cn_desc": "可自托管的免费软件合集",
+    "value": "数据主权倡导者的最佳工具库",
+    "category": "学习资源"
+  },
+  "996icu/996.ICU": {
+    "cn_name": "996.ICU",
+    "cn_desc": "关于996工作制的讨论和项目",
+    "value": "中国程序员文化的标志性项目",
+    "category": "社会议题"
+  },
+  "practical-tutorials/project-based-learning": {
+    "cn_name": "项目式学习",
+    "cn_desc": "精选的项目式教程合集",
+    "value": "通过项目实战学习编程",
+    "category": "学习资源"
+  },
+  "obra/superpowers": {
+    "cn_name": "Superpowers",
+    "cn_desc": "Agent技能框架和软件开发方法论",
+    "value": "提升AI Agent能力的框架",
+    "category": "AI工具"
+  },
+  "react/react": {
+    "cn_name": "React",
+    "cn_desc": "构建用户界面的JavaScript库",
+    "value": "前端开发的基石",
+    "category": "前端框架"
+  },
+  "torvalds/linux": {
+    "cn_name": "Linux内核",
+    "cn_desc": "Linux内核源码",
+    "value": "现代计算世界的基石",
+    "category": "操作系统"
+  },
+  "affaan-m/ECC": {
+    "cn_name": "ECC 性能优化",
+    "cn_desc": "Agent Harness性能优化系统",
+    "value": "提升Claude Code、Cursor等工具的编程能力",
+    "category": "AI工具"
+  },
+  "TheAlgorithms/Python": {
+    "cn_name": "Python算法库",
+    "cn_desc": "所有算法的Python实现",
+    "value": "学习算法的最佳实践库",
+    "category": "学习资源"
+  },
+  "NousResearch/hermes-agent": {
+    "cn_name": "Hermes Agent",
+    "cn_desc": "与你一起成长的AI助手",
+    "value": "本项目的底层AI助手",
+    "category": "AI工具"
+  },
+  "ossu/computer-science": {
+    "cn_name": "OSSU计算机科学",
+    "cn_desc": "免费自学计算机科学的完整路径",
+    "value": "不想上大学又想学CS的最佳替代方案",
+    "category": "学习资源"
+  },
+  "pixel-point/aval": {
+    "cn_name": "AVAL 交互视频格式",
+    "cn_desc": "Web交互式视频的新开源格式",
+    "value": "为Web互动视频提供标准化方案",
+    "category": "前端技术"
+  },
+  "littledivy/mimic": {
+    "cn_name": "Mimic 应用拦截器",
+    "cn_desc": "拦截任何应用，然后在Python中像调用库一样使用",
+    "value": "让Python开发者轻松调用桌面应用API",
+    "category": "开发工具"
+  },
+  "tandpfun/wardrobe": {
+    "cn_name": "Wardrobe 数字衣橱",
+    "cn_desc": "用AI提取和组织你的衣物",
+    "value": "将AI应用于日常生活，拍照识别衣物",
+    "category": "AI应用"
+  },
+  "mereyabdenbekuly-ctrl/clodex-ide": {
+    "cn_name": "Clodex IDE",
+    "cn_desc": "本地优先、零信任的自主软件开发IDE",
+    "value": "强调安全性的AI编程环境",
+    "category": "开发工具"
+  },
+  "PengZhang64/circuit-framework": {
+    "cn_name": "Circuit Framework",
+    "cn_desc": "多Agent LLM交易研究系统",
+    "value": "将AI Agent应用于量化交易领域",
+    "category": "金融科技"
+  },
+  "pablostanley/yoinks": {
+    "cn_name": "Yoinks 视频下载",
+    "cn_desc": "从终端下载视频，无广告",
+    "value": "简洁高效的命令行视频下载工具",
+    "category": "网络工具"
+  },
+  "nethical6/conversation-steganography": {
+    "cn_name": "对话隐写术",
+    "cn_desc": "用LLM在正常对话中隐藏秘密消息",
+    "value": "信息隐写术+AI的安全研究方向",
+    "category": "网络安全"
+  },
+  "vshulcz/deja-vu": {
+    "cn_name": "Deja Vu 记忆层",
+    "cn_desc": "编程Agent的记忆层，支持搜索和上下文回忆",
+    "value": "为AI编程工具补齐会话记忆能力",
+    "category": "AI基础设施"
+  },
+  "stackblitz/bolt-slides": {
+    "cn_name": "Bolt Slides",
+    "cn_desc": "用AI生成精美的交互式演示文稿",
+    "value": "降低PPT制作门槛，AI自动生成内容",
+    "category": "生产力工具"
+  },
+  "Blueturboguy07/cue": {
+    "cn_name": "Cue AI助手",
+    "cn_desc": "开源macOS AI Copilot，悬浮于屏幕之上",
+    "value": "类似Cluely的开源替代方案，支持自带密钥",
+    "category": "AI工具"
+  },
+  "oil-oil/beautify-github-readme": {
+    "cn_name": "美化GitHub README",
+    "cn_desc": "自动生成美观的GitHub项目介绍页",
+    "value": "解决开发者不擅长设计的痛点",
+    "category": "开发工具"
+  },
+  "Kappaemme-git/codex-first-customer-finder-skill": {
+    "cn_name": "Codex客户发现",
+    "cn_desc": "从公开信号中发现潜在首批客户",
+    "value": "将AI用于商业洞察，帮创业者找到早期用户",
+    "category": "创业工具"
+  },
+  "Fei-Away/Codex-Dream-Skin": {
+    "cn_name": "Codex梦想皮肤",
+    "cn_desc": "Codex视觉主题皮肤",
+    "value": "为OpenAI Codex提供视觉定制",
+    "category": "开发工具"
+  },
+  "Yu9191/wloc": {
+    "cn_name": "WLoc 虚拟定位",
+    "cn_desc": "修改Apple网络定位，支持多种代理工具",
+    "value": "iOS用户的一键虚拟定位方案",
+    "category": "移动工具"
+  },
+  "mekos2772/ios-location-spoofer": {
+    "cn_name": "iOS位置模拟器",
+    "cn_desc": "无需越狱的iOS独立GPS位置模拟应用",
+    "value": "配合Shadowrocket等工具使用",
+    "category": "移动工具"
+  },
+  "oso95/scroll-world": {
+    "cn_name": "Scroll World",
+    "cn_desc": "将品牌转化为可滚动的3D世界",
+    "value": "沉浸式品牌展示的新方式",
+    "category": "前端技术"
+  },
+  "withmarbleapp/os-taxonomy": {
+    "cn_name": "OS Taxonomy",
+    "cn_desc": "开源操作系统分类体系",
+    "value": "系统化梳理开源操作系统生态",
+    "category": "操作系统"
+  },
+  "bozhouDev/codex-orange-book": {
+    "cn_name": "Codex橙皮书",
+    "cn_desc": "Codex从安装到实战的全链路使用指南",
+    "value": "非官方但实用的Codex教程",
+    "category": "学习资源"
+  },
+  "davidondrej/skills": {
+    "cn_name": "David的技能集",
+    "cn_desc": "个人Agent技能集合",
+    "value": "参考优秀的Agent技能设计",
+    "category": "AI工具"
+  },
+  "Krishnagangwal/CS-Fundamentals": {
+    "cn_name": "CS基础知识",
+    "cn_desc": "精选计算机基础面试题集",
+    "value": "求职准备的最佳参考资料",
+    "category": "学习资源"
+  },
+  "trekhleb/javascript-algorithms": {
+    "cn_name": "JavaScript算法",
+    "cn_desc": "用JavaScript实现的算法和数据结构",
+    "value": "学习算法的交互式实践库",
+    "category": "学习资源"
+  },
+  "Snailclimb/JavaGuide": {
+    "cn_name": "Java指南",
+    "cn_desc": "Java面试&后端通用面试指南",
+    "value": "中文Java学习者的最佳伴侣",
+    "category": "学习资源"
+  },
+  "airbnb/javascript": {
+    "cn_name": "JavaScript风格指南",
+    "cn_desc": "Airbnb的JavaScript编码规范",
+    "value": "业界最流行的JS代码风格指南",
+    "category": "前端规范"
+  },
+  "vercel/next.js": {
+    "cn_name": "Next.js",
+    "cn_desc": "React全栈框架",
+    "value": "构建现代Web应用的首选框架",
+    "category": "前端框架"
+  },
+  "Chalarangelo/30-seconds-of-code": {
+    "cn_name": "30秒代码",
+    "cn_desc": "编程技巧文章合集",
+    "value": "每天30秒，提升编程技能",
+    "category": "学习资源"
+  },
+  "nodejs/node": {
+    "cn_name": "Node.js",
+    "cn_desc": "JavaScript运行时",
+    "value": "服务端JavaScript的基石",
+    "category": "运行时"
+  },
+  "mrdoob/three.js": {
+    "cn_name": "Three.js",
+    "cn_desc": "JavaScript 3D图形库",
+    "value": "Web端3D渲染的标准选择",
+    "category": "前端技术"
+  },
+  "axios/axios": {
+    "cn_name": "Axios",
+    "cn_desc": "Promise HTTP客户端",
+    "value": "前端网络请求的事实标准",
+    "category": "前端工具"
+  },
+  "yt-dlp/yt-dlp": {
+    "cn_name": "yt-dlp",
+    "cn_desc": "功能丰富的命令行音视频下载器",
+    "value": "YouTube等视频下载的最佳工具",
+    "category": "网络工具"
+  },
+  "microsoft/markitdown": {
+    "cn_name": "MarkItDown",
+    "cn_desc": "将文件和Office文档转换为Markdown",
+    "value": "文档格式转换的利器",
+    "category": "开发工具"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "cn_name": "AutoGPT",
+    "cn_desc": "自主运行的AI Agent框架",
+    "value": "让AI自动完成复杂任务的先驱项目",
+    "category": "AI工具"
+  },
+  "ultraworkers/claw-code": {
+    "cn_name": "Claw Code",
+    "cn_desc": "由Agent管理的博物馆展品",
+    "value": "无人工干预的AI自主开发项目",
+    "category": "AI实验"
+  },
+  "farion1231/cc-switch": {
+    "cn_name": "CC Switch",
+    "cn_desc": "跨平台AI编程工具切换助手",
+    "value": "一键切换Claude Code、Codex等工具",
+    "category": "开发工具"
+  },
+  "rustdesk/rustdesk": {
+    "cn_name": "RustDesk",
+    "cn_desc": "开源远程桌面应用",
+    "value": "TeamViewer的开源替代品",
+    "category": "远程办公"
+  },
+  "rust-lang/rust": {
+    "cn_name": "Rust",
+    "cn_desc": "Rust编程语言",
+    "value": "内存安全的系统级编程语言",
+    "category": "编程语言"
+  },
+  "tauri-apps/tauri": {
+    "cn_name": "Tauri",
+    "cn_desc": "轻量级桌面应用框架",
+    "value": "用Web前端构建更小更快的桌面应用",
+    "category": "桌面开发"
+  },
+  "denoland/deno": {
+    "cn_name": "Deno",
+    "cn_desc": "现代化的JavaScript/TypeScript运行时",
+    "value": "Node.js的更安全替代品",
+    "category": "运行时"
+  },
+  "oven-sh/bun": {
+    "cn_name": "Bun",
+    "cn_desc": "极速JavaScript运行时和打包工具",
+    "value": "比Node.js快数倍的新一代运行时",
+    "category": "运行时"
+  },
+  "astral-sh/uv": {
+    "cn_name": "UV",
+    "cn_desc": "极速Python包和项目管理器",
+    "value": "用Rust编写的Python包管理新选择",
+    "category": "开发工具"
+  },
+  "zed-industries/zed": {
+    "cn_name": "Zed",
+    "cn_desc": "高性能多人协作代码编辑器",
+    "value": "Atom和Tree-sitter创始人的新作",
+    "category": "编辑器"
+  },
+  "avelino/awesome-go": {
+    "cn_name": "Awesome Go",
+    "cn_desc": "Go框架、库、软件合集",
+    "value": "Go生态全景图",
+    "category": "学习资源"
+  },
+  "ollama/ollama": {
+    "cn_name": "Ollama",
+    "cn_desc": "本地运行大语言模型",
+    "value": "一行命令在本地跑起LLM",
+    "category": "AI基础设施"
+  },
+  "golang/go": {
+    "cn_name": "Go",
+    "cn_desc": "Go编程语言",
+    "value": "Google开发的简洁高效语言",
+    "category": "编程语言"
+  },
+  "kubernetes/kubernetes": {
+    "cn_name": "Kubernetes",
+    "cn_desc": "容器编排管理平台",
+    "value": "云原生时代的操作系统",
+    "category": "运维工具"
+  },
+  "fatedier/frp": {
+    "cn_name": "FRP",
+    "cn_desc": "高速内网穿透工具",
+    "value": "把本地服务暴露到公网的神器",
+    "category": "网络工具"
+  },
+  "gohugoio/hugo": {
+    "cn_name": "Hugo",
+    "cn_desc": "最快的静态网站生成器",
+    "value": "用Go构建超快网站的框架",
+    "category": "建站工具"
+  },
+  "gin-gonic/gin": {
+    "cn_name": "Gin",
+    "cn_desc": "高性能Go HTTP Web框架",
+    "value": "Go后端开发的事实标准",
+    "category": "后端框架"
+  },
+  "syncthing/syncthing": {
+    "cn_name": "Syncthing",
+    "cn_desc": "开源持续文件同步工具",
+    "value": "自建云存储的完美方案",
+    "category": "网络工具"
+  },
+  "infiniflow/ragflow": {
+    "cn_name": "RAGFlow",
+    "cn_desc": "RAG+Agent引擎",
+    "value": "结合检索增强生成和AI Agent的企业级解决方案",
+    "category": "AI基础设施"
+  },
+  "junegunn/fzf": {
+    "cn_name": "FZF",
+    "cn_desc": "命令行模糊查找器",
+    "value": "终端里的超级搜索",
+    "category": "开发工具"
+  },
+  "vuejs/vue": {
+    "cn_name": "Vue.js",
+    "cn_desc": "渐进式JavaScript框架",
+    "value": "易上手的前端框架",
+    "category": "前端框架"
+  },
+  "n8n-io/n8n": {
+    "cn_name": "n8n",
+    "cn_desc": "工作流自动化平台",
+    "value": "开源版Zapier，带原生AI能力",
+    "category": "自动化"
+  },
+  "microsoft/vscode": {
+    "cn_name": "VS Code",
+    "cn_desc": "Visual Studio Code编辑器",
+    "value": "全球最流行的代码编辑器",
+    "category": "编辑器"
+  },
+  "anomalyco/opencode": {
+    "cn_name": "OpenCode",
+    "cn_desc": "开源编程Agent",
+    "value": "终端里的AI编程助手",
+    "category": "AI工具"
+  },
+  "firecrawl/firecrawl": {
+    "cn_name": "Firecrawl",
+    "cn_desc": "Web搜索、抓取和交互API",
+    "value": "规模化获取网页数据的工具",
+    "category": "网络工具"
+  },
+  "langgenius/dify": {
+    "cn_name": "Dify",
+    "cn_desc": "Agentic工作流开发平台",
+    "value": "低代码构建AI应用的平台",
+    "category": "AI工具"
+  },
+  "yangshun/tech-interview-handbook": {
+    "cn_name": "技术面试手册",
+    "cn_desc": "精选编程面试准备材料",
+    "value": "准备技术面试的完整指南",
+    "category": "学习资源"
+  }
+}

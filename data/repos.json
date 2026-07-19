@@ -1,0 +1,2099 @@
+{
+  "generated_at": "2026-07-19T14:02:36.172032",
+  "categories": {
+    "today": {
+      "title": "今日新星",
+      "subtitle": "2026-07-19 创建的热门项目",
+      "repos": [
+        {
+          "name": "PostmanReminisce/Wisp-VPN",
+          "owner": "PostmanReminisce",
+          "avatar_url": "https://avatars.githubusercontent.com/u/292291995?v=4",
+          "description": "Wisp VPN - бесплатный и открытый VPN-клиент для Windows на основе WireGuard. Без логов, без ограничений по трафику, полностью open-source. В активной разработке. Обходим блокировки в РФ.",
+          "url": "https://github.com/PostmanReminisce/Wisp-VPN",
+          "language": "C#",
+          "stars": 124,
+          "forks": 11,
+          "topics": [
+            "censorship-bypass",
+            "free-vpn-internet",
+            "free-vpn-russia",
+            "goodbyedpi",
+            "openvpn"
+          ],
+          "created_at": "2026-07-19",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "oi88boi/hanime-viewer1.0.0",
+          "owner": "oi88boi",
+          "avatar_url": "https://avatars.githubusercontent.com/u/230580982?v=4",
+          "description": "一个hanime1的第三方app",
+          "url": "https://github.com/oi88boi/hanime-viewer1.0.0",
+          "language": "Unknown",
+          "stars": 6,
+          "forks": 0,
+          "topics": [],
+          "created_at": "2026-07-19",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "AmunM9/glyf",
+          "owner": "AmunM9",
+          "avatar_url": "https://avatars.githubusercontent.com/u/78280817?v=4",
+          "description": "Tu letra a mano convertida en fuente .ttf/.otf — 100% en el navegador, sin subir archivos a la nube.",
+          "url": "https://github.com/AmunM9/glyf",
+          "language": "TypeScript",
+          "stars": 6,
+          "forks": 0,
+          "topics": [
+            "client-side",
+            "font-generation",
+            "handwriting",
+            "nextjs",
+            "opentypejs"
+          ],
+          "created_at": "2026-07-19",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        }
+      ]
+    },
+    "week": {
+      "title": "本周热门",
+      "subtitle": "2026-07-12 至今创建的热门项目",
+      "repos": [
+        {
+          "name": "xai-org/grok-build",
+          "owner": "xai-org",
+          "avatar_url": "https://avatars.githubusercontent.com/u/130314967?v=4",
+          "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+          "url": "https://github.com/xai-org/grok-build",
+          "language": "Rust",
+          "stars": 19238,
+          "forks": 3466,
+          "topics": [],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "Fei-Away/Codex-Dream-Skin",
+          "owner": "Fei-Away",
+          "avatar_url": "https://avatars.githubusercontent.com/u/100042407?v=4",
+          "description": "Codex Dream Skin",
+          "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+          "language": "JavaScript",
+          "stars": 9884,
+          "forks": 1029,
+          "topics": [],
+          "created_at": "2026-07-15",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "CluvexStudio/Aether",
+          "owner": "CluvexStudio",
+          "avatar_url": "https://avatars.githubusercontent.com/u/125141320?v=4",
+          "description": "暂无描述",
+          "url": "https://github.com/CluvexStudio/Aether",
+          "language": "Rust",
+          "stars": 1264,
+          "forks": 76,
+          "topics": [],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "pixel-point/aval",
+          "owner": "pixel-point",
+          "avatar_url": "https://avatars.githubusercontent.com/u/29034027?v=4",
+          "description": "A new open-source format for interactive video on the web, with a built-in state machine, frame-accurate transitions, and packed-alpha transparency.",
+          "url": "https://github.com/pixel-point/aval",
+          "language": "TypeScript",
+          "stars": 1218,
+          "forks": 65,
+          "topics": [],
+          "created_at": "2026-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "littledivy/mimic",
+          "owner": "littledivy",
+          "avatar_url": "https://avatars.githubusercontent.com/u/34997667?v=4",
+          "description": "Intercept any app, then call it from Python like a library",
+          "url": "https://github.com/littledivy/mimic",
+          "language": "Python",
+          "stars": 1178,
+          "forks": 75,
+          "topics": [],
+          "created_at": "2026-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "tandpfun/wardrobe",
+          "owner": "tandpfun",
+          "avatar_url": "https://avatars.githubusercontent.com/u/28990589?v=4",
+          "description": "Your clothes, extracted and organized with gpt-image.",
+          "url": "https://github.com/tandpfun/wardrobe",
+          "language": "JavaScript",
+          "stars": 1075,
+          "forks": 160,
+          "topics": [],
+          "created_at": "2026-07-16",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "oil-oil/beautify-github-readme",
+          "owner": "oil-oil",
+          "avatar_url": "https://avatars.githubusercontent.com/u/57465570?v=4",
+          "description": "Design clear, theme-specific GitHub README homepages with SVG titles, real proof, and maintainable Markdown",
+          "url": "https://github.com/oil-oil/beautify-github-readme",
+          "language": "Python",
+          "stars": 831,
+          "forks": 47,
+          "topics": [
+            "agent-skill",
+            "codex-skill",
+            "github-readme",
+            "readme-design",
+            "svg"
+          ],
+          "created_at": "2026-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "nethical6/conversation-steganography",
+          "owner": "nethical6",
+          "avatar_url": "https://avatars.githubusercontent.com/u/79095297?v=4",
+          "description": "Use LLMs to hide messages inside normal looking conversations",
+          "url": "https://github.com/nethical6/conversation-steganography",
+          "language": "Go",
+          "stars": 727,
+          "forks": 41,
+          "topics": [
+            "llm-tools",
+            "steganography"
+          ],
+          "created_at": "2026-07-17",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "KubeezMedia/kubeez-scroll-world-video",
+          "owner": "KubeezMedia",
+          "avatar_url": "https://avatars.githubusercontent.com/u/268049402?v=4",
+          "description": "Scroll-scrubbed 'fly through the world' burger demo, generated with Kubeez. Live: meepcastana.github.io/kubeez-scroll-world-video",
+          "url": "https://github.com/KubeezMedia/kubeez-scroll-world-video",
+          "language": "JavaScript",
+          "stars": 654,
+          "forks": 4,
+          "topics": [],
+          "created_at": "2026-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "MatinSenPai/Aether-GUI",
+          "owner": "MatinSenPai",
+          "avatar_url": "https://avatars.githubusercontent.com/u/99926753?v=4",
+          "description": "One-click desktop GUI for the Aether censorship-circumvention tunnel — Tauri v2, React 19, Rust",
+          "url": "https://github.com/MatinSenPai/Aether-GUI",
+          "language": "TypeScript",
+          "stars": 601,
+          "forks": 26,
+          "topics": [
+            "anti-censorship",
+            "censorship-circumvention",
+            "desktop-app",
+            "proxy",
+            "react"
+          ],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "pablostanley/yoinks",
+          "owner": "pablostanley",
+          "avatar_url": "https://avatars.githubusercontent.com/u/7430988?v=4",
+          "description": "yoink any video from your terminal. no shady ads.",
+          "url": "https://github.com/pablostanley/yoinks",
+          "language": "TypeScript",
+          "stars": 573,
+          "forks": 55,
+          "topics": [],
+          "created_at": "2026-07-16",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "Blueturboguy07/cue",
+          "owner": "Blueturboguy07",
+          "avatar_url": "https://avatars.githubusercontent.com/u/114044325?v=4",
+          "description": "Open-source macOS AI copilot that floats over your screen, sees/hears your meetings, and stays hidden from screen shares. Cluely alternative, bring-your-own-key.",
+          "url": "https://github.com/Blueturboguy07/cue",
+          "language": "JavaScript",
+          "stars": 558,
+          "forks": 119,
+          "topics": [],
+          "created_at": "2026-07-15",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "PengZhang64/circuit-framework",
+          "owner": "PengZhang64",
+          "avatar_url": "https://avatars.githubusercontent.com/u/156494645?v=4",
+          "description": "Circuit Framework — multi-agent LLM trading research system",
+          "url": "https://github.com/PengZhang64/circuit-framework",
+          "language": "Python",
+          "stars": 483,
+          "forks": 19,
+          "topics": [],
+          "created_at": "2026-07-16",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "stackblitz/bolt-slides",
+          "owner": "stackblitz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/28635252?v=4",
+          "description": "Use any agent to create stunning, interactive presentations",
+          "url": "https://github.com/stackblitz/bolt-slides",
+          "language": "TypeScript",
+          "stars": 392,
+          "forks": 55,
+          "topics": [],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "pyang5166/gbro-collage-broll",
+          "owner": "pyang5166",
+          "avatar_url": "https://avatars.githubusercontent.com/u/176493563?v=4",
+          "description": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
+          "url": "https://github.com/pyang5166/gbro-collage-broll",
+          "language": "Python",
+          "stars": 366,
+          "forks": 41,
+          "topics": [
+            "agent-skill",
+            "broll",
+            "gemini",
+            "paper-collage",
+            "video-generation"
+          ],
+          "created_at": "2026-07-15",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "vshulcz/deja-vu",
+          "owner": "vshulcz",
+          "avatar_url": "https://avatars.githubusercontent.com/u/99616188?v=4",
+          "description": "Memory layer for coding agents: search, MCP recall, auto-context, secret redaction, stats, share and sync over the session logs Claude Code, Codex, opencode, Cursor, Gemini CLI, aider, Antigravity, Grok Build and Qwen Code already write. One zero-dep binary.",
+          "url": "https://github.com/vshulcz/deja-vu",
+          "language": "Go",
+          "stars": 366,
+          "forks": 17,
+          "topics": [
+            "agent-memory",
+            "ai-memory",
+            "claude",
+            "claude-code",
+            "cli"
+          ],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "QuantumByteOSS/quantumbyte",
+          "owner": "QuantumByteOSS",
+          "avatar_url": "https://avatars.githubusercontent.com/u/305254032?v=4",
+          "description": "Open-source app builder engine — intent to working app",
+          "url": "https://github.com/QuantumByteOSS/quantumbyte",
+          "language": "Python",
+          "stars": 328,
+          "forks": 45,
+          "topics": [
+            "agents",
+            "ai",
+            "app-builder",
+            "code-generation",
+            "llm"
+          ],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "Wan-Video/Wan-Dancer",
+          "owner": "Wan-Video",
+          "avatar_url": "https://avatars.githubusercontent.com/u/200620180?v=4",
+          "description": "暂无描述",
+          "url": "https://github.com/Wan-Video/Wan-Dancer",
+          "language": "Python",
+          "stars": 314,
+          "forks": 28,
+          "topics": [],
+          "created_at": "2026-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "TobiasLee/Rebuttal-Skill",
+          "owner": "TobiasLee",
+          "avatar_url": "https://avatars.githubusercontent.com/u/20009381?v=4",
+          "description": "暂无描述",
+          "url": "https://github.com/TobiasLee/Rebuttal-Skill",
+          "language": "Unknown",
+          "stars": 312,
+          "forks": 11,
+          "topics": [],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "PromptPartner/agentsmith",
+          "owner": "PromptPartner",
+          "avatar_url": "https://avatars.githubusercontent.com/u/258588204?v=4",
+          "description": "Universal, model-agnostic operating harness for AI agents (Claude, Codex, Gemini, …) — a lean core + work-type profiles assembled by one setup script.",
+          "url": "https://github.com/PromptPartner/agentsmith",
+          "language": "Shell",
+          "stars": 308,
+          "forks": 17,
+          "topics": [
+            "agentic-ai",
+            "agentic-coding",
+            "ai-agents",
+            "ai-tools",
+            "automation"
+          ],
+          "created_at": "2026-07-16",
+          "updated_at": "2026-07-18",
+          "color": "#89e051"
+        }
+      ]
+    },
+    "month": {
+      "title": "本月精选",
+      "subtitle": "2026-06-19 至今创建的热门项目",
+      "repos": [
+        {
+          "name": "xai-org/grok-build",
+          "owner": "xai-org",
+          "avatar_url": "https://avatars.githubusercontent.com/u/130314967?v=4",
+          "description": "SpaceXAI's coding agent harness and TUI. Fullscreen, mouse interactive, extensible.",
+          "url": "https://github.com/xai-org/grok-build",
+          "language": "Rust",
+          "stars": 19238,
+          "forks": 3466,
+          "topics": [],
+          "created_at": "2026-07-14",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "JustVugg/colibri",
+          "owner": "JustVugg",
+          "avatar_url": "https://avatars.githubusercontent.com/u/13022503?v=4",
+          "description": "Run GLM-5.2 (744B MoE) on a 25GB-RAM consumer machine — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦",
+          "url": "https://github.com/JustVugg/colibri",
+          "language": "C",
+          "stars": 16181,
+          "forks": 1467,
+          "topics": [],
+          "created_at": "2026-07-01",
+          "updated_at": "2026-07-19",
+          "color": "#555555"
+        },
+        {
+          "name": "langchain-ai/openwiki",
+          "owner": "langchain-ai",
+          "avatar_url": "https://avatars.githubusercontent.com/u/126733545?v=4",
+          "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
+          "url": "https://github.com/langchain-ai/openwiki",
+          "language": "TypeScript",
+          "stars": 12336,
+          "forks": 850,
+          "topics": [],
+          "created_at": "2026-06-22",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "Fei-Away/Codex-Dream-Skin",
+          "owner": "Fei-Away",
+          "avatar_url": "https://avatars.githubusercontent.com/u/100042407?v=4",
+          "description": "Codex Dream Skin",
+          "url": "https://github.com/Fei-Away/Codex-Dream-Skin",
+          "language": "JavaScript",
+          "stars": 9884,
+          "forks": 1029,
+          "topics": [],
+          "created_at": "2026-07-15",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "deepseek-ai/DeepSpec",
+          "owner": "deepseek-ai",
+          "avatar_url": "https://avatars.githubusercontent.com/u/148330874?v=4",
+          "description": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
+          "url": "https://github.com/deepseek-ai/DeepSpec",
+          "language": "Python",
+          "stars": 6693,
+          "forks": 614,
+          "topics": [],
+          "created_at": "2026-06-26",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "x4gKing/X4G",
+          "owner": "x4gKing",
+          "avatar_url": "https://avatars.githubusercontent.com/u/298382259?v=4",
+          "description": "暂无描述",
+          "url": "https://github.com/x4gKing/X4G",
+          "language": "Python",
+          "stars": 5755,
+          "forks": 10598,
+          "topics": [],
+          "created_at": "2026-07-04",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "Yu9191/wloc",
+          "owner": "Yu9191",
+          "avatar_url": "https://avatars.githubusercontent.com/u/132221547?v=4",
+          "description": "修改 Apple 网络定位（gs-loc）返回坐标 · 支持 Surge / Quantumult X / Loon / Stash · 快捷指令一键设置/恢复定位",
+          "url": "https://github.com/Yu9191/wloc",
+          "language": "JavaScript",
+          "stars": 5639,
+          "forks": 1092,
+          "topics": [],
+          "created_at": "2026-06-24",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "elder-plinius/T3MP3ST",
+          "owner": "elder-plinius",
+          "avatar_url": "https://avatars.githubusercontent.com/u/133052465?v=4",
+          "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
+          "url": "https://github.com/elder-plinius/T3MP3ST",
+          "language": "TypeScript",
+          "stars": 4953,
+          "forks": 1035,
+          "topics": [
+            "agents",
+            "ai",
+            "multi-agent",
+            "offensive-security",
+            "redteam"
+          ],
+          "created_at": "2026-07-02",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "bikini/exploitarium",
+          "owner": "bikini",
+          "avatar_url": "https://avatars.githubusercontent.com/u/63224111?v=4",
+          "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way.",
+          "url": "https://github.com/bikini/exploitarium",
+          "language": "Python",
+          "stars": 3966,
+          "forks": 1139,
+          "topics": [],
+          "created_at": "2026-06-23",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "baairon/torlink",
+          "owner": "baairon",
+          "avatar_url": "https://avatars.githubusercontent.com/u/97924486?v=4",
+          "description": "A sleek, zero-setup torrent finder and downloader that lives right in your terminal.",
+          "url": "https://github.com/baairon/torlink",
+          "language": "TypeScript",
+          "stars": 3678,
+          "forks": 245,
+          "topics": [
+            "crossplatform",
+            "downloader",
+            "magnet-links",
+            "p2p",
+            "torrent"
+          ],
+          "created_at": "2026-06-25",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "oso95/scroll-world",
+          "owner": "oso95",
+          "avatar_url": "https://avatars.githubusercontent.com/u/86410452?v=4",
+          "description": "A skill that turn any brand into a scrollable 3D world",
+          "url": "https://github.com/oso95/scroll-world",
+          "language": "JavaScript",
+          "stars": 3643,
+          "forks": 453,
+          "topics": [],
+          "created_at": "2026-07-06",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "withmarbleapp/os-taxonomy",
+          "owner": "withmarbleapp",
+          "avatar_url": "https://avatars.githubusercontent.com/u/233045934?v=4",
+          "description": "暂无描述",
+          "url": "https://github.com/withmarbleapp/os-taxonomy",
+          "language": "JavaScript",
+          "stars": 3278,
+          "forks": 568,
+          "topics": [],
+          "created_at": "2026-07-08",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "oomol-lab/open-connector",
+          "owner": "oomol-lab",
+          "avatar_url": "https://avatars.githubusercontent.com/u/146153906?v=4",
+          "description": "Open-source auth gateway connecting 1000+ SaaS providers to AI agents through SDK, CLI, MCP, HTTP, and OpenAPI.",
+          "url": "https://github.com/oomol-lab/open-connector",
+          "language": "TypeScript",
+          "stars": 2950,
+          "forks": 220,
+          "topics": [
+            "agent-tools",
+            "ai-agents",
+            "api-gateway",
+            "automation",
+            "cli"
+          ],
+          "created_at": "2026-06-29",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "bozhouDev/codex-orange-book",
+          "owner": "bozhouDev",
+          "avatar_url": "https://avatars.githubusercontent.com/u/259759010?v=4",
+          "description": "Codex 橙皮书：从安装到实战案例的全链路 Codex 使用指南（非官方开源，含可下载 PDF）",
+          "url": "https://github.com/bozhouDev/codex-orange-book",
+          "language": "HTML",
+          "stars": 2901,
+          "forks": 282,
+          "topics": [],
+          "created_at": "2026-06-23",
+          "updated_at": "2026-07-19",
+          "color": "#e34c26"
+        },
+        {
+          "name": "davidondrej/skills",
+          "owner": "davidondrej",
+          "avatar_url": "https://avatars.githubusercontent.com/u/131768515?v=4",
+          "description": "access to david ondrej's personal agent skills",
+          "url": "https://github.com/davidondrej/skills",
+          "language": "Shell",
+          "stars": 2595,
+          "forks": 315,
+          "topics": [],
+          "created_at": "2026-06-24",
+          "updated_at": "2026-07-19",
+          "color": "#89e051"
+        },
+        {
+          "name": "synthetic-sciences/openscience",
+          "owner": "synthetic-sciences",
+          "avatar_url": "https://avatars.githubusercontent.com/u/220546587?v=4",
+          "description": "The open-source AI workbench for scientific research",
+          "url": "https://github.com/synthetic-sciences/openscience",
+          "language": "TypeScript",
+          "stars": 2583,
+          "forks": 365,
+          "topics": [
+            "agent",
+            "ai",
+            "ai-agent",
+            "bun",
+            "cli"
+          ],
+          "created_at": "2026-07-03",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "mekos2772/ios-location-spoofer",
+          "owner": "mekos2772",
+          "avatar_url": "https://avatars.githubusercontent.com/u/119464194?v=4",
+          "description": "Standalone iOS app to spoof GPS location without jailbreak. Includes Shadowrocket/Surge/Loon/QX/Stash module.",
+          "url": "https://github.com/mekos2772/ios-location-spoofer",
+          "language": "JavaScript",
+          "stars": 2498,
+          "forks": 367,
+          "topics": [],
+          "created_at": "2026-06-30",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "isjiamu/gzh-design-skill",
+          "owner": "isjiamu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/30619280?v=4",
+          "description": "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+          "url": "https://github.com/isjiamu/gzh-design-skill",
+          "language": "HTML",
+          "stars": 2317,
+          "forks": 265,
+          "topics": [
+            "agent-skill",
+            "ai-agent",
+            "claude-code",
+            "codex",
+            "cursor"
+          ],
+          "created_at": "2026-07-01",
+          "updated_at": "2026-07-19",
+          "color": "#e34c26"
+        },
+        {
+          "name": "Younesfdj/gitfut",
+          "owner": "Younesfdj",
+          "avatar_url": "https://avatars.githubusercontent.com/u/113609638?v=4",
+          "description": "Your GitHub stats, turned into a World-Cup-style player card ",
+          "url": "https://github.com/Younesfdj/gitfut",
+          "language": "TypeScript",
+          "stars": 2200,
+          "forks": 112,
+          "topics": [
+            "fifa-19",
+            "fut-card",
+            "github-stats-card",
+            "world-cup-2026"
+          ],
+          "created_at": "2026-06-24",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "Krishnagangwal/CS-Fundamentals",
+          "owner": "Krishnagangwal",
+          "avatar_url": "https://avatars.githubusercontent.com/u/175389609?v=4",
+          "description": "Curated CS fundamentals for placement prep: DSA,Computer Networks, DBMS & SQL, OOPs, Operating Systems, System Design & Software Engineering",
+          "url": "https://github.com/Krishnagangwal/CS-Fundamentals",
+          "language": "Unknown",
+          "stars": 2139,
+          "forks": 216,
+          "topics": [],
+          "created_at": "2026-06-28",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        }
+      ]
+    },
+    "featured": {
+      "title": "精选经典",
+      "subtitle": "持续活跃的高星项目",
+      "repos": [
+        {
+          "name": "codecrafters-io/build-your-own-x",
+          "owner": "codecrafters-io",
+          "avatar_url": "https://avatars.githubusercontent.com/u/58904235?v=4",
+          "description": "Master programming by recreating your favorite technologies from scratch.",
+          "url": "https://github.com/codecrafters-io/build-your-own-x",
+          "language": "Markdown",
+          "stars": 528414,
+          "forks": 50000,
+          "topics": [
+            "awesome-list",
+            "free",
+            "programming",
+            "tutorial-code",
+            "tutorial-exercises"
+          ],
+          "created_at": "2018-05-09",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "sindresorhus/awesome",
+          "owner": "sindresorhus",
+          "avatar_url": "https://avatars.githubusercontent.com/u/170270?v=4",
+          "description": "😎 Awesome lists about all kinds of interesting topics",
+          "url": "https://github.com/sindresorhus/awesome",
+          "language": "Unknown",
+          "stars": 486522,
+          "forks": 35948,
+          "topics": [
+            "awesome",
+            "awesome-list",
+            "lists",
+            "resources",
+            "unicorns"
+          ],
+          "created_at": "2014-07-11",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "freeCodeCamp/freeCodeCamp",
+          "owner": "freeCodeCamp",
+          "avatar_url": "https://avatars.githubusercontent.com/u/9892522?v=4",
+          "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "language": "TypeScript",
+          "stars": 452060,
+          "forks": 45584,
+          "topics": [
+            "careers",
+            "certification",
+            "community",
+            "curriculum",
+            "d3"
+          ],
+          "created_at": "2014-12-24",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "public-apis/public-apis",
+          "owner": "public-apis",
+          "avatar_url": "https://avatars.githubusercontent.com/u/51121562?v=4",
+          "description": "A collective list of free APIs",
+          "url": "https://github.com/public-apis/public-apis",
+          "language": "Python",
+          "stars": 451249,
+          "forks": 49646,
+          "topics": [
+            "api",
+            "apis",
+            "dataset",
+            "development",
+            "free"
+          ],
+          "created_at": "2016-03-20",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "EbookFoundation/free-programming-books",
+          "owner": "EbookFoundation",
+          "avatar_url": "https://avatars.githubusercontent.com/u/14127308?v=4",
+          "description": ":books: Freely available programming books",
+          "url": "https://github.com/EbookFoundation/free-programming-books",
+          "language": "Python",
+          "stars": 392446,
+          "forks": 66544,
+          "topics": [
+            "books",
+            "education",
+            "hacktoberfest",
+            "list",
+            "resource"
+          ],
+          "created_at": "2013-10-11",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "openclaw/openclaw",
+          "owner": "openclaw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/252820863?v=4",
+          "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+          "url": "https://github.com/openclaw/openclaw",
+          "language": "TypeScript",
+          "stars": 383424,
+          "forks": 80538,
+          "topics": [
+            "ai",
+            "assistant",
+            "crustacean",
+            "molty",
+            "openclaw"
+          ],
+          "created_at": "2025-11-24",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "nilbuild/developer-roadmap",
+          "owner": "nilbuild",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4921183?v=4",
+          "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+          "url": "https://github.com/nilbuild/developer-roadmap",
+          "language": "TypeScript",
+          "stars": 361583,
+          "forks": 44574,
+          "topics": [
+            "angular-roadmap",
+            "backend-roadmap",
+            "blockchain-roadmap",
+            "computer-science",
+            "dba-roadmap"
+          ],
+          "created_at": "2017-03-15",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "donnemartin/system-design-primer",
+          "owner": "donnemartin",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5458997?v=4",
+          "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "language": "Python",
+          "stars": 358156,
+          "forks": 57264,
+          "topics": [
+            "design",
+            "design-patterns",
+            "design-system",
+            "development",
+            "interview"
+          ],
+          "created_at": "2017-02-26",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "jwasham/coding-interview-university",
+          "owner": "jwasham",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3771963?v=4",
+          "description": "A complete computer science study plan to become a software engineer.",
+          "url": "https://github.com/jwasham/coding-interview-university",
+          "language": "Unknown",
+          "stars": 356553,
+          "forks": 84330,
+          "topics": [
+            "algorithm",
+            "algorithms",
+            "coding-interview",
+            "coding-interviews",
+            "computer-science"
+          ],
+          "created_at": "2016-06-06",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "vinta/awesome-python",
+          "owner": "vinta",
+          "avatar_url": "https://avatars.githubusercontent.com/u/652070?v=4",
+          "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
+          "url": "https://github.com/vinta/awesome-python",
+          "language": "Python",
+          "stars": 308982,
+          "forks": 28348,
+          "topics": [
+            "awesome",
+            "collections",
+            "python",
+            "python-frameworks",
+            "python-libraries"
+          ],
+          "created_at": "2014-06-27",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "awesome-selfhosted/awesome-selfhosted",
+          "owner": "awesome-selfhosted",
+          "avatar_url": "https://avatars.githubusercontent.com/u/24270415?v=4",
+          "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
+          "url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
+          "language": "Unknown",
+          "stars": 306572,
+          "forks": 14369,
+          "topics": [
+            "awesome",
+            "awesome-list",
+            "cloud",
+            "free-software",
+            "hosting"
+          ],
+          "created_at": "2015-06-01",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "996icu/996.ICU",
+          "owner": "996icu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/48942249?v=4",
+          "description": "Repo for counting stars and contributing. Press F to pay respect to glorious developers.",
+          "url": "https://github.com/996icu/996.ICU",
+          "language": "Unknown",
+          "stars": 276426,
+          "forks": 20793,
+          "topics": [],
+          "created_at": "2019-03-26",
+          "updated_at": "2026-07-19",
+          "color": "#8b949e"
+        },
+        {
+          "name": "practical-tutorials/project-based-learning",
+          "owner": "practical-tutorials",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89421154?v=4",
+          "description": "Curated list of project-based tutorials",
+          "url": "https://github.com/practical-tutorials/project-based-learning",
+          "language": "Python",
+          "stars": 273942,
+          "forks": 35318,
+          "topics": [
+            "beginner-project",
+            "cpp",
+            "golang",
+            "javascript",
+            "project"
+          ],
+          "created_at": "2017-04-12",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "obra/superpowers",
+          "owner": "obra",
+          "avatar_url": "https://avatars.githubusercontent.com/u/45416?v=4",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "url": "https://github.com/obra/superpowers",
+          "language": "Shell",
+          "stars": 257204,
+          "forks": 22918,
+          "topics": [
+            "ai",
+            "brainstorming",
+            "coding",
+            "obra",
+            "sdlc"
+          ],
+          "created_at": "2025-10-09",
+          "updated_at": "2026-07-19",
+          "color": "#89e051"
+        },
+        {
+          "name": "react/react",
+          "owner": "react",
+          "avatar_url": "https://avatars.githubusercontent.com/u/102812?v=4",
+          "description": "The library for web and native user interfaces.",
+          "url": "https://github.com/react/react",
+          "language": "JavaScript",
+          "stars": 246569,
+          "forks": 51255,
+          "topics": [
+            "declarative",
+            "frontend",
+            "javascript",
+            "library",
+            "react"
+          ],
+          "created_at": "2013-05-24",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "torvalds/linux",
+          "owner": "torvalds",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1024025?v=4",
+          "description": "Linux kernel source tree",
+          "url": "https://github.com/torvalds/linux",
+          "language": "C",
+          "stars": 239780,
+          "forks": 63500,
+          "topics": [],
+          "created_at": "2011-09-04",
+          "updated_at": "2026-07-19",
+          "color": "#555555"
+        },
+        {
+          "name": "affaan-m/ECC",
+          "owner": "affaan-m",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124439313?v=4",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "url": "https://github.com/affaan-m/ECC",
+          "language": "JavaScript",
+          "stars": 230986,
+          "forks": 35244,
+          "topics": [
+            "ai-agents",
+            "anthropic",
+            "claude",
+            "claude-code",
+            "developer-tools"
+          ],
+          "created_at": "2026-01-18",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "TheAlgorithms/Python",
+          "owner": "TheAlgorithms",
+          "avatar_url": "https://avatars.githubusercontent.com/u/20487725?v=4",
+          "description": "All Algorithms implemented in Python",
+          "url": "https://github.com/TheAlgorithms/Python",
+          "language": "Python",
+          "stars": 222871,
+          "forks": 50869,
+          "topics": [
+            "algorithm",
+            "algorithm-competitions",
+            "algorithms-implemented",
+            "algos",
+            "community-driven"
+          ],
+          "created_at": "2016-07-16",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "owner": "NousResearch",
+          "avatar_url": "https://avatars.githubusercontent.com/u/134168893?v=4",
+          "description": "The agent that grows with you",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "language": "Python",
+          "stars": 216928,
+          "forks": 40769,
+          "topics": [
+            "ai",
+            "ai-agent",
+            "ai-agents",
+            "anthropic",
+            "chatgpt"
+          ],
+          "created_at": "2025-07-22",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "ossu/computer-science",
+          "owner": "ossu",
+          "avatar_url": "https://avatars.githubusercontent.com/u/14957346?v=4",
+          "description": "🎓 Path to a free self-taught education in Computer Science!",
+          "url": "https://github.com/ossu/computer-science",
+          "language": "HTML",
+          "stars": 206914,
+          "forks": 25654,
+          "topics": [
+            "awesome-list",
+            "computer-science",
+            "courses",
+            "curriculum"
+          ],
+          "created_at": "2014-05-04",
+          "updated_at": "2026-07-19",
+          "color": "#e34c26"
+        }
+      ]
+    }
+  },
+  "languages": {
+    "javascript": {
+      "repos": [
+        {
+          "name": "react/react",
+          "owner": "react",
+          "avatar_url": "https://avatars.githubusercontent.com/u/102812?v=4",
+          "description": "The library for web and native user interfaces.",
+          "url": "https://github.com/react/react",
+          "language": "JavaScript",
+          "stars": 246569,
+          "forks": 51255,
+          "topics": [
+            "declarative",
+            "frontend",
+            "javascript",
+            "library",
+            "react"
+          ],
+          "created_at": "2013-05-24",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "affaan-m/ECC",
+          "owner": "affaan-m",
+          "avatar_url": "https://avatars.githubusercontent.com/u/124439313?v=4",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "url": "https://github.com/affaan-m/ECC",
+          "language": "JavaScript",
+          "stars": 230986,
+          "forks": 35244,
+          "topics": [
+            "ai-agents",
+            "anthropic",
+            "claude",
+            "claude-code",
+            "developer-tools"
+          ],
+          "created_at": "2026-01-18",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "trekhleb/javascript-algorithms",
+          "owner": "trekhleb",
+          "avatar_url": "https://avatars.githubusercontent.com/u/3000285?v=4",
+          "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+          "url": "https://github.com/trekhleb/javascript-algorithms",
+          "language": "JavaScript",
+          "stars": 196268,
+          "forks": 31044,
+          "topics": [
+            "algorithm",
+            "algorithms",
+            "computer-science",
+            "data-structures",
+            "interview"
+          ],
+          "created_at": "2018-03-24",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "Snailclimb/JavaGuide",
+          "owner": "Snailclimb",
+          "avatar_url": "https://avatars.githubusercontent.com/u/29880145?v=4",
+          "description": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
+          "url": "https://github.com/Snailclimb/JavaGuide",
+          "language": "JavaScript",
+          "stars": 157121,
+          "forks": 46178,
+          "topics": [
+            "agent",
+            "ai",
+            "context-engineering",
+            "deepseek",
+            "interview"
+          ],
+          "created_at": "2018-05-07",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "airbnb/javascript",
+          "owner": "airbnb",
+          "avatar_url": "https://avatars.githubusercontent.com/u/698437?v=4",
+          "description": "JavaScript Style Guide",
+          "url": "https://github.com/airbnb/javascript",
+          "language": "JavaScript",
+          "stars": 148081,
+          "forks": 26621,
+          "topics": [
+            "arrow-functions",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018"
+          ],
+          "created_at": "2012-11-01",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "vercel/next.js",
+          "owner": "vercel",
+          "avatar_url": "https://avatars.githubusercontent.com/u/14985020?v=4",
+          "description": "The React Framework",
+          "url": "https://github.com/vercel/next.js",
+          "language": "JavaScript",
+          "stars": 141012,
+          "forks": 31474,
+          "topics": [
+            "blog",
+            "browser",
+            "compiler",
+            "components",
+            "hybrid"
+          ],
+          "created_at": "2016-10-05",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "Chalarangelo/30-seconds-of-code",
+          "owner": "Chalarangelo",
+          "avatar_url": "https://avatars.githubusercontent.com/u/8281875?v=4",
+          "description": "Coding articles to level up your development skills",
+          "url": "https://github.com/Chalarangelo/30-seconds-of-code",
+          "language": "JavaScript",
+          "stars": 128429,
+          "forks": 12483,
+          "topics": [
+            "astro",
+            "awesome-list",
+            "css",
+            "education",
+            "es6-javascript"
+          ],
+          "created_at": "2017-11-29",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "nodejs/node",
+          "owner": "nodejs",
+          "avatar_url": "https://avatars.githubusercontent.com/u/9950313?v=4",
+          "description": "Node.js JavaScript runtime ✨🐢🚀✨",
+          "url": "https://github.com/nodejs/node",
+          "language": "JavaScript",
+          "stars": 118299,
+          "forks": 36165,
+          "topics": [
+            "javascript",
+            "js",
+            "linux",
+            "macos",
+            "mit"
+          ],
+          "created_at": "2014-11-26",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "mrdoob/three.js",
+          "owner": "mrdoob",
+          "avatar_url": "https://avatars.githubusercontent.com/u/97088?v=4",
+          "description": "JavaScript 3D Library.",
+          "url": "https://github.com/mrdoob/three.js",
+          "language": "JavaScript",
+          "stars": 113835,
+          "forks": 36434,
+          "topics": [
+            "3d",
+            "augmented-reality",
+            "canvas",
+            "html5",
+            "javascript"
+          ],
+          "created_at": "2010-03-23",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        },
+        {
+          "name": "axios/axios",
+          "owner": "axios",
+          "avatar_url": "https://avatars.githubusercontent.com/u/32372333?v=4",
+          "description": "Promise based HTTP client for the browser and node.js",
+          "url": "https://github.com/axios/axios",
+          "language": "JavaScript",
+          "stars": 109125,
+          "forks": 11754,
+          "topics": [
+            "hacktoberfest",
+            "http-client",
+            "javascript",
+            "nodejs",
+            "promise"
+          ],
+          "created_at": "2014-08-18",
+          "updated_at": "2026-07-19",
+          "color": "#f1e05a"
+        }
+      ]
+    },
+    "python": {
+      "repos": [
+        {
+          "name": "public-apis/public-apis",
+          "owner": "public-apis",
+          "avatar_url": "https://avatars.githubusercontent.com/u/51121562?v=4",
+          "description": "A collective list of free APIs",
+          "url": "https://github.com/public-apis/public-apis",
+          "language": "Python",
+          "stars": 451249,
+          "forks": 49646,
+          "topics": [
+            "api",
+            "apis",
+            "dataset",
+            "development",
+            "free"
+          ],
+          "created_at": "2016-03-20",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "EbookFoundation/free-programming-books",
+          "owner": "EbookFoundation",
+          "avatar_url": "https://avatars.githubusercontent.com/u/14127308?v=4",
+          "description": ":books: Freely available programming books",
+          "url": "https://github.com/EbookFoundation/free-programming-books",
+          "language": "Python",
+          "stars": 392446,
+          "forks": 66544,
+          "topics": [
+            "books",
+            "education",
+            "hacktoberfest",
+            "list",
+            "resource"
+          ],
+          "created_at": "2013-10-11",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "donnemartin/system-design-primer",
+          "owner": "donnemartin",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5458997?v=4",
+          "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
+          "url": "https://github.com/donnemartin/system-design-primer",
+          "language": "Python",
+          "stars": 358156,
+          "forks": 57264,
+          "topics": [
+            "design",
+            "design-patterns",
+            "design-system",
+            "development",
+            "interview"
+          ],
+          "created_at": "2017-02-26",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "vinta/awesome-python",
+          "owner": "vinta",
+          "avatar_url": "https://avatars.githubusercontent.com/u/652070?v=4",
+          "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
+          "url": "https://github.com/vinta/awesome-python",
+          "language": "Python",
+          "stars": 308982,
+          "forks": 28348,
+          "topics": [
+            "awesome",
+            "collections",
+            "python",
+            "python-frameworks",
+            "python-libraries"
+          ],
+          "created_at": "2014-06-27",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "practical-tutorials/project-based-learning",
+          "owner": "practical-tutorials",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89421154?v=4",
+          "description": "Curated list of project-based tutorials",
+          "url": "https://github.com/practical-tutorials/project-based-learning",
+          "language": "Python",
+          "stars": 273942,
+          "forks": 35318,
+          "topics": [
+            "beginner-project",
+            "cpp",
+            "golang",
+            "javascript",
+            "project"
+          ],
+          "created_at": "2017-04-12",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "TheAlgorithms/Python",
+          "owner": "TheAlgorithms",
+          "avatar_url": "https://avatars.githubusercontent.com/u/20487725?v=4",
+          "description": "All Algorithms implemented in Python",
+          "url": "https://github.com/TheAlgorithms/Python",
+          "language": "Python",
+          "stars": 222871,
+          "forks": 50869,
+          "topics": [
+            "algorithm",
+            "algorithm-competitions",
+            "algorithms-implemented",
+            "algos",
+            "community-driven"
+          ],
+          "created_at": "2016-07-16",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "NousResearch/hermes-agent",
+          "owner": "NousResearch",
+          "avatar_url": "https://avatars.githubusercontent.com/u/134168893?v=4",
+          "description": "The agent that grows with you",
+          "url": "https://github.com/NousResearch/hermes-agent",
+          "language": "Python",
+          "stars": 216928,
+          "forks": 40769,
+          "topics": [
+            "ai",
+            "ai-agent",
+            "ai-agents",
+            "anthropic",
+            "chatgpt"
+          ],
+          "created_at": "2025-07-22",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "Significant-Gravitas/AutoGPT",
+          "owner": "Significant-Gravitas",
+          "avatar_url": "https://avatars.githubusercontent.com/u/130738209?v=4",
+          "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "language": "Python",
+          "stars": 185600,
+          "forks": 46074,
+          "topics": [
+            "agentic-ai",
+            "agents",
+            "ai",
+            "artificial-intelligence",
+            "autonomous-agents"
+          ],
+          "created_at": "2023-03-16",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "yt-dlp/yt-dlp",
+          "owner": "yt-dlp",
+          "avatar_url": "https://avatars.githubusercontent.com/u/79589310?v=4",
+          "description": "A feature-rich command-line audio/video downloader",
+          "url": "https://github.com/yt-dlp/yt-dlp",
+          "language": "Python",
+          "stars": 178800,
+          "forks": 15202,
+          "topics": [
+            "cli",
+            "downloader",
+            "python",
+            "sponsorblock",
+            "youtube-dl"
+          ],
+          "created_at": "2020-10-26",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        },
+        {
+          "name": "microsoft/markitdown",
+          "owner": "microsoft",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "description": "Python tool for converting files and office documents to Markdown.",
+          "url": "https://github.com/microsoft/markitdown",
+          "language": "Python",
+          "stars": 167148,
+          "forks": 12017,
+          "topics": [
+            "autogen",
+            "autogen-extension",
+            "langchain",
+            "markdown",
+            "microsoft-office"
+          ],
+          "created_at": "2024-11-13",
+          "updated_at": "2026-07-19",
+          "color": "#3572A5"
+        }
+      ]
+    },
+    "rust": {
+      "repos": [
+        {
+          "name": "ultraworkers/claw-code",
+          "owner": "ultraworkers",
+          "avatar_url": "https://avatars.githubusercontent.com/u/272961631?v=4",
+          "description": "An agent-managed museum exhibit, built in Rust with Gajae-Code / LazyCodex — developed and maintained with no human intervention.",
+          "url": "https://github.com/ultraworkers/claw-code",
+          "language": "Rust",
+          "stars": 194812,
+          "forks": 109611,
+          "topics": [],
+          "created_at": "2026-03-31",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "farion1231/cc-switch",
+          "owner": "farion1231",
+          "avatar_url": "https://avatars.githubusercontent.com/u/44939412?v=4",
+          "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Gemini CLI & Hermes Agent. Only official website: ccswitch.io",
+          "url": "https://github.com/farion1231/cc-switch",
+          "language": "Rust",
+          "stars": 118724,
+          "forks": 7960,
+          "topics": [
+            "ai-tools",
+            "claude-code",
+            "codex",
+            "desktop-app",
+            "hermes"
+          ],
+          "created_at": "2025-08-04",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "rustdesk/rustdesk",
+          "owner": "rustdesk",
+          "avatar_url": "https://avatars.githubusercontent.com/u/71636191?v=4",
+          "description": "An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer.",
+          "url": "https://github.com/rustdesk/rustdesk",
+          "language": "Rust",
+          "stars": 118468,
+          "forks": 18040,
+          "topics": [
+            "android",
+            "anydesk",
+            "dart",
+            "flatpak",
+            "flutter"
+          ],
+          "created_at": "2020-09-28",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "rust-lang/rust",
+          "owner": "rust-lang",
+          "avatar_url": "https://avatars.githubusercontent.com/u/5430905?v=4",
+          "description": "Empowering everyone to build reliable and efficient software.",
+          "url": "https://github.com/rust-lang/rust",
+          "language": "Rust",
+          "stars": 114725,
+          "forks": 15360,
+          "topics": [
+            "compiler",
+            "language",
+            "rust"
+          ],
+          "created_at": "2010-06-16",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "tauri-apps/tauri",
+          "owner": "tauri-apps",
+          "avatar_url": "https://avatars.githubusercontent.com/u/54536011?v=4",
+          "description": "Build smaller, faster, and more secure desktop and mobile applications with a web frontend.",
+          "url": "https://github.com/tauri-apps/tauri",
+          "language": "Rust",
+          "stars": 109206,
+          "forks": 3783,
+          "topics": [
+            "desktop-app",
+            "high-performance",
+            "mobile-app",
+            "native-app",
+            "rust"
+          ],
+          "created_at": "2019-07-13",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "denoland/deno",
+          "owner": "denoland",
+          "avatar_url": "https://avatars.githubusercontent.com/u/42048915?v=4",
+          "description": "A modern runtime for JavaScript and TypeScript.",
+          "url": "https://github.com/denoland/deno",
+          "language": "Rust",
+          "stars": 107737,
+          "forks": 6184,
+          "topics": [
+            "deno",
+            "javascript",
+            "rust",
+            "typescript"
+          ],
+          "created_at": "2018-05-15",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "openai/codex",
+          "owner": "openai",
+          "avatar_url": "https://avatars.githubusercontent.com/u/14957082?v=4",
+          "description": "Lightweight coding agent that runs in your terminal",
+          "url": "https://github.com/openai/codex",
+          "language": "Rust",
+          "stars": 99472,
+          "forks": 14889,
+          "topics": [],
+          "created_at": "2025-04-13",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "oven-sh/bun",
+          "owner": "oven-sh",
+          "avatar_url": "https://avatars.githubusercontent.com/u/108928776?v=4",
+          "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+          "url": "https://github.com/oven-sh/bun",
+          "language": "Rust",
+          "stars": 94855,
+          "forks": 4888,
+          "topics": [
+            "bun",
+            "bundler",
+            "javascript",
+            "javascriptcore",
+            "jsx"
+          ],
+          "created_at": "2021-04-14",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "astral-sh/uv",
+          "owner": "astral-sh",
+          "avatar_url": "https://avatars.githubusercontent.com/u/115962839?v=4",
+          "description": "An extremely fast Python package and project manager, written in Rust.",
+          "url": "https://github.com/astral-sh/uv",
+          "language": "Rust",
+          "stars": 87636,
+          "forks": 3352,
+          "topics": [
+            "packaging",
+            "python",
+            "resolver",
+            "uv"
+          ],
+          "created_at": "2023-10-02",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        },
+        {
+          "name": "zed-industries/zed",
+          "owner": "zed-industries",
+          "avatar_url": "https://avatars.githubusercontent.com/u/79345384?v=4",
+          "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+          "url": "https://github.com/zed-industries/zed",
+          "language": "Rust",
+          "stars": 87206,
+          "forks": 9598,
+          "topics": [
+            "gpui",
+            "rust-lang",
+            "text-editor",
+            "zed"
+          ],
+          "created_at": "2021-02-20",
+          "updated_at": "2026-07-19",
+          "color": "#dea584"
+        }
+      ]
+    },
+    "go": {
+      "repos": [
+        {
+          "name": "avelino/awesome-go",
+          "owner": "avelino",
+          "avatar_url": "https://avatars.githubusercontent.com/u/31996?v=4",
+          "description": "A curated list of awesome Go frameworks, libraries and software",
+          "url": "https://github.com/avelino/awesome-go",
+          "language": "Go",
+          "stars": 178563,
+          "forks": 13419,
+          "topics": [
+            "awesome",
+            "awesome-list",
+            "go",
+            "golang",
+            "golang-library"
+          ],
+          "created_at": "2014-07-06",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "ollama/ollama",
+          "owner": "ollama",
+          "avatar_url": "https://avatars.githubusercontent.com/u/151674099?v=4",
+          "description": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+          "url": "https://github.com/ollama/ollama",
+          "language": "Go",
+          "stars": 176419,
+          "forks": 17024,
+          "topics": [
+            "deepseek",
+            "gemma",
+            "gemma3",
+            "glm",
+            "go"
+          ],
+          "created_at": "2023-06-26",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "golang/go",
+          "owner": "golang",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4314092?v=4",
+          "description": "The Go programming language",
+          "url": "https://github.com/golang/go",
+          "language": "Go",
+          "stars": 135284,
+          "forks": 19267,
+          "topics": [
+            "go",
+            "golang",
+            "language",
+            "programming-language"
+          ],
+          "created_at": "2014-08-19",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "kubernetes/kubernetes",
+          "owner": "kubernetes",
+          "avatar_url": "https://avatars.githubusercontent.com/u/13629408?v=4",
+          "description": "Production-Grade Container Scheduling and Management",
+          "url": "https://github.com/kubernetes/kubernetes",
+          "language": "Go",
+          "stars": 123813,
+          "forks": 43705,
+          "topics": [
+            "cncf",
+            "containers",
+            "go",
+            "kubernetes"
+          ],
+          "created_at": "2014-06-06",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "fatedier/frp",
+          "owner": "fatedier",
+          "avatar_url": "https://avatars.githubusercontent.com/u/7346661?v=4",
+          "description": "A fast reverse proxy to help you expose a local server behind a NAT or firewall to the internet.",
+          "url": "https://github.com/fatedier/frp",
+          "language": "Go",
+          "stars": 108153,
+          "forks": 15118,
+          "topics": [
+            "expose",
+            "firewall",
+            "frp",
+            "go",
+            "http-proxy"
+          ],
+          "created_at": "2015-12-21",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "gohugoio/hugo",
+          "owner": "gohugoio",
+          "avatar_url": "https://avatars.githubusercontent.com/u/29385237?v=4",
+          "description": "The world’s fastest framework for building websites.",
+          "url": "https://github.com/gohugoio/hugo",
+          "language": "Go",
+          "stars": 89025,
+          "forks": 8294,
+          "topics": [
+            "blog-engine",
+            "cms",
+            "content-management-system",
+            "documentation-tool",
+            "go"
+          ],
+          "created_at": "2013-07-04",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "gin-gonic/gin",
+          "owner": "gin-gonic",
+          "avatar_url": "https://avatars.githubusercontent.com/u/7894478?v=4",
+          "description": "Gin is a high-performance HTTP web framework written in Go. It provides a Martini-like API but with significantly better performance—up to 40 times faster—thanks to httprouter. Gin is designed for building REST APIs, web applications, and microservices.",
+          "url": "https://github.com/gin-gonic/gin",
+          "language": "Go",
+          "stars": 88930,
+          "forks": 8643,
+          "topics": [
+            "framework",
+            "gin",
+            "go",
+            "middleware",
+            "performance"
+          ],
+          "created_at": "2014-06-16",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "syncthing/syncthing",
+          "owner": "syncthing",
+          "avatar_url": "https://avatars.githubusercontent.com/u/7628018?v=4",
+          "description": "Open Source Continuous File Synchronization",
+          "url": "https://github.com/syncthing/syncthing",
+          "language": "Go",
+          "stars": 86612,
+          "forks": 5363,
+          "topics": [
+            "go",
+            "p2p",
+            "peer-to-peer",
+            "synchronization"
+          ],
+          "created_at": "2013-11-26",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "infiniflow/ragflow",
+          "owner": "infiniflow",
+          "avatar_url": "https://avatars.githubusercontent.com/u/69962740?v=4",
+          "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+          "url": "https://github.com/infiniflow/ragflow",
+          "language": "Go",
+          "stars": 85359,
+          "forks": 9971,
+          "topics": [
+            "agent-harness",
+            "agentic-ai",
+            "agentic-retrieval",
+            "agentic-search",
+            "ai"
+          ],
+          "created_at": "2023-12-12",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        },
+        {
+          "name": "junegunn/fzf",
+          "owner": "junegunn",
+          "avatar_url": "https://avatars.githubusercontent.com/u/700826?v=4",
+          "description": ":cherry_blossom: A command-line fuzzy finder",
+          "url": "https://github.com/junegunn/fzf",
+          "language": "Go",
+          "stars": 81836,
+          "forks": 2818,
+          "topics": [
+            "bash",
+            "cli",
+            "fish",
+            "fzf",
+            "go"
+          ],
+          "created_at": "2013-10-23",
+          "updated_at": "2026-07-19",
+          "color": "#00ADD8"
+        }
+      ]
+    },
+    "typescript": {
+      "repos": [
+        {
+          "name": "freeCodeCamp/freeCodeCamp",
+          "owner": "freeCodeCamp",
+          "avatar_url": "https://avatars.githubusercontent.com/u/9892522?v=4",
+          "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn math, programming, and computer science for free.",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp",
+          "language": "TypeScript",
+          "stars": 452060,
+          "forks": 45584,
+          "topics": [
+            "careers",
+            "certification",
+            "community",
+            "curriculum",
+            "d3"
+          ],
+          "created_at": "2014-12-24",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "openclaw/openclaw",
+          "owner": "openclaw",
+          "avatar_url": "https://avatars.githubusercontent.com/u/252820863?v=4",
+          "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
+          "url": "https://github.com/openclaw/openclaw",
+          "language": "TypeScript",
+          "stars": 383424,
+          "forks": 80538,
+          "topics": [
+            "ai",
+            "assistant",
+            "crustacean",
+            "molty",
+            "openclaw"
+          ],
+          "created_at": "2025-11-24",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "nilbuild/developer-roadmap",
+          "owner": "nilbuild",
+          "avatar_url": "https://avatars.githubusercontent.com/u/4921183?v=4",
+          "description": "Interactive roadmaps, guides and other educational content to help developers grow in their careers.",
+          "url": "https://github.com/nilbuild/developer-roadmap",
+          "language": "TypeScript",
+          "stars": 361583,
+          "forks": 44574,
+          "topics": [
+            "angular-roadmap",
+            "backend-roadmap",
+            "blockchain-roadmap",
+            "computer-science",
+            "dba-roadmap"
+          ],
+          "created_at": "2017-03-15",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "vuejs/vue",
+          "owner": "vuejs",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6128107?v=4",
+          "description": "This is the repo for Vue 2. For Vue 3, go to https://github.com/vuejs/core",
+          "url": "https://github.com/vuejs/vue",
+          "language": "TypeScript",
+          "stars": 210106,
+          "forks": 33832,
+          "topics": [
+            "framework",
+            "frontend",
+            "javascript",
+            "vue"
+          ],
+          "created_at": "2013-07-29",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "n8n-io/n8n",
+          "owner": "n8n-io",
+          "avatar_url": "https://avatars.githubusercontent.com/u/45487711?v=4",
+          "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+          "url": "https://github.com/n8n-io/n8n",
+          "language": "TypeScript",
+          "stars": 196993,
+          "forks": 59454,
+          "topics": [
+            "ai",
+            "apis",
+            "automation",
+            "cli",
+            "data-flow"
+          ],
+          "created_at": "2019-06-22",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "microsoft/vscode",
+          "owner": "microsoft",
+          "avatar_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
+          "description": "Visual Studio Code",
+          "url": "https://github.com/microsoft/vscode",
+          "language": "TypeScript",
+          "stars": 187654,
+          "forks": 41290,
+          "topics": [
+            "editor",
+            "electron",
+            "microsoft",
+            "typescript",
+            "visual-studio-code"
+          ],
+          "created_at": "2015-09-03",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "anomalyco/opencode",
+          "owner": "anomalyco",
+          "avatar_url": "https://avatars.githubusercontent.com/u/66570915?v=4",
+          "description": "The open source coding agent.",
+          "url": "https://github.com/anomalyco/opencode",
+          "language": "TypeScript",
+          "stars": 187288,
+          "forks": 23525,
+          "topics": [],
+          "created_at": "2025-04-30",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "owner": "firecrawl",
+          "avatar_url": "https://avatars.githubusercontent.com/u/135057108?v=4",
+          "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "language": "TypeScript",
+          "stars": 152878,
+          "forks": 8733,
+          "topics": [
+            "ai",
+            "ai-agents",
+            "ai-crawler",
+            "ai-scraping",
+            "ai-search"
+          ],
+          "created_at": "2024-04-15",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "langgenius/dify",
+          "owner": "langgenius",
+          "avatar_url": "https://avatars.githubusercontent.com/u/127165244?v=4",
+          "description": "Production-ready platform for agentic workflow development.",
+          "url": "https://github.com/langgenius/dify",
+          "language": "TypeScript",
+          "stars": 149282,
+          "forks": 23520,
+          "topics": [
+            "agent",
+            "agentic-ai",
+            "agentic-framework",
+            "agentic-workflow",
+            "ai"
+          ],
+          "created_at": "2023-04-12",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        },
+        {
+          "name": "yangshun/tech-interview-handbook",
+          "owner": "yangshun",
+          "avatar_url": "https://avatars.githubusercontent.com/u/1315101?v=4",
+          "description": "Curated coding interview preparation materials for busy software engineers",
+          "url": "https://github.com/yangshun/tech-interview-handbook",
+          "language": "TypeScript",
+          "stars": 141067,
+          "forks": 16689,
+          "topics": [
+            "algorithm",
+            "algorithm-interview",
+            "algorithm-interview-questions",
+            "algorithms",
+            "behavioral-interviews"
+          ],
+          "created_at": "2016-07-05",
+          "updated_at": "2026-07-19",
+          "color": "#2b7489"
+        }
+      ]
+    }
+  }
+}

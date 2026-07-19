@@ -1,0 +1,42 @@
+name: Daily GitHub Data Update
+
+on:
+  schedule:
+    # GitHub Actions uses UTC. 01:00 UTC = 09:00 Beijing time.
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Update GitHub project data with AI classification
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_DATA_TOKEN || github.token }}
+          AI_API_KEY: ${{ secrets.AI_API_KEY }}
+          AI_BASE_URL: ${{ secrets.AI_BASE_URL }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+        run: python scripts/update_data.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/combined.json data/translations_v2.json data/update_report.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "chore: update daily GitHub data"
+            git push
+          fi
