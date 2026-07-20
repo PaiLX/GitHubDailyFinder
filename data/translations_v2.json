@@ -273,7 +273,10 @@
     "cn_name": "Superpowers",
     "cn_desc": "AI 智能体技能框架和软件开发方法论",
     "purpose": "提供一套完整的 AI 智能体开发方法论和技能框架",
-    "value": "系统化组织 AI 技能，提升开发效率和代码质量"
+    "value": "系统化组织 AI 技能，提升开发效率和代码质量",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "规则分类"
   },
   "react/react": {
     "cn_name": "React",
@@ -322,5 +325,356 @@
     "cn_desc": "操作系统分类和知识图谱工具",
     "purpose": "整理和分类各类操作系统及其关系",
     "value": "操作系统学习者和研究者的参考工具"
+  },
+  "x1xhlol/system-prompts-and-models-of-ai-tools": {
+    "cn_name": "system-prompts-and-models-of-ai-tools",
+    "cn_desc": "system-prompts-and-models-of-ai-tools：FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, L",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "DietrichGebert/ponytail": {
+    "cn_name": "ponytail",
+    "cn_desc": "ponytail：Makes your AI agent think like the laziest senior dev in the room. The best code is the co",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "thedotmack/claude-mem": {
+    "cn_name": "claude-mem",
+    "cn_desc": "claude-mem：Persistent Context Across Sessions for Every Agent –  Captures everything your agent does ",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "addyosmani/agent-skills": {
+    "cn_name": "agent-skills",
+    "cn_desc": "agent-skills：Production-grade engineering skills for AI coding agents.",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "bytedance/deer-flow": {
+    "cn_name": "deer-flow",
+    "cn_desc": "deer-flow：An open-source long-horizon SuperAgent harness that researches, codes, and creates. With t",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "earendil-works/pi": {
+    "cn_name": "pi",
+    "cn_desc": "pi：AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "code-yeongyu/oh-my-openagent": {
+    "cn_name": "oh-my-openagent",
+    "cn_desc": "oh-my-openagent：omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for comple",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "headroomlabs-ai/headroom": {
+    "cn_name": "headroom",
+    "cn_desc": "headroom：Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer to",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Leonxlnx/taste-skill": {
+    "cn_name": "taste-skill",
+    "cn_desc": "taste-skill：Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop ",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ruvnet/ruflo": {
+    "cn_name": "ruflo",
+    "cn_desc": "ruflo：🌊 The leading agent meta-harness. Deploy intelligent multi-player swarms, coordinate auton",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "shanraisshan/claude-code-best-practice": {
+    "cn_name": "claude-code-best-practice",
+    "cn_desc": "claude-code-best-practice：from vibe coding to agentic engineering - practice makes claude perfect",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "aaif-goose/goose": {
+    "cn_name": "goose",
+    "cn_desc": "goose：an open source, extensible AI agent that goes beyond code suggestions - install, execute, ",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "danny-avila/LibreChat": {
+    "cn_name": "LibreChat",
+    "cn_desc": "LibreChat：Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Re",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "coreyhaines31/marketingskills": {
+    "cn_name": "marketingskills",
+    "cn_desc": "marketingskills：Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and grow",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "calesthio/OpenMontage": {
+    "cn_name": "OpenMontage",
+    "cn_desc": "OpenMontage：World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ a",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "continuedev/continue": {
+    "cn_name": "continue",
+    "cn_desc": "continue：open-source coding agent",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "JCodesMore/ai-website-cloner-template": {
+    "cn_name": "ai-website-cloner-template",
+    "cn_desc": "ai-website-cloner-template：Clone any website with one command using AI coding agents",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "K-Dense-AI/scientific-agent-skills": {
+    "cn_name": "scientific-agent-skills",
+    "cn_desc": "scientific-agent-skills：Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 1",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "iOfficeAI/AionUi": {
+    "cn_name": "AionUi",
+    "cn_desc": "AionUi：Free, local, open-source 24/7 Cowork app for OpenClaw, Hermes Agent, Claude Code, Codex, O",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "VoltAgent/awesome-design-md": {
+    "cn_name": "设计系统灵感库",
+    "cn_desc": "收集主流品牌DESIGN.md文件，供AI编码代理生成匹配UI。",
+    "purpose": "为AI辅助前端开发提供标准化的设计系统参考数据。",
+    "value": "简化从设计到代码的转换流程，提升UI生成的一致性与效率。",
+    "parent_category": "design",
+    "sub_category": "ui",
+    "category_reason": "该项目聚焦于设计系统的结构化数据，直接服务于界面生成与体验优化。"
+  },
+  "VoltAgent/awesome-claude-design": {
+    "cn_name": "Claude设计灵感集",
+    "cn_desc": "68个DESIGN.md格式的设计系统灵感，一键脚手架生成完整UI。",
+    "purpose": "提供现成的设计模板，帮助开发者快速搭建符合特定风格的用户界面。",
+    "value": "大幅降低前端开发门槛，实现设计到代码的快速落地。",
+    "parent_category": "design",
+    "sub_category": "ui",
+    "category_reason": "内容核心在于提供设计资源以辅助界面构建，属于设计创意中的界面体验范畴。"
+  },
+  "OpenSenseNova/SenseNova-Skills": {
+    "cn_name": "SenseNova 技能集",
+    "cn_desc": "模块化技能库，用于构建AI驱动的办公助手及生产力工作流。",
+    "purpose": "提供可复用的AI技能模块，帮助用户快速搭建智能办公应用。",
+    "value": "降低AI应用开发门槛，提升办公自动化与智能化水平。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "专注于AI助手构建与办公场景，属于产品运营类中的AI助手方向。"
+  },
+  "kevinluosl/deepbot": {
+    "cn_name": "DeepBot",
+    "cn_desc": "系统级AI助手，支持飞书集成，适用于个人与企业工作流。",
+    "purpose": "提供一键部署的AI助手，整合飞书生态以优化企业及个人效率。",
+    "value": "无缝集成主流协作平台，实现高效的企业级AI工作流自动化。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "作为企业级AI助手工具，直接服务于业务效率提升，归类为AI助手。"
+  },
+  "IRISX-AI/IRIS-AI": {
+    "cn_name": "IRIS AI",
+    "cn_desc": "桌面端全能AI助手，集成语音、记忆、视觉及网页搜索功能。",
+    "purpose": "打造本地化的桌面AI伴侣，通过多模态能力辅助用户处理复杂任务。",
+    "value": "提供沉浸式桌面体验，将多种AI能力聚合于单一应用以提升生产力。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "明确的桌面AI助手定位，涵盖多种辅助功能，符合AI助手分类标准。"
+  },
+  "kcosr/assistant": {
+    "cn_name": "Assistant",
+    "cn_desc": "基于面板架构的个人AI助手，支持插件扩展与多Agent协作。",
+    "purpose": "提供一个可扩展的工作空间，让多个AI代理协同管理笔记与任务。",
+    "value": "灵活的插件架构支持自定义工作流，增强个人知识管理与任务执行效率。",
+    "parent_category": "product",
+    "sub_category": "assistant",
+    "category_reason": "核心功能为个人助理与工作流管理，属于AI助手范畴。"
+  },
+  "nomi-sec/PoC-in-GitHub": {
+    "cn_name": "GitHub PoC 自动收集",
+    "cn_desc": "自动从GitHub收集CVE漏洞利用代码，含恶意软件警告。",
+    "purpose": "自动化聚合全网公开的漏洞验证代码。",
+    "value": "提高安全研究人员获取最新PoC的效率。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专注于CVE漏洞利用代码的自动化收集与整理。"
+  },
+  "XiaomingX/data-cve-poc": {
+    "cn_name": "CVE漏洞利用工具集",
+    "cn_desc": "收集GitHub上所有可用的CVE漏洞利用工具。",
+    "purpose": "集中存储和提供各类CVE漏洞的Exploit代码。",
+    "value": "为渗透测试人员提供全面的漏洞利用资源库。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "直接针对CVE漏洞利用工具进行收集和分类。"
+  },
+  "Threekiii/CVE": {
+    "cn_name": "CVE漏洞预警知识库",
+    "cn_desc": "无Exploit的CVE安全知识库，部分含修复方案。",
+    "purpose": "提供CVE漏洞预警及修复建议，不含攻击代码。",
+    "value": "帮助开发者快速了解漏洞风险并实施修复。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "作为CVE知识库，侧重于安全研究与防御而非攻击。"
+  },
+  "trickest/cve": {
+    "cn_name": "Trickest CVE 聚合",
+    "cn_desc": "持续更新最新的CVE及其对应的PoC代码。",
+    "purpose": "自动化追踪并整合全球最新的CVE漏洞信息。",
+    "value": "确保用户始终拥有最新的漏洞情报和利用代码。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "核心功能为CVE漏洞情报的自动化采集与更新。"
+  },
+  "Chocapikk/CVE-2026-21858": {
+    "cn_name": "n8n CVE-2026-21858 利用",
+    "cn_desc": "n8n未授权文件读取至RCE漏洞的PoC利用代码。",
+    "purpose": "验证并演示n8n特定高危漏洞的攻击链。",
+    "value": "提供CVSS 10.0分漏洞的具体利用方法。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "针对特定CVE漏洞的利用代码验证与展示。"
+  },
+  "wioui/n8n-CVE-2025-68613-exploit": {
+    "cn_name": "n8n CVE-2025-68613 利用",
+    "cn_desc": "n8n远程代码执行漏洞的Exploit及文档。",
+    "purpose": "提供n8n RCE漏洞的具体利用脚本。",
+    "value": "协助安全人员验证该高危漏洞的存在性。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专门用于特定CVE漏洞利用的代码实现。"
+  },
+  "EQSTLab/CVE-2024-5932": {
+    "cn_name": "GiveWP PHP对象注入利用",
+    "cn_desc": "GiveWP插件PHP对象注入漏洞的Exploit代码。",
+    "purpose": "演示GiveWP中PHP对象注入漏洞的攻击方式。",
+    "value": "为WordPress生态安全审计提供具体案例。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "针对特定软件漏洞的利用代码与安全研究。"
+  },
+  "k8gege/PowerLadon": {
+    "cn_name": "PowerLadon 渗透扫描器",
+    "cn_desc": "基于PowerShell的综合内网渗透扫描与爆破工具。",
+    "purpose": "执行端口扫描、服务探测及多种协议爆破。",
+    "value": "轻量级且功能强大的Windows环境渗透测试工具。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "典型的网络安全渗透测试与漏洞扫描工具。"
+  },
+  "AjayAntoIsDev/WaSonar": {
+    "cn_name": "WaSonar WhatsApp 侦察",
+    "cn_desc": "WhatsApp设备追踪与协议压力测试安全研究工具。",
+    "purpose": "对WhatsApp协议进行安全研究与压力测试。",
+    "value": "辅助发现即时通讯应用的安全隐患。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "用于通信协议安全研究与漏洞探测的工具。"
+  },
+  "trickest/find-gh-poc": {
+    "cn_name": "GitHub PoC 查找器",
+    "cn_desc": "在GitHub上搜索和定位CVE漏洞利用代码。",
+    "purpose": "帮助用户快速发现隐藏的漏洞利用代码。",
+    "value": "提升漏洞情报收集的自动化与精准度。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "专注于安全领域PoC代码的检索与发现。"
+  },
+  "tintinweb/pub": {
+    "cn_name": "tintinweb 漏洞笔记",
+    "cn_desc": "包含漏洞笔记、PoC及Write-Ups的安全研究合集。",
+    "purpose": "记录并分享安全研究员发现的漏洞细节。",
+    "value": "提供高质量的安全漏洞分析与利用思路。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "典型的安全研究笔记与漏洞利用代码集合。"
+  },
+  "joshuavanderpoll/CVE-2021-3129": {
+    "cn_name": "Laravel RCE 利用工具",
+    "cn_desc": "Laravel框架远程代码执行漏洞的友好型PoC。",
+    "purpose": "简化Laravel RCE漏洞的验证过程。",
+    "value": "自动检测日志路径，降低漏洞复现门槛。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "针对特定Web框架漏洞的利用与验证工具。"
+  },
+  "ivan-sincek/malware-apk": {
+    "cn_name": "恶意APK PoC 生成器",
+    "cn_desc": "生成看似恶意的Android APK以通过Bug Bounty审核。",
+    "purpose": "帮助安全研究员提交更具说服力的漏洞报告。",
+    "value": "解决漏洞报告中缺乏有效PoC导致的拒收问题。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "服务于安全测试与漏洞赏金计划的辅助工具。"
+  },
+  "EQSTLab/CVE-2024-46538": {
+    "cn_name": "PfSense XSS转RCE利用",
+    "cn_desc": "PfSense存储型XSS导致任意代码执行的Exploit。",
+    "purpose": "演示从XSS到RCE的完整攻击链。",
+    "value": "揭示防火墙软件深层逻辑漏洞的危害。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "针对网络设备漏洞的深度利用与安全研究。"
   }
 }

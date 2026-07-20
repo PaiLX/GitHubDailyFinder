@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T11:18:08.615905",
+  "generated_at": "2026-07-20T11:29:24.781990",
   "categories": {
     "dev": {
       "title": "开发工具",
@@ -10,11 +10,9 @@
     },
     "design": {
       "title": "设计创意",
-      "count": 4,
+      "count": 2,
       "sub_counts": {
-        "ui": 2,
-        "security": 1,
-        "growth": 1
+        "ui": 2
       }
     },
     "product": {
@@ -26,10 +24,8 @@
     },
     "test": {
       "title": "测试安全",
-      "count": 18,
+      "count": 14,
       "sub_counts": {
-        "learning": 3,
-        "inspiration": 1,
         "security": 14
       }
     }
