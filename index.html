@@ -64,6 +64,12 @@
     <div class="hero-kicker">Daily Open Source Curation</div>
     <h1>每日开源项目发现</h1>
     <p class="hero-sub">筛选值得研究、可落地复用的 GitHub 项目</p>
+    <div class="hero-controls">
+      <label class="date-filter">
+        <span>推荐日期</span>
+        <select id="dateSelect" aria-label="选择推荐日期"></select>
+      </label>
+    </div>
     <p class="hero-meta" id="updatedTime"></p>
   </div>
 
@@ -110,6 +116,16 @@
   <aside class="ad-slot ad-top" data-ad-key="top" aria-label="广告位">
     <span>Advertisement</span>
   </aside>
+
+  <div class="mode-bar" id="modeBar">
+    <button class="mode-tab active" data-mode="category" type="button">按角色分类</button>
+    <button class="mode-tab" data-mode="dimension" type="button">按推荐维度</button>
+  </div>
+
+  <div class="dimension-bar" id="dimensionBar" style="display:none;">
+    <button class="dimension-tab active" data-dimension="fastest_growth" type="button">增长最快 TOP 20</button>
+    <button class="dimension-tab" data-dimension="top_stars" type="button">标星最多 TOP 20</button>
+  </div>
 
   <div class="category-bar" id="categoryBar">
     <div class="category-tabs" id="categoryTabs">

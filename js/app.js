@@ -1,8 +1,12 @@
 // ===== State =====
 let allData = null;
+let historyData = [];
 let translations = {};
+let currentMode = 'category';
 let currentCat = 'dev';
+let currentDimension = 'fastest_growth';
 let currentSubcat = 'all';
+let currentDate = 'latest';
 let searchQuery = '';
 
 const contentBlocklist = [
@@ -12,19 +16,6 @@ const contentBlocklist = [
   '中国','台湾','香港','新疆','西藏','中共','996','战争','军事','武器','恐怖','纳粹','色情','成人','黄色','本子','里番'
 ];
 const blockedRepos = new Set(['996icu/996.icu']);
-function hasBlockedTerm(text, term) {
-  const lower = String(term).toLowerCase();
-  if (/^[a-z0-9_. -]+$/.test(lower)) {
-    return new RegExp(`(^|[^a-z0-9])${lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z0-9]|$)`).test(text);
-  }
-  return text.includes(lower);
-}
-function isSafeRepo(r) {
-  const name = String(r?.name || '').toLowerCase();
-  if (blockedRepos.has(name)) return false;
-  const text = [r?.name, r?.owner, r?.description, r?.cn_name, r?.cn_desc, r?.purpose, r?.value, ...(r?.topics || [])].filter(Boolean).join(' ').toLowerCase();
-  return !contentBlocklist.some(term => hasBlockedTerm(text, term));
-}
 
 const roleSubcats = {
   dev: {
@@ -65,11 +56,11 @@ const roleSubcats = {
   }
 };
 
-// ===== Init =====
 async function init() {
-  await Promise.all([loadData(), loadTranslations()]);
+  await Promise.all([loadData(), loadTranslations(), loadHistory()]);
   setupFilters();
   renderLangPills();
+  renderDateSelect();
   render();
   updateTime();
   setupTheme();
@@ -78,12 +69,8 @@ async function init() {
 async function loadTranslations() {
   try {
     const resp = await fetch('data/translations_v2.json?t=' + Date.now());
-    if (resp.ok) {
-      translations = await resp.json();
-    }
-  } catch(e) {
-    console.warn('翻译加载失败:', e);
-  }
+    if (resp.ok) translations = await resp.json();
+  } catch(e) { console.warn('翻译加载失败:', e); }
 }
 
 async function loadData() {
@@ -92,12 +79,24 @@ async function loadData() {
   allData = await resp.json();
 }
 
+async function loadHistory() {
+  try {
+    const resp = await fetch('data/history.json?t=' + Date.now());
+    if (resp.ok) historyData = await resp.json();
+  } catch(e) { historyData = []; }
+}
+
+function activeSnapshot() {
+  if (currentDate === 'latest') return allData;
+  const snap = historyData.find(x => x.date === currentDate);
+  return snap || allData;
+}
+
 function updateTime() {
   const el = document.getElementById('updatedTime');
-  if (el && allData) {
-    const d = new Date(allData.generated_at);
-    el.textContent = '更新于 ' + formatDate(d);
-  }
+  if (!el || !allData) return;
+  const dateText = currentDate === 'latest' ? '最新数据' : currentDate;
+  el.textContent = `${dateText} · 更新于 ${formatDate(new Date(activeSnapshot().generated_at || allData.generated_at))}`;
 }
 
 function formatDate(d) {
@@ -109,100 +108,111 @@ function formatDate(d) {
   return `${y}年${m}月${day}日 ${h}:${min}`;
 }
 
-// ===== Theme =====
 function setupTheme() {
   const stored = localStorage.getItem('theme');
-  if (stored === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  }
+  if (stored === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
   document.getElementById('themeToggle').addEventListener('click', () => {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    if (isDark) {
-      document.documentElement.removeAttribute('data-theme');
-      localStorage.setItem('theme', 'light');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    }
+    document.documentElement.toggleAttribute('data-theme', !isDark);
+    localStorage.setItem('theme', isDark ? 'light' : 'dark');
   });
 }
 
-// ===== Language Colors =====
 function getLangColor(lang) {
-  const colors = {
-    'JavaScript': 'lang-js',
-    'TypeScript': 'lang-ts',
-    'Python': 'lang-py',
-    'Rust': 'lang-rs',
-    'C': 'lang-c',
-    'C++': 'lang-cpp',
-    'Go': 'lang-go',
-    'Shell': 'lang-sh',
-    'Java': 'lang-java',
-    'HTML': 'lang-html',
-    'CSS': 'lang-css'
-  };
+  const colors = {'JavaScript':'lang-js','TypeScript':'lang-ts','Python':'lang-py','Rust':'lang-rs','C':'lang-c','C++':'lang-cpp','Go':'lang-go','Shell':'lang-sh','Java':'lang-java','HTML':'lang-html','CSS':'lang-css'};
   return colors[lang] || '';
 }
 
-// ===== Escape HTML =====
 function escapeHtml(str) {
   const div = document.createElement('div');
-  div.textContent = str;
+  div.textContent = String(str || '');
   return div.innerHTML;
 }
 
 function escapeAttr(str) {
-  return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
+  return String(str || '').replace(/'/g, "\\'").replace(/"/g, '\\"');
 }
 
-// ===== Format Numbers =====
 function formatNum(n) {
+  n = Number(n || 0);
   if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
   if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
   return n.toString();
 }
 
-// ===== Find Repo =====
-function findRepo(name) {
-  if (!allData) return null;
-  for (const cat of Object.values(allData.categories)) {
-    for (const r of cat.repos) {
-      if (r.name === name) return r;
-    }
+function hasBlockedTerm(text, term) {
+  const lower = String(term).toLowerCase();
+  if (/^[a-z0-9_. -]+$/.test(lower)) {
+    return new RegExp(`(^|[^a-z0-9])${lower.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z0-9]|$)`).test(text);
   }
-  return null;
+  return text.includes(lower);
 }
 
-// ===== Render role subcategory filters =====
+function isSafeRepo(r) {
+  const name = String(r?.name || '').toLowerCase();
+  if (blockedRepos.has(name)) return false;
+  const text = [r?.name, r?.owner, r?.description, r?.cn_name, r?.cn_desc, r?.purpose, r?.value, r?.category_reason, ...(r?.topics || [])].filter(Boolean).join(' ').toLowerCase();
+  return !contentBlocklist.some(term => hasBlockedTerm(text, term));
+}
+
+function allReposFromSnapshot(snap = activeSnapshot()) {
+  const repos = [];
+  Object.values(snap?.categories || {}).forEach(cat => repos.push(...(cat.repos || [])));
+  Object.values(snap?.dimensions || {}).forEach(dim => repos.push(...(dim.repos || [])));
+  return repos;
+}
+
+function findRepo(name) {
+  return allReposFromSnapshot().find(r => r.name === name) || null;
+}
+
+function renderDateSelect() {
+  const select = document.getElementById('dateSelect');
+  if (!select) return;
+  const dates = [...new Set(historyData.map(x => x.date).filter(Boolean))].sort().reverse();
+  select.innerHTML = '<option value="latest">最新推荐</option>' + dates.map(d => `<option value="${escapeAttr(d)}">${escapeHtml(d)}</option>`).join('');
+  select.value = currentDate;
+}
+
 function renderLangPills() {
   const container = document.getElementById('langPills');
   const label = document.getElementById('subcatLabel');
   if (!container) return;
+  if (currentMode !== 'category') {
+    if (label) label.textContent = '推荐维度';
+    container.innerHTML = '<button class="lang-pill active" data-lang="all">全部项目</button>';
+    return;
+  }
   const config = roleSubcats[currentCat] || roleSubcats.dev;
   if (label) label.textContent = config.label;
   const buttons = [`<button class="lang-pill active" data-lang="all">全部关注点</button>`];
-  config.items.forEach(item => {
-    buttons.push(`<button class="lang-pill" data-lang="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>`);
-  });
+  config.items.forEach(item => buttons.push(`<button class="lang-pill" data-lang="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>`));
   container.innerHTML = buttons.join('');
 }
 
 function repoMatchesSubcat(repo, subcatId) {
   if (subcatId === 'all') return true;
-  const config = roleSubcats[currentCat] || roleSubcats.dev;
-  const item = config.items.find(x => x.id === subcatId);
+  if (repo.sub_category === subcatId) return true;
+  const item = (roleSubcats[currentCat]?.items || []).find(x => x.id === subcatId);
   if (!item) return true;
-  const haystack = [
-    repo.name, repo.owner, repo.description, repo.cn_name, repo.cn_desc, repo.purpose, repo.value,
-    ...(repo.topics || [])
-  ].filter(Boolean).join(' ').toLowerCase();
+  const haystack = [repo.name, repo.owner, repo.description, repo.cn_name, repo.cn_desc, repo.purpose, repo.value, repo.category_reason, ...(repo.topics || [])].filter(Boolean).join(' ').toLowerCase();
   return item.hints.some(hint => haystack.includes(String(hint).toLowerCase()));
 }
 
-// ===== Setup Filters =====
 function setupFilters() {
-  // Category tabs
+  document.querySelectorAll('.mode-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.mode-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentMode = btn.dataset.mode;
+      currentSubcat = 'all';
+      document.getElementById('categoryBar').style.display = currentMode === 'category' ? '' : 'none';
+      document.getElementById('dimensionBar').style.display = currentMode === 'dimension' ? '' : 'none';
+      renderLangPills();
+      render();
+    });
+  });
+
   document.querySelectorAll('.category-tab').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('.category-tab').forEach(b => b.classList.remove('active'));
@@ -214,24 +224,27 @@ function setupFilters() {
     });
   });
 
-  // Role subcategory pills
+  document.querySelectorAll('.dimension-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.dimension-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentDimension = btn.dataset.dimension;
+      render();
+    });
+  });
+
   const langContainer = document.getElementById('langPills');
   langContainer.addEventListener('click', (e) => {
     const pill = e.target.closest('.lang-pill');
     if (!pill) return;
     const subcat = pill.dataset.lang;
-    if (subcat === 'all') {
-      currentSubcat = 'all';
-    } else {
-      currentSubcat = currentSubcat === subcat ? 'all' : subcat;
-    }
+    currentSubcat = subcat === 'all' ? 'all' : (currentSubcat === subcat ? 'all' : subcat);
     langContainer.querySelectorAll('.lang-pill').forEach(p => p.classList.remove('active'));
     const active = langContainer.querySelector(`[data-lang="${CSS.escape(currentSubcat)}"]`) || langContainer.querySelector('[data-lang="all"]');
     if (active) active.classList.add('active');
     render();
   });
 
-  // Search
   const searchInput = document.getElementById('searchInput');
   let searchTimeout;
   searchInput.addEventListener('input', (e) => {
@@ -242,146 +255,104 @@ function setupFilters() {
     }, 200);
   });
 
-  // Contact
-  const contactBtn = document.getElementById('contactBtn');
-  if (contactBtn) {
-    contactBtn.addEventListener('click', showContactModal);
-  }
-
-  // Refresh
-  document.getElementById('refreshBtn').addEventListener('click', () => {
-    location.reload();
-  });
-}
-
-// ===== Render =====
-function render() {
-  const cat = allData?.categories[currentCat];
-  if (!cat) return;
-
-  let repos = [...cat.repos].filter(isSafeRepo);
-
-  // Update category description
-  const descEl = document.getElementById('catDesc');
-  if (descEl) {
-    descEl.textContent = cat.desc;
-  }
-  
-  // Update audience info
-  const audienceEl = document.getElementById('catAudience');
-  if (audienceEl) {
-    audienceEl.textContent = `适用人群：${cat.audience}`;
-  }
-
-  // Role subcategory filter
-  if (currentSubcat !== 'all') {
-    repos = repos.filter(r => repoMatchesSubcat(r, currentSubcat));
-  }
-
-  // Search filter
-  if (searchQuery) {
-    repos = repos.filter(r => {
-      return (
-        r.name.toLowerCase().includes(searchQuery) ||
-        (r.cn_name || '').includes(searchQuery) ||
-        (r.cn_desc || '').includes(searchQuery) ||
-        (r.purpose || '').includes(searchQuery) ||
-        (r.value || '').includes(searchQuery)
-      );
+  const dateSelect = document.getElementById('dateSelect');
+  if (dateSelect) {
+    dateSelect.addEventListener('change', e => {
+      currentDate = e.target.value;
+      render();
+      updateTime();
     });
   }
 
-  // Update stats
-  const parentTotal = cat.repos.length;
-  const activeSubcatName = currentSubcat === 'all'
-    ? '全部关注点'
-    : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点');
-  const allLangs = new Set(repos.map(r => r.language).filter(Boolean));
-  const statsEl = document.getElementById('statsSummary');
-  if (statsEl) {
-    statsEl.innerHTML = `父级 <strong>${parentTotal}</strong> 个项目 · 当前 <strong>${repos.length}</strong> 个 · ${activeSubcatName} · ${cat.title}`;
+  const contactBtn = document.getElementById('contactBtn');
+  if (contactBtn) contactBtn.addEventListener('click', showContactModal);
+  document.getElementById('refreshBtn').addEventListener('click', () => location.reload());
+}
+
+function activeCollection() {
+  const snap = activeSnapshot();
+  if (currentMode === 'dimension') {
+    const dim = snap?.dimensions?.[currentDimension] || allData?.dimensions?.[currentDimension];
+    return dim ? { ...dim, type: 'dimension' } : null;
+  }
+  const cat = snap?.categories?.[currentCat] || allData?.categories?.[currentCat];
+  return cat ? { ...cat, type: 'category' } : null;
+}
+
+function searchableText(r) {
+  return [r.name, r.owner, r.description, r.language, r.cn_name, r.cn_desc, r.purpose, r.value, r.category_reason, ...(r.topics || [])]
+    .filter(Boolean).join(' ').toLowerCase();
+}
+
+function render() {
+  const collection = activeCollection();
+  if (!collection) return;
+  let repos = [...(collection.repos || [])].filter(isSafeRepo);
+
+  const descEl = document.getElementById('catDesc');
+  if (descEl) descEl.textContent = collection.desc || '';
+  const audienceEl = document.getElementById('catAudience');
+  if (audienceEl) {
+    audienceEl.textContent = collection.type === 'category'
+      ? `适用人群：${collection.audience || ''}`
+      : '推荐维度：用于快速发现近期爆发项目和长期高星项目。';
   }
 
-  // Render cards
+  if (currentMode === 'category' && currentSubcat !== 'all') repos = repos.filter(r => repoMatchesSubcat(r, currentSubcat));
+  if (searchQuery) repos = repos.filter(r => searchableText(r).includes(searchQuery));
+
+  const activeSubcatName = currentMode === 'dimension' ? collection.title : (currentSubcat === 'all' ? '全部关注点' : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点'));
+  const statsEl = document.getElementById('statsSummary');
+  if (statsEl) statsEl.innerHTML = `总计 <strong>${collection.repos.length}</strong> 个 · 当前 <strong>${repos.length}</strong> 个 · ${escapeHtml(activeSubcatName)}`;
+
   const grid = document.getElementById('cardMasonry');
   const empty = document.getElementById('emptyState');
-
   if (repos.length === 0) {
     grid.innerHTML = '';
     empty.style.display = 'block';
     return;
   }
-
   empty.style.display = 'none';
   grid.innerHTML = repos.map(r => renderCard(r)).join('');
 }
 
-// ===== Render Card =====
 function renderCard(r) {
   const displayName = r.cn_name || r.name.split('/')[1] || r.name;
   const cnDesc = r.cn_desc || r.description || '暂无描述';
-  const purpose = r.purpose || '';
-  const value = r.value || '';
   const avatarUrl = r.avatar_url || '';
   const langColor = getLangColor(r.language);
   const initial = displayName.charAt(0).toUpperCase();
-
+  const growth = r.star_gain !== undefined && r.star_gain !== null ? `<span class="card-stat accent-stat">+${formatNum(r.star_gain)} stars</span>` : '';
   return `
     <div class="project-card" onclick="showModal('${escapeAttr(r.name)}')">
       <div class="card-top">
-        ${avatarUrl 
-          ? `<img class="card-avatar" src="${avatarUrl}" alt="" loading="lazy" onerror="this.outerHTML='<div class=\\'card-avatar-placeholder\\'>${initial}</div>'">`
-          : `<div class="card-avatar-placeholder">${initial}</div>`
-        }
+        ${avatarUrl ? `<img class="card-avatar" src="${avatarUrl}" alt="" loading="lazy" onerror="this.outerHTML='<div class=\\'card-avatar-placeholder\\'>${initial}</div>'">` : `<div class="card-avatar-placeholder">${initial}</div>`}
         <div class="card-info">
-          <div class="card-title-row">
-            <a class="card-title card-title-link" href="${r.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(displayName)}</a>
-          </div>
-          <span class="card-owner">@${r.owner}</span>
+          <div class="card-title-row"><a class="card-title card-title-link" href="${r.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(displayName)}</a></div>
+          <span class="card-owner">@${escapeHtml(r.owner)}</span>
         </div>
       </div>
       <div class="card-desc">${escapeHtml(cnDesc)}</div>
-      <div class="card-tags">
-        <span class="tag-lang"><span class="dot ${langColor}"></span>${escapeHtml(r.language)}</span>
-      </div>
+      <div class="card-tags"><span class="tag-lang"><span class="dot ${langColor}"></span>${escapeHtml(r.language)}</span>${r.sub_category ? `<span class="tag-lang">${escapeHtml(r.sub_category)}</span>` : ''}</div>
       <div class="card-footer">
-        <div class="card-stats">
-          <span class="card-stat">Stars ${formatNum(r.stars)}</span>
-          <span class="card-stat">Forks ${formatNum(r.forks)}</span>
-          <span class="card-stat">${r.created_at}</span>
-        </div>
+        <div class="card-stats"><span class="card-stat">Stars ${formatNum(r.stars)}</span><span class="card-stat">Forks ${formatNum(r.forks)}</span>${growth}<span class="card-stat">${escapeHtml(r.created_at)}</span></div>
         <span class="card-arrow">›</span>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
-// ===== Contact Modal =====
 function showContactModal() {
   const html = `
     <div class="modal-overlay" onclick="if(event.target===this)this.remove()">
       <div class="contact-panel">
-        <div class="contact-panel-header">
-          <h2>联系我们</h2>
-          <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
-        </div>
+        <div class="contact-panel-header"><h2>联系我们</h2><button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button></div>
         <div class="contact-panel-body">
           <p>如需项目收录、广告合作、网站发布或功能建议，可以通过以下方式联系。</p>
-          <div class="contact-items">
-            <div class="contact-item">
-              <span>邮箱</span>
-              <a href="mailto:1484247834@qq.com">1484247834@qq.com</a>
-            </div>
-            <div class="contact-item">
-              <span>QQ</span>
-              <strong>1484247834</strong>
-            </div>
-          </div>
+          <div class="contact-items"><div class="contact-item"><span>邮箱</span><a href="mailto:1484247834@qq.com">1484247834@qq.com</a></div><div class="contact-item"><span>QQ</span><strong>1484247834</strong></div></div>
           <button class="btn-secondary contact-copy" onclick="copyContactInfo()">复制联系方式</button>
         </div>
       </div>
-    </div>
-  `;
+    </div>`;
   document.body.insertAdjacentHTML('beforeend', html);
 }
 
@@ -395,106 +366,31 @@ function copyContactInfo() {
   });
 }
 
-// ===== Modal =====
 function showModal(repoName) {
   const repo = findRepo(repoName);
   if (!repo) return;
-
   const displayName = repo.cn_name || repo.name.split('/')[1] || repo.name;
-  const cnName = repo.cn_name || '';
-  const cnDesc = repo.cn_desc || '';
-  const purpose = repo.purpose || '';
-  const value = repo.value || '';
   const langColor = getLangColor(repo.language);
   const initial = displayName.charAt(0).toUpperCase();
-
+  const growth = repo.star_gain !== undefined && repo.star_gain !== null ? `<span class="modal-stat">近次新增 ${repo.star_gain.toLocaleString()} Stars</span>` : '';
   let html = `
-    <div class="modal-overlay" onclick="if(event.target===this)this.remove()">
-      <div class="modal">
-        <div class="modal-header">
-          ${repo.avatar_url 
-            ? `<img class="modal-avatar" src="${repo.avatar_url}" alt="" onerror="this.outerHTML='<div class=\\'card-avatar-placeholder\\' style=\\'width:56px;height:56px;border-radius:12px;background:var(--bg-input);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-tertiary);border:2px solid var(--border)\\'>${initial}</div>'">`
-            : `<div class="card-avatar-placeholder" style="width:56px;height:56px;border-radius:12px;background:var(--bg-input);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-tertiary);border:2px solid var(--border)">${initial}</div>`
-          }
-          <div class="modal-title-area">
-            <div class="modal-title">${escapeHtml(displayName)}</div>
-            ${cnName ? `<div class="modal-cn-name">${escapeHtml(cnName)}</div>` : ''}
-            <div class="modal-owner">${escapeHtml(repo.owner)} · ${escapeHtml(repo.language)}</div>
-          </div>
-          <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
-        </div>
-        <div class="modal-body">
-  `;
+    <div class="modal-overlay" onclick="if(event.target===this)this.remove()"><div class="modal">
+      <div class="modal-header">
+        ${repo.avatar_url ? `<img class="modal-avatar" src="${repo.avatar_url}" alt="" onerror="this.outerHTML='<div class=\\'card-avatar-placeholder\\' style=\\'width:56px;height:56px;border-radius:12px;background:var(--bg-input);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-tertiary);border:2px solid var(--border)\\'>${initial}</div>'">` : `<div class="card-avatar-placeholder" style="width:56px;height:56px;border-radius:12px;background:var(--bg-input);display:flex;align-items:center;justify-content:center;font-size:24px;color:var(--text-tertiary);border:2px solid var(--border)">${initial}</div>`}
+        <div class="modal-title-area"><div class="modal-title">${escapeHtml(displayName)}</div><div class="modal-cn-name">${escapeHtml(repo.name)}</div><div class="modal-owner">${escapeHtml(repo.owner)} · ${escapeHtml(repo.language)}</div></div>
+        <button class="modal-close" onclick="this.closest('.modal-overlay').remove()">✕</button>
+      </div><div class="modal-body">`;
 
-  // Purpose section
-  if (purpose) {
-    html += `
-      <div class="modal-section">
-        <div class="modal-label">项目作用</div>
-        <div class="modal-desc">${escapeHtml(purpose)}</div>
-      </div>
-    `;
-  }
-
-  // Value section
-  if (value) {
-    html += `
-      <div class="modal-section">
-        <div class="modal-label">核心价值</div>
-        <div class="modal-value">${escapeHtml(value)}</div>
-      </div>
-    `;
-  }
-
-  // Original description
-  if (cnDesc && !purpose) {
-    html += `
-      <div class="modal-section">
-        <div class="modal-label">项目简介</div>
-        <div class="modal-desc">${escapeHtml(cnDesc)}</div>
-      </div>
-    `;
-  }
-
-  // Stats
-  html += `
-      <div class="modal-section">
-        <div class="modal-label">项目数据</div>
-        <div class="modal-stats">
-          <span class="modal-stat">Stars ${repo.stars.toLocaleString()}</span>
-          <span class="modal-stat">Forks ${repo.forks.toLocaleString()}</span>
-          <span class="modal-stat">Updated ${repo.created_at}</span>
-          <span class="modal-stat"><span class="dot ${langColor}" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;"></span>${escapeHtml(repo.language)}</span>
-        </div>
-      </div>
-  `;
-
-  // Topics
-  if (repo.topics && repo.topics.length > 0) {
-    html += `
-      <div class="modal-section">
-        <div class="modal-label">标签</div>
-        <div class="modal-tags">
-          ${repo.topics.slice(0, 8).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('')}
-        </div>
-      </div>
-    `;
-  }
-
-  html += `
-        </div>
-        <div class="modal-actions">
-          <a href="${repo.url}" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none;">前往 GitHub</a>
-          <button class="btn-secondary" onclick="copyLink('${escapeAttr(repo.url)}')">复制链接</button>
-        </div>
-      </div>
-    </div>
-  `;
-
+  if (repo.cn_desc) html += `<div class="modal-section"><div class="modal-label">中文介绍</div><div class="modal-desc">${escapeHtml(repo.cn_desc)}</div></div>`;
+  if (repo.purpose) html += `<div class="modal-section"><div class="modal-label">项目作用</div><div class="modal-desc">${escapeHtml(repo.purpose)}</div></div>`;
+  if (repo.value) html += `<div class="modal-section"><div class="modal-label">核心价值</div><div class="modal-value">${escapeHtml(repo.value)}</div></div>`;
+  if (repo.category_reason) html += `<div class="modal-section"><div class="modal-label">归类原因</div><div class="modal-desc">${escapeHtml(repo.category_reason)}</div></div>`;
+  html += `<div class="modal-section"><div class="modal-label">项目数据</div><div class="modal-stats"><span class="modal-stat">Stars ${repo.stars.toLocaleString()}</span><span class="modal-stat">Forks ${repo.forks.toLocaleString()}</span>${growth}<span class="modal-stat">Created ${escapeHtml(repo.created_at)}</span><span class="modal-stat"><span class="dot ${langColor}" style="display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;"></span>${escapeHtml(repo.language)}</span></div></div>`;
+  if (repo.topics && repo.topics.length > 0) html += `<div class="modal-section"><div class="modal-label">标签</div><div class="modal-tags">${repo.topics.slice(0, 8).map(t => `<span class="modal-tag">${escapeHtml(t)}</span>`).join('')}</div></div>`;
+  html += `</div><div class="modal-actions"><a href="${repo.url}" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none;">前往 GitHub</a><button class="btn-secondary" onclick="copyLink('${escapeAttr(repo.url)}')">复制链接</button></div></div></div>`;
   document.body.insertAdjacentHTML('beforeend', html);
 }
 
-// ===== Copy Link =====
 function copyLink(url) {
   navigator.clipboard.writeText(url).then(() => {
     const btn = event.target;
@@ -504,5 +400,4 @@ function copyLink(url) {
   });
 }
 
-// ===== Start =====
 init();

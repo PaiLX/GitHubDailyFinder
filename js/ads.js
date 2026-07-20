@@ -4,10 +4,11 @@
 
   function loadAdsense(client) {
     if (!client || document.querySelector('script[data-ad-client-loader]')) return;
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return;
     const script = document.createElement('script');
     script.async = true;
     script.crossOrigin = 'anonymous';
-    script.dataset.adClientLoader = 'true';
+    script.setAttribute('data-ad-client-loader', 'true');
     script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + encodeURIComponent(client);
     document.head.appendChild(script);
   }
@@ -40,6 +41,10 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
+    if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
+      document.querySelectorAll('.ad-slot').forEach(el => { el.style.display = 'none'; });
+      return;
+    }
     if (config.enabled && config.provider === 'adsense') loadAdsense(config.client);
     document.querySelectorAll('.ad-slot').forEach(fillSlot);
   });

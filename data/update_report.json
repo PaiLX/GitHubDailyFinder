@@ -1,33 +1,43 @@
 {
-  "generated_at": "2026-07-20T11:29:24.781990",
+  "generated_at": "2026-07-21T00:45:38.523502",
   "categories": {
     "dev": {
       "title": "开发工具",
-      "count": 20,
+      "count": 24,
       "sub_counts": {
-        "ai-coding": 20
+        "ai-coding": 24
       }
     },
     "design": {
       "title": "设计创意",
-      "count": 2,
+      "count": 18,
       "sub_counts": {
-        "ui": 2
+        "automation": 18
       }
     },
     "product": {
       "title": "产品运营",
-      "count": 4,
+      "count": 14,
       "sub_counts": {
-        "assistant": 4
+        "automation": 14
       }
     },
     "test": {
       "title": "测试安全",
       "count": 14,
       "sub_counts": {
-        "security": 14
+        "automation": 14
       }
+    }
+  },
+  "dimensions": {
+    "fastest_growth": {
+      "title": "增长最快 TOP 20",
+      "count": 20
+    },
+    "top_stars": {
+      "title": "标星最多 TOP 20",
+      "count": 20
     }
   },
   "ai_enabled": true
