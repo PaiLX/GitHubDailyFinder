@@ -190,6 +190,12 @@ function renderLangPills() {
   container.innerHTML = buttons.join('');
 }
 
+
+function subcatName(id, cat = currentCat) {
+  const match = (roleSubcats[cat]?.items || []).find(item => item.id === id);
+  return match?.name || id || '';
+}
+
 function repoMatchesSubcat(repo, subcatId) {
   if (subcatId === 'all') return true;
   if (repo.sub_category === subcatId) return true;
@@ -333,7 +339,7 @@ function renderCard(r) {
         </div>
       </div>
       <div class="card-desc">${escapeHtml(cnDesc)}</div>
-      <div class="card-tags"><span class="tag-lang"><span class="dot ${langColor}"></span>${escapeHtml(r.language)}</span>${r.sub_category ? `<span class="tag-lang">${escapeHtml(r.sub_category)}</span>` : ''}</div>
+      <div class="card-tags"><span class="tag-lang"><span class="dot ${langColor}"></span>${escapeHtml(r.language)}</span>${r.sub_category ? `<span class="tag-lang tag-subcat">${escapeHtml(subcatName(r.sub_category, r.parent_category || currentCat))}</span>` : ''}</div>
       <div class="card-footer">
         <div class="card-stats"><span class="card-stat">Stars ${formatNum(r.stars)}</span><span class="card-stat">Forks ${formatNum(r.forks)}</span>${growth}<span class="card-stat">${escapeHtml(r.created_at)}</span></div>
         <span class="card-arrow">›</span>

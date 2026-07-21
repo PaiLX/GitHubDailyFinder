@@ -13,6 +13,12 @@
     document.head.appendChild(script);
   }
 
+  function hideUnfilledSlots() {
+    document.querySelectorAll('.ad-slot').forEach(el => {
+      if (!el.querySelector('ins.adsbygoogle')) el.classList.add('ad-pending');
+    });
+  }
+
   function fillSlot(el) {
     if (!config.enabled || config.provider !== 'adsense' || !config.client) {
       el.classList.add('ad-pending');
@@ -47,5 +53,6 @@
     }
     if (config.enabled && config.provider === 'adsense') loadAdsense(config.client);
     document.querySelectorAll('.ad-slot').forEach(fillSlot);
+    setTimeout(hideUnfilledSlots, 2200);
   });
 })();
