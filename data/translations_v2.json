@@ -303,7 +303,10 @@
     "cn_name": "CS 基础速成",
     "cn_desc": "面向求职面试的计算机科学基础速成指南",
     "purpose": "整理 DSA、计算机网络、数据库、操作系统等核心知识点",
-    "value": "求职者的必备复习材料，覆盖面试高频考点"
+    "value": "求职者的必备复习材料，覆盖面试高频考点",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "按推荐维度收录，并根据仓库信息补充中文说明。"
   },
   "codecrafters-io/build-your-own-x": {
     "cn_name": "从零构建万物",
@@ -809,6 +812,69 @@
   "n8n-io/n8n": {
     "cn_name": "n8n",
     "cn_desc": "n8n：Fair-code workflow automation platform with native AI capabilities. Combine visual buildin",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "unicity-aos/aos-ce": {
+    "cn_name": "aos-ce",
+    "cn_desc": "aos-ce：AOS Community Edition: the open agent operating system.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "usestrix/strix": {
+    "cn_name": "strix",
+    "cn_desc": "strix：Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "langflow-ai/langflow": {
+    "cn_name": "langflow",
+    "cn_desc": "langflow：Langflow is a powerful tool for building and deploying AI-powered agents and workflows.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "hesreallyhim/awesome-claude-code": {
+    "cn_name": "awesome-claude-code",
+    "cn_desc": "awesome-claude-code：A hand-picked collection of the finest of resources for the most awesome of agents, Claude",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "MaximeRivest/riddle": {
+    "cn_name": "riddle",
+    "cn_desc": "riddle：The diary of Tom Riddle for the reMarkable Paper Pro — write with your pen, the page drink",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "can1357/oh-my-pi": {
+    "cn_name": "oh-my-pi",
+    "cn_desc": "oh-my-pi：⌥  AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Py",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Crosstalk-Solutions/project-nomad": {
+    "cn_name": "project-nomad",
+    "cn_desc": "project-nomad：Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical too",
     "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
     "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
     "parent_category": "dev",
