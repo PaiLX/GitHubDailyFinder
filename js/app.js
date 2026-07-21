@@ -61,7 +61,6 @@ async function init() {
   await Promise.all([loadData(), loadTranslations(), loadHistory()]);
   setupFilters();
   renderLangPills();
-  renderDateSelect();
   renderDateList();
   render();
   updateTime();
@@ -172,35 +171,56 @@ function availableDates() {
   return [...new Set(historyData.map(x => x.date).filter(Boolean))].sort().reverse();
 }
 
+function latestHistoryDate() {
+  return availableDates()[0] || 'latest';
+}
+
 function dateLabel(value) {
   return value === 'latest' ? '最新推荐' : value;
 }
 
 function setCurrentDate(value) {
   currentDate = value;
-  const select = document.getElementById('dateSelect');
-  if (select) select.value = currentDate;
   renderDateList();
   render();
   updateTime();
 }
 
-function renderDateSelect() {
-  const select = document.getElementById('dateSelect');
-  if (!select) return;
-  const dates = availableDates();
-  select.innerHTML = '<option value="latest">最新推荐</option>' + dates.map(d => `<option value="${escapeAttr(d)}">${escapeHtml(d)}</option>`).join('');
-  select.value = currentDate;
+function snapshotForDate(date) {
+  if (date === 'latest') return allData;
+  return historyData.find(x => x.date === date) || allData;
+}
+
+function uniqueRepoCount(snap) {
+  const names = new Set();
+  allReposFromSnapshot(snap).forEach(repo => { if (repo?.name) names.add(repo.name); });
+  return names.size;
+}
+
+function groupDatesByMonth(dates) {
+  return dates.reduce((groups, date) => {
+    const month = date.slice(0, 7);
+    if (!groups[month]) groups[month] = [];
+    groups[month].push(date);
+    return groups;
+  }, {});
 }
 
 function renderDateList() {
   const list = document.getElementById('dateList');
   if (!list) return;
-  const items = ['latest', ...availableDates()];
-  list.innerHTML = items.map((d, idx) => {
-    const isActive = d === currentDate;
-    const meta = d === 'latest' ? '当前最新' : (idx === 1 ? '最近一天' : '历史记录');
-    return `<button class="date-item ${isActive ? 'active' : ''}" data-date="${escapeAttr(d)}" type="button"><span>${escapeHtml(dateLabel(d))}</span><small>${escapeHtml(meta)}</small></button>`;
+  const dates = availableDates();
+  const activeDate = currentDate === 'latest' ? latestHistoryDate() : currentDate;
+  const groups = groupDatesByMonth(dates);
+  list.innerHTML = Object.entries(groups).map(([month, monthDates]) => {
+    const total = monthDates.reduce((sum, d) => sum + uniqueRepoCount(snapshotForDate(d)), 0);
+    const rows = monthDates.map(d => {
+      const day = d.slice(8, 10);
+      const isActive = d === activeDate;
+      const count = uniqueRepoCount(snapshotForDate(d));
+      return `<button class="date-item ${isActive ? 'active' : ''}" data-date="${escapeAttr(d)}" type="button"><span>${escapeHtml(day)}</span><strong>${formatNum(count)}</strong></button>`;
+    }).join('');
+    return `<div class="date-month"><div class="date-month-head"><span>⌄ ${escapeHtml(month)}</span><strong>${formatNum(total)}</strong></div>${rows}</div>`;
   }).join('');
 }
 
@@ -290,9 +310,6 @@ function setupFilters() {
     }, 200);
   });
 
-  const dateSelect = document.getElementById('dateSelect');
-  if (dateSelect) dateSelect.addEventListener('change', e => setCurrentDate(e.target.value));
-
   const dateList = document.getElementById('dateList');
   if (dateList) {
     dateList.addEventListener('click', e => {
@@ -361,7 +378,7 @@ function render() {
 
   const activeSubcatName = currentSubcat === 'all' ? '全部关注点' : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点');
   const statsEl = document.getElementById('statsSummary');
-  if (statsEl) statsEl.innerHTML = `${escapeHtml(dateLabel(currentDate))} · ${escapeHtml(collection.title || '')} · ${escapeHtml(activeSubcatName)} · ${escapeHtml(roleDimensionName())}<br><strong>${repos.length}</strong> / ${collection.repos.length} 个项目`;
+  if (statsEl) statsEl.innerHTML = `${escapeHtml(dateLabel(currentDate === 'latest' ? latestHistoryDate() : currentDate))} · ${escapeHtml(collection.title || '')} · ${escapeHtml(activeSubcatName)} · ${escapeHtml(roleDimensionName())}<br><strong>${repos.length}</strong> / ${collection.repos.length} 个项目`;
 
   const grid = document.getElementById('cardMasonry');
   const empty = document.getElementById('emptyState');

@@ -64,23 +64,10 @@
     <div class="hero-kicker">Daily Open Source Curation</div>
     <h1>每日开源项目发现</h1>
     <p class="hero-sub">筛选值得研究、可落地复用的 GitHub 项目</p>
-    <div class="hero-controls">
-      <label class="date-filter">
-        <span>推荐日期</span>
-        <select id="dateSelect" aria-label="选择推荐日期"></select>
-      </label>
-    </div>
     <p class="hero-meta" id="updatedTime"></p>
   </div>
 
   <section class="daily-shell">
-    <aside class="date-sidebar" aria-label="推荐日期列表">
-      <div class="date-sidebar-inner">
-        <div class="date-sidebar-label">推荐日期</div>
-        <div class="date-list" id="dateList"></div>
-      </div>
-    </aside>
-
     <div class="daily-content">
       <section class="usage-guide compact" aria-labelledby="usageTitle">
         <div class="section-head compact-head">
@@ -145,6 +132,13 @@
       <aside class="ad-slot ad-bottom" data-ad-key="bottom" aria-label="底部广告位"><span>Advertisement</span></aside>
       <div class="empty-state" id="emptyState" style="display:none;"><h3>没有找到匹配的项目</h3><p>尝试调整筛选条件或搜索关键词</p></div>
     </div>
+
+    <aside class="date-sidebar" aria-label="历史内容日期列表">
+      <div class="date-sidebar-inner">
+        <div class="date-sidebar-label">历史内容</div>
+        <div class="date-list" id="dateList"></div>
+      </div>
+    </aside>
   </section>
 </main>
 
