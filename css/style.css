@@ -117,7 +117,7 @@ button, input { font: inherit; }
 .tag-subcat { color:var(--text-tertiary); }
 
 /* ===== Date sidebar + role-dimension IA ===== */
-.daily-shell { display:grid; grid-template-columns:minmax(0,1fr) 220px; gap:24px; align-items:start; }
+.daily-shell { display:block; }
 .date-sidebar { min-width:0; }
 .date-sidebar-inner { position:sticky; top:84px; padding:12px; border:1px solid var(--border); border-radius:var(--radius-lg); background:color-mix(in srgb, var(--bg-card) 82%, #f3eee5); box-shadow:var(--shadow-xs); }
 .date-sidebar-label, .classification-label { color:var(--text-tertiary); font-size:11px; font-weight:760; letter-spacing:.13em; text-transform:uppercase; }
@@ -140,7 +140,7 @@ button, input { font: inherit; }
 .role-dimension-tab { border:1px solid var(--border); background:transparent; }
 .role-dimension-tab.active { color:var(--bg-page); background:var(--text-primary); border-color:var(--text-primary); }
 .stats-summary { text-align:right; line-height:1.55; min-width:210px; }
-@media (max-width: 1100px) { .daily-shell { grid-template-columns:1fr; gap:18px; } .date-sidebar { order:-1; } .date-sidebar-inner { position:relative; top:auto; } .date-list { grid-auto-flow:column; grid-auto-columns:minmax(150px,auto); overflow-x:auto; overflow-y:hidden; max-height:none; } .date-month { min-width:150px; } .role-filter-row { grid-template-columns:1fr; } .stats-summary { text-align:left; min-width:0; } }
+@media (max-width: 1100px) { .content-layout { grid-template-columns:1fr; gap:18px; } .content-layout .date-sidebar { order:-1; } .date-sidebar-inner { position:relative; top:auto; } .date-list { grid-auto-flow:column; grid-auto-columns:minmax(150px,auto); overflow-x:auto; overflow-y:hidden; max-height:none; } .date-month { min-width:150px; } .role-filter-row { grid-template-columns:1fr; } .stats-summary { text-align:left; min-width:0; } }
 @media (max-width: 760px) { .date-sidebar-inner { padding:12px; } .date-list { grid-auto-columns:minmax(142px, 1fr); } .role-filter-row { text-align:center; } .dimension-panel { justify-items:center; } .stats-summary { text-align:center; width:100%; } }
 
 .mode-bar, .dimension-bar, .category-bar { margin: 6px 0 16px; display:flex; justify-content:center; flex-wrap:wrap; gap:8px; }
@@ -163,7 +163,7 @@ button, input { font: inherit; }
 .stats-summary { color:var(--text-tertiary); font-size:13px; }
 .stats-summary strong { color:var(--text-primary); }
 
-.content-layout { display:block; }
+.content-layout { display:grid; grid-template-columns:minmax(0,1fr) 220px; gap:24px; align-items:start; }
 .card-masonry { display:grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap:14px; }
 .project-card { position:relative; overflow:hidden; min-height:218px; padding:16px; border:1px solid var(--border); border-radius:var(--radius); background:var(--bg-card); cursor:pointer; transition: border-color var(--transition), box-shadow var(--transition), background var(--transition); }
 .project-card::before { content:""; position:absolute; inset:0; opacity:0; background:linear-gradient(180deg, color-mix(in srgb, var(--text-primary) 2%, transparent), transparent 58%); transition:opacity var(--transition); pointer-events:none; }
@@ -177,7 +177,7 @@ button, input { font: inherit; }
 .card-rank-growth { margin-top:3px; padding:2px 5px; border-radius:999px; background:var(--bg-elevated); color:var(--text-primary); font-size:10.5px; font-weight:680; }
 .card-rank-growth.muted { color:var(--text-tertiary); }
 .card-title-row { margin-bottom:2px; }
-.card-title { color:var(--text-primary); font-size:16px; line-height:1.25; font-weight:740; letter-spacing:-.25px; word-break:break-word; }
+.card-title { color:var(--text-primary); font-size:16px; line-height:1.25; font-weight:740; letter-spacing:-.25px; word-break:normal; overflow-wrap:anywhere; }
 .card-title:hover { color:var(--text-primary); text-decoration:underline; text-decoration-color:var(--border-hover); text-underline-offset:3px; }
 .card-owner { color:var(--text-tertiary); font-size:12px; }
 .card-desc { position:relative; color:var(--text-secondary); font-size:13px; line-height:1.58; min-height:41px; margin-bottom:10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
