@@ -291,3 +291,11 @@ button, input { font: inherit; }
 .filter-panel-head { margin-bottom:10px; }
 .filter-panel .category-bar { margin-bottom:12px; }
 .filter-panel .role-filter-row { padding-top:10px; }
+
+/* ===== Remove non-action helper labels; keep filter controls direct ===== */
+.filter-panel.no-helper-labels .step-label { display:none; }
+.filter-panel .filter-panel-head { margin-bottom:8px; }
+.filter-panel .category-bar { margin-bottom:10px; }
+.filter-panel .role-filter-row { padding-top:10px; }
+.filter-panel .subcat-panel { gap:0; }
+.filter-panel .lang-pills, .filter-panel .role-dimension-pills { align-items:center; }
