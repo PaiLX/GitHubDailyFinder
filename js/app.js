@@ -229,12 +229,12 @@ function renderLangPills() {
   const label = document.getElementById('subcatLabel');
   if (!container) return;
   if (currentMode !== 'category') {
-    if (label) label.textContent = '推荐维度';
+    if (label) label.innerHTML = '<span>02</span>关注方向';
     container.innerHTML = '<button class="lang-pill active" data-lang="all">全部项目</button>';
     return;
   }
   const config = roleSubcats[currentCat] || roleSubcats.dev;
-  if (label) label.textContent = config.label;
+  if (label) label.innerHTML = '<span>02</span>关注方向';
   const buttons = [`<button class="lang-pill active" data-lang="all">全部关注点</button>`];
   config.items.forEach(item => buttons.push(`<button class="lang-pill" data-lang="${escapeAttr(item.id)}">${escapeHtml(item.name)}</button>`));
   container.innerHTML = buttons.join('');
