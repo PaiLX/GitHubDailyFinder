@@ -397,7 +397,9 @@ function renderCard(r) {
   const avatarUrl = r.avatar_url || '';
   const langColor = getLangColor(r.language);
   const initial = displayName.charAt(0).toUpperCase();
-  const growth = r.star_gain !== undefined && r.star_gain !== null ? `<span class="card-stat accent-stat">+${formatNum(r.star_gain)} stars</span>` : '';
+  const growth = r.star_gain !== undefined && r.star_gain !== null ? `+${formatNum(r.star_gain)}` : '';
+  const growthMeta = growth ? `<span class="card-rank-growth">${growth}</span>` : `<span class="card-rank-growth muted">${Math.round((r.stars || 0) / repoAgeDays(r))}/天</span>`;
+  const valueText = r.value || r.purpose || r.category_reason || '适合收藏、试跑或二次开发。';
   return `
     <div class="project-card" onclick="showModal('${escapeAttr(r.name)}')">
       <div class="card-top">
@@ -406,11 +408,13 @@ function renderCard(r) {
           <div class="card-title-row"><a class="card-title card-title-link" href="${r.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${escapeHtml(displayName)}</a></div>
           <span class="card-owner">@${escapeHtml(r.owner)}</span>
         </div>
+        <div class="card-rank"><strong>${formatNum(r.stars)}</strong><span>Stars</span>${growthMeta}</div>
       </div>
       <div class="card-desc">${escapeHtml(cnDesc)}</div>
+      <div class="card-value">${escapeHtml(valueText)}</div>
       <div class="card-tags"><span class="tag-lang"><span class="dot ${langColor}"></span>${escapeHtml(r.language)}</span>${r.sub_category ? `<span class="tag-lang tag-subcat">${escapeHtml(subcatName(r.sub_category, r.parent_category || currentCat))}</span>` : ''}</div>
       <div class="card-footer">
-        <div class="card-stats"><span class="card-stat">Stars ${formatNum(r.stars)}</span><span class="card-stat">Forks ${formatNum(r.forks)}</span>${growth}<span class="card-stat">${escapeHtml(r.created_at)}</span></div>
+        <div class="card-stats"><span class="card-stat">Forks ${formatNum(r.forks)}</span><span class="card-stat">Created ${escapeHtml(r.created_at)}</span><span class="card-stat">Updated ${escapeHtml(r.updated_at || '')}</span></div>
         <span class="card-arrow">›</span>
       </div>
     </div>`;
