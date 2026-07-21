@@ -5,6 +5,7 @@ let translations = {};
 let currentMode = 'category';
 let currentCat = 'dev';
 let currentDimension = 'fastest_growth';
+let currentRoleDimension = 'recommended';
 let currentSubcat = 'all';
 let currentDate = 'latest';
 let searchQuery = '';
@@ -61,6 +62,7 @@ async function init() {
   setupFilters();
   renderLangPills();
   renderDateSelect();
+  renderDateList();
   render();
   updateTime();
   setupTheme();
@@ -166,12 +168,40 @@ function findRepo(name) {
   return allReposFromSnapshot().find(r => r.name === name) || null;
 }
 
+function availableDates() {
+  return [...new Set(historyData.map(x => x.date).filter(Boolean))].sort().reverse();
+}
+
+function dateLabel(value) {
+  return value === 'latest' ? '最新推荐' : value;
+}
+
+function setCurrentDate(value) {
+  currentDate = value;
+  const select = document.getElementById('dateSelect');
+  if (select) select.value = currentDate;
+  renderDateList();
+  render();
+  updateTime();
+}
+
 function renderDateSelect() {
   const select = document.getElementById('dateSelect');
   if (!select) return;
-  const dates = [...new Set(historyData.map(x => x.date).filter(Boolean))].sort().reverse();
+  const dates = availableDates();
   select.innerHTML = '<option value="latest">最新推荐</option>' + dates.map(d => `<option value="${escapeAttr(d)}">${escapeHtml(d)}</option>`).join('');
   select.value = currentDate;
+}
+
+function renderDateList() {
+  const list = document.getElementById('dateList');
+  if (!list) return;
+  const items = ['latest', ...availableDates()];
+  list.innerHTML = items.map((d, idx) => {
+    const isActive = d === currentDate;
+    const meta = d === 'latest' ? '当前最新' : (idx === 1 ? '最近一天' : '历史记录');
+    return `<button class="date-item ${isActive ? 'active' : ''}" data-date="${escapeAttr(d)}" type="button"><span>${escapeHtml(dateLabel(d))}</span><small>${escapeHtml(meta)}</small></button>`;
+  }).join('');
 }
 
 function renderLangPills() {
@@ -212,19 +242,7 @@ function clearSearchInput() {
 }
 
 function setupFilters() {
-  document.querySelectorAll('.mode-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.mode-tab').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentMode = btn.dataset.mode;
-      currentSubcat = 'all';
-      clearSearchInput();
-      document.getElementById('categoryBar').style.display = currentMode === 'category' ? '' : 'none';
-      document.getElementById('dimensionBar').style.display = currentMode === 'dimension' ? '' : 'none';
-      renderLangPills();
-      render();
-    });
-  });
+  // 一级分类固定为角色；增长最快/标星最多改到每个角色内部。
 
   document.querySelectorAll('.category-tab').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -232,17 +250,19 @@ function setupFilters() {
       btn.classList.add('active');
       currentCat = btn.dataset.cat;
       currentSubcat = 'all';
+      currentRoleDimension = 'recommended';
+      document.querySelectorAll('.role-dimension-tab').forEach(b => b.classList.toggle('active', b.dataset.roleDimension === currentRoleDimension));
       clearSearchInput();
       renderLangPills();
       render();
     });
   });
 
-  document.querySelectorAll('.dimension-tab').forEach(btn => {
+  document.querySelectorAll('.role-dimension-tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.dimension-tab').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.role-dimension-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      currentDimension = btn.dataset.dimension;
+      currentRoleDimension = btn.dataset.roleDimension;
       clearSearchInput();
       render();
     });
@@ -271,11 +291,14 @@ function setupFilters() {
   });
 
   const dateSelect = document.getElementById('dateSelect');
-  if (dateSelect) {
-    dateSelect.addEventListener('change', e => {
-      currentDate = e.target.value;
-      render();
-      updateTime();
+  if (dateSelect) dateSelect.addEventListener('change', e => setCurrentDate(e.target.value));
+
+  const dateList = document.getElementById('dateList');
+  if (dateList) {
+    dateList.addEventListener('click', e => {
+      const item = e.target.closest('.date-item');
+      if (!item) return;
+      setCurrentDate(item.dataset.date);
     });
   }
 
@@ -286,12 +309,31 @@ function setupFilters() {
 
 function activeCollection() {
   const snap = activeSnapshot();
-  if (currentMode === 'dimension') {
-    const dim = snap?.dimensions?.[currentDimension] || allData?.dimensions?.[currentDimension];
-    return dim ? { ...dim, type: 'dimension' } : null;
-  }
   const cat = snap?.categories?.[currentCat] || allData?.categories?.[currentCat];
   return cat ? { ...cat, type: 'category' } : null;
+}
+
+function roleDimensionName(id = currentRoleDimension) {
+  return { recommended: '默认推荐', fastest_growth: '增长最快', top_stars: '标星最多' }[id] || '默认推荐';
+}
+
+function repoAgeDays(repo) {
+  const created = new Date((repo.created_at || '1970-01-01') + 'T00:00:00Z');
+  const days = Math.max(1, Math.round((Date.now() - created.getTime()) / 86400000));
+  return Number.isFinite(days) ? days : 9999;
+}
+
+function sortReposByRoleDimension(repos) {
+  const list = [...repos];
+  if (currentRoleDimension === 'top_stars') return list.sort((a, b) => (b.stars || 0) - (a.stars || 0));
+  if (currentRoleDimension === 'fastest_growth') {
+    return list.sort((a, b) => {
+      const ag = a.growth_score ?? a.star_gain ?? ((a.stars || 0) / repoAgeDays(a));
+      const bg = b.growth_score ?? b.star_gain ?? ((b.stars || 0) / repoAgeDays(b));
+      return bg - ag || (b.stars || 0) - (a.stars || 0);
+    });
+  }
+  return list;
 }
 
 function searchableText(r) {
@@ -313,12 +355,13 @@ function render() {
       : '推荐维度：用于快速发现近期爆发项目和长期高星项目。';
   }
 
-  if (currentMode === 'category' && currentSubcat !== 'all') repos = repos.filter(r => repoMatchesSubcat(r, currentSubcat));
+  if (currentSubcat !== 'all') repos = repos.filter(r => repoMatchesSubcat(r, currentSubcat));
+  repos = sortReposByRoleDimension(repos);
   if (searchQuery) repos = repos.filter(r => searchableText(r).includes(searchQuery));
 
-  const activeSubcatName = currentMode === 'dimension' ? collection.title : (currentSubcat === 'all' ? '全部关注点' : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点'));
+  const activeSubcatName = currentSubcat === 'all' ? '全部关注点' : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点');
   const statsEl = document.getElementById('statsSummary');
-  if (statsEl) statsEl.innerHTML = `总计 <strong>${collection.repos.length}</strong> 个 · 当前 <strong>${repos.length}</strong> 个 · ${escapeHtml(activeSubcatName)}`;
+  if (statsEl) statsEl.innerHTML = `${escapeHtml(dateLabel(currentDate))} · ${escapeHtml(collection.title || '')} · ${escapeHtml(activeSubcatName)} · ${escapeHtml(roleDimensionName())}<br><strong>${repos.length}</strong> / ${collection.repos.length} 个项目`;
 
   const grid = document.getElementById('cardMasonry');
   const empty = document.getElementById('emptyState');
