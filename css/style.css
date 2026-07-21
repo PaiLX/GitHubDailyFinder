@@ -87,26 +87,26 @@ button, input { font: inherit; }
 .date-filter { display:inline-flex; align-items:center; gap:9px; padding:6px 8px 6px 12px; border:1px solid var(--border); border-radius:999px; background:var(--bg-card); color:var(--text-tertiary); font-size:12px; font-weight:650; }
 .date-filter select { height:30px; min-width:142px; border:0; border-radius:999px; background:var(--bg-input); color:var(--text-primary); padding:0 10px; outline:none; font-size:12.5px; }
 
-.usage-guide { margin: 0 0 18px; padding: 16px 0 18px; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:transparent; }
+.usage-guide { margin: 0 0 12px; padding: 10px 0 12px; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background:transparent; }
 .section-head { max-width:680px; margin-bottom:16px; }
 .usage-guide.compact { display:grid; grid-template-columns: 250px minmax(0, 1fr); gap:18px; align-items:stretch; }
 .compact-head { margin-bottom:0; align-self:center; }
 .section-label { display:block; margin-bottom:7px; color:var(--text-tertiary); font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
-.section-head h2 { font-size:20px; line-height:1.2; letter-spacing:-.45px; margin-bottom:7px; }
-.section-head p { color:var(--text-secondary); font-size:13px; line-height:1.6; }
-.steps-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; }
-.step-card { padding:12px 0 10px; border:0; border-radius:0; background:transparent; }
+.section-head h2 { font-size:18px; line-height:1.15; letter-spacing:-.35px; margin-bottom:5px; }
+.section-head p { color:var(--text-secondary); font-size:12.5px; line-height:1.45; }
+.steps-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; }
+.step-card { padding:8px 0 8px; border:0; border-radius:0; background:transparent; }
 .step-emphasis { background:transparent; border-color:transparent; }
-.step-no { display:block; margin-bottom:10px; color:var(--text-muted); font-size:11px; font-weight:760; letter-spacing:.12em; }
-.step-card h3 { font-size:14px; margin-bottom:5px; letter-spacing:-.2px; }
-.step-card p { color:var(--text-secondary); font-size:12.5px; line-height:1.55; }
+.step-no { display:block; margin-bottom:7px; color:var(--text-muted); font-size:10.5px; font-weight:760; letter-spacing:.10em; }
+.step-card h3 { font-size:13.5px; margin-bottom:3px; letter-spacing:-.15px; }
+.step-card p { color:var(--text-secondary); font-size:12px; line-height:1.45; }
 
-.download-guide { margin: -4px 0 20px; padding: 13px 0 15px; border-bottom:1px solid var(--border); background:transparent; }
-.download-guide-title { color:var(--text-primary); font-size:13px; font-weight:760; margin-bottom:10px; letter-spacing:-.1px; }
-.download-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; }
-.download-item { padding:9px 0; border-radius:0; background:transparent; border:0; }
-.download-item strong { display:block; color:var(--text-primary); font-size:12.5px; margin-bottom:4px; }
-.download-item span { display:block; color:var(--text-secondary); font-size:12px; line-height:1.52; }
+.download-guide { margin: -4px 0 12px; padding: 10px 0 12px; border-bottom:1px solid var(--border); background:transparent; }
+.download-guide-title { color:var(--text-primary); font-size:12.5px; font-weight:760; margin-bottom:8px; letter-spacing:-.1px; }
+.download-grid { display:grid; grid-template-columns: repeat(4, 1fr); gap:8px; }
+.download-item { padding:7px 0; border-radius:0; background:transparent; border:0; }
+.download-item strong { display:block; color:var(--text-primary); font-size:12px; margin-bottom:3px; }
+.download-item span { display:block; color:var(--text-secondary); font-size:11.5px; line-height:1.42; }
 
 .ad-slot { display:flex; align-items:center; justify-content:center; border:1px solid var(--border); border-radius:var(--radius-lg); background: color-mix(in srgb, var(--bg-elevated) 62%, transparent); color:var(--text-muted); font-size:11px; letter-spacing:.12em; text-transform:uppercase; overflow:hidden; }
 .ad-top { min-height:72px; margin: 8px 0 30px; }
