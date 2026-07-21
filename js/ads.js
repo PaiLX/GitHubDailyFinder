@@ -15,7 +15,9 @@
 
   function hideUnfilledSlots() {
     document.querySelectorAll('.ad-slot').forEach(el => {
-      if (!el.querySelector('ins.adsbygoogle')) el.classList.add('ad-pending');
+      const frame = el.querySelector('iframe');
+      const ins = el.querySelector('ins.adsbygoogle');
+      if (!frame || !ins || ins.clientHeight < 24) el.classList.add('ad-pending');
     });
   }
 
@@ -54,5 +56,6 @@
     if (config.enabled && config.provider === 'adsense') loadAdsense(config.client);
     document.querySelectorAll('.ad-slot').forEach(fillSlot);
     setTimeout(hideUnfilledSlots, 2200);
+    setTimeout(hideUnfilledSlots, 5200);
   });
 })();

@@ -205,6 +205,12 @@ function repoMatchesSubcat(repo, subcatId) {
   return item.hints.some(hint => haystack.includes(String(hint).toLowerCase()));
 }
 
+function clearSearchInput() {
+  searchQuery = '';
+  const input = document.getElementById('searchInput');
+  if (input) input.value = '';
+}
+
 function setupFilters() {
   document.querySelectorAll('.mode-tab').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -212,6 +218,7 @@ function setupFilters() {
       btn.classList.add('active');
       currentMode = btn.dataset.mode;
       currentSubcat = 'all';
+      clearSearchInput();
       document.getElementById('categoryBar').style.display = currentMode === 'category' ? '' : 'none';
       document.getElementById('dimensionBar').style.display = currentMode === 'dimension' ? '' : 'none';
       renderLangPills();
@@ -225,6 +232,7 @@ function setupFilters() {
       btn.classList.add('active');
       currentCat = btn.dataset.cat;
       currentSubcat = 'all';
+      clearSearchInput();
       renderLangPills();
       render();
     });
@@ -235,6 +243,7 @@ function setupFilters() {
       document.querySelectorAll('.dimension-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentDimension = btn.dataset.dimension;
+      clearSearchInput();
       render();
     });
   });
