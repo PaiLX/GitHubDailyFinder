@@ -367,9 +367,8 @@ function render() {
   if (descEl) descEl.textContent = collection.desc || '';
   const audienceEl = document.getElementById('catAudience');
   if (audienceEl) {
-    audienceEl.textContent = collection.type === 'category'
-      ? `适用人群：${collection.audience || ''}`
-      : '推荐维度：用于快速发现近期爆发项目和长期高星项目。';
+    const audience = collection.audience || '';
+    audienceEl.textContent = audience ? audience.replace(/^适合/, '适合').slice(0, 52) + (audience.length > 52 ? '…' : '') : '';
   }
 
   if (currentSubcat !== 'all') repos = repos.filter(r => repoMatchesSubcat(r, currentSubcat));
@@ -378,7 +377,7 @@ function render() {
 
   const activeSubcatName = currentSubcat === 'all' ? '全部关注点' : ((roleSubcats[currentCat]?.items || []).find(x => x.id === currentSubcat)?.name || '当前关注点');
   const statsEl = document.getElementById('statsSummary');
-  if (statsEl) statsEl.innerHTML = `${escapeHtml(dateLabel(currentDate === 'latest' ? latestHistoryDate() : currentDate))} · ${escapeHtml(collection.title || '')} · ${escapeHtml(activeSubcatName)} · ${escapeHtml(roleDimensionName())}<br><strong>${repos.length}</strong> / ${collection.repos.length} 个项目`;
+  if (statsEl) statsEl.innerHTML = `<span>${escapeHtml(dateLabel(currentDate === 'latest' ? latestHistoryDate() : currentDate))} · ${escapeHtml(collection.title || '')} · ${escapeHtml(activeSubcatName)} · ${escapeHtml(roleDimensionName())}</span><strong>${repos.length} / ${collection.repos.length} 个项目</strong>`;
 
   const grid = document.getElementById('cardMasonry');
   const empty = document.getElementById('emptyState');

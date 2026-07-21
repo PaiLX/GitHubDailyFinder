@@ -69,34 +69,19 @@
 
   <section class="daily-shell">
     <div class="daily-content">
-      <section class="usage-guide compact" aria-labelledby="usageTitle">
-        <div class="section-head compact-head">
-          <span class="section-label">使用方法</span>
-          <h2 id="usageTitle">4步把项目用起来</h2>
-          <p>先判断价值，再去 GitHub 下载、安装、试跑。</p>
-        </div>
-        <div class="steps-grid compact-steps">
-          <article class="step-card"><span class="step-no">01</span><h3>选分类</h3><p>按角色快速筛选项目。</p></article>
-          <article class="step-card"><span class="step-no">02</span><h3>看价值</h3><p>点击卡片查看作用和价值。</p></article>
-          <article class="step-card step-emphasis"><span class="step-no">03</span><h3>下载内容</h3><p>优先看 README、Releases、examples。</p></article>
-          <article class="step-card step-emphasis"><span class="step-no">04</span><h3>直接试用</h3><p>先跑 Demo，再接入项目。</p></article>
-        </div>
+      <section class="guide-strip" aria-label="项目使用提示">
+        <div class="guide-main"><span>使用提示</span><strong>先判断价值，再去 GitHub 试跑</strong></div>
+        <div class="guide-flow"><span>选角色</span><span>看价值</span><span>读 README / Releases</span><span>先跑 Demo</span></div>
       </section>
 
-      <section class="download-guide" aria-label="GitHub 下载内容说明">
-        <div class="download-guide-title">GitHub 下载选择</div>
-        <div class="download-grid">
-          <div class="download-item"><strong>源码 ZIP</strong><span>点 Code → Download ZIP 后看 README。</span></div>
-          <div class="download-item"><strong>git clone</strong><span>长期跟进或二开时克隆仓库。</span></div>
-          <div class="download-item"><strong>Releases 安装包</strong><span>优先下载可执行文件或安装包。</span></div>
-          <div class="download-item"><strong>examples / Demo</strong><span>先跑示例再决定是否接入。</span></div>
+      <section class="filter-panel" aria-label="项目筛选">
+        <div class="filter-panel-head">
+          <div>
+            <div class="classification-label">一级分类 · 角色</div>
+            <div class="category-info" id="categoryInfo"><p class="cat-desc" id="catDesc"></p><p class="cat-audience" id="catAudience"></p></div>
+          </div>
+          <div class="stats-summary" id="statsSummary"></div>
         </div>
-      </section>
-
-      <aside class="ad-slot ad-top" data-ad-key="top" aria-label="广告位"><span>Advertisement</span></aside>
-
-      <div class="classification-panel">
-        <div class="classification-label">一级分类 · 角色</div>
         <div class="category-bar" id="categoryBar">
           <div class="category-tabs" id="categoryTabs">
             <button class="category-tab active" data-cat="dev"><span class="tab-text">开发工具</span></button>
@@ -105,24 +90,21 @@
             <button class="category-tab" data-cat="test"><span class="tab-text">测试安全</span></button>
           </div>
         </div>
-        <div class="category-info" id="categoryInfo"><p class="cat-desc" id="catDesc"></p><p class="cat-audience" id="catAudience"></p></div>
-      </div>
-
-      <div class="filter-row role-filter-row">
-        <div class="subcat-panel">
-          <div class="subcat-label" id="subcatLabel">角色关注点</div>
-          <div class="lang-pills" id="langPills"></div>
-        </div>
-        <div class="subcat-panel dimension-panel">
-          <div class="subcat-label">角色内维度</div>
-          <div class="role-dimension-pills" id="roleDimensionPills">
-            <button class="dimension-tab role-dimension-tab active" data-role-dimension="recommended" type="button">默认推荐</button>
-            <button class="dimension-tab role-dimension-tab" data-role-dimension="fastest_growth" type="button">增长最快</button>
-            <button class="dimension-tab role-dimension-tab" data-role-dimension="top_stars" type="button">标星最多</button>
+        <div class="filter-row role-filter-row">
+          <div class="subcat-panel">
+            <div class="subcat-label" id="subcatLabel">角色关注点</div>
+            <div class="lang-pills" id="langPills"></div>
+          </div>
+          <div class="subcat-panel dimension-panel">
+            <div class="subcat-label">角色内维度</div>
+            <div class="role-dimension-pills" id="roleDimensionPills">
+              <button class="dimension-tab role-dimension-tab active" data-role-dimension="recommended" type="button">默认推荐</button>
+              <button class="dimension-tab role-dimension-tab" data-role-dimension="fastest_growth" type="button">增长最快</button>
+              <button class="dimension-tab role-dimension-tab" data-role-dimension="top_stars" type="button">标星最多</button>
+            </div>
           </div>
         </div>
-        <div class="stats-summary" id="statsSummary"></div>
-      </div>
+      </section>
 
       <section class="content-layout">
         <div class="content-main"><div class="card-masonry" id="cardMasonry"></div></div>
