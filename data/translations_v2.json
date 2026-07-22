@@ -880,5 +880,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "lopopolo/harness-engineering": {
+    "cn_name": "harness-engineering",
+    "cn_desc": "harness-engineering：🐎 Ryan Lopopolo’s anthology, field guide, and agent context bundle for harness engineering",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "hoainho/img2threejs": {
+    "cn_name": "img2threejs",
+    "cn_desc": "img2threejs：Rebuild the object in a reference image as a code-only, procedural, quality-gated, animati",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
