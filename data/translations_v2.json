@@ -898,5 +898,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "andrewyng/openworker": {
+    "cn_name": "openworker",
+    "cn_desc": "优质开源项目，适合进一步研究和试用。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ComposioHQ/awesome-claude-skills": {
+    "cn_name": "awesome-claude-skills",
+    "cn_desc": "awesome-claude-skills：A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI wo",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "petergyang/no-ai-slop": {
+    "cn_name": "no-ai-slop",
+    "cn_desc": "no-ai-slop：Removes 20+ patterns of AI slop from any piece of writing.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
