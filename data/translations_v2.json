@@ -925,5 +925,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "img2threejs/img2threejs": {
+    "cn_name": "img2threejs",
+    "cn_desc": "img2threejs：Rebuild the object in a reference image as a code-only, procedural, quality-gated, animati",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "DavidHDev/canvas-ui": {
+    "cn_name": "canvas-ui",
+    "cn_desc": "canvas-ui：A library of creative canvas components. Real HTML with WebGL effects running over it. Rea",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
