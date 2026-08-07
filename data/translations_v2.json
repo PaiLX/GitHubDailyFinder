@@ -1123,5 +1123,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "microsoft/skill-recorder": {
+    "cn_name": "skill-recorder",
+    "cn_desc": "skill-recorder：Desktop app that records your on-screen work session and uses the GitHub Copilot CLI to re",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "LiamGvchi/gc-minimal-zine-poster": {
+    "cn_name": "gc-minimal-zine-poster",
+    "cn_desc": "gc-minimal-zine-poster：Codex skill for generating quiet minimal zine-style editorial poster prompts and images.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
