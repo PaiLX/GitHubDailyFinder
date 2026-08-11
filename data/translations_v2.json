@@ -1150,5 +1150,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "herdrdev/herdr": {
+    "cn_name": "Herdr",
+    "cn_desc": "AI编码代理的运行时代理编排层。",
+    "purpose": "为编码代理提供运行时环境和多路复用能力。",
+    "value": "Rust构建，支持Claude Code和Codex代理调度。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "AI编码代理运行时编排框架。"
+  },
+  "ZzzLc0405/photo-abstract-editorial": {
+    "cn_name": "photo-abstract-editorial",
+    "cn_desc": "优质开源项目，适合进一步研究和试用。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "genspark-ai/genoffice": {
+    "cn_name": "genoffice",
+    "cn_desc": "genoffice：Free, open-source AI office suite for macOS, Windows & Linux — Word (.docx), Excel (.xlsx)",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
