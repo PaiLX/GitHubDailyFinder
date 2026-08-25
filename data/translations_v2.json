@@ -1339,5 +1339,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "anywhere-labs/dsh-desktop": {
+    "cn_name": "dsh-desktop",
+    "cn_desc": "为 DeepSeek Harness (DSH) 插件生态打造的现代化桌面端解决方案。万物皆「插件」，桌面本身也是「插件」。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "zhu1090093659/dsh-web": {
+    "cn_name": "dsh-web",
+    "cn_desc": "DeepSeek Harness（DSH）Web 插件聚合生态包 · 一切皆插件，创意工坊分发（dsh-market.com）",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "arvids-unavailable/openGym": {
+    "cn_name": "openGym",
+    "cn_desc": "openGym：https://github.com/DuarteSantos8/openGym",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
