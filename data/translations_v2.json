@@ -1447,5 +1447,14 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ToolJet/ToolJet": {
+    "cn_name": "ToolJet",
+    "cn_desc": "企业级内部工具与AI代理应用生成平台",
+    "purpose": "可视化或提示词生成内部应用",
+    "value": "低代码+AI代理双模式，MCP集成",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "AI代理驱动的企业应用开发平台"
   }
 }
