@@ -1771,5 +1771,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "mizorewww/laya-mlx": {
+    "cn_name": "laya-mlx",
+    "cn_desc": "laya-mlx：Native MLX runtime for Laya typed decision models — 7–14 ms short decisions on M3 Max. No ",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "jaredpalmer/kev": {
+    "cn_name": "kev",
+    "cn_desc": "kev：tiny Jev-like family of decision models built on top of Qwen3.5 you can train and run on y",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "mcncarl/jianying-headless": {
+    "cn_name": "jianying-headless",
+    "cn_desc": "jianying-headless：Private source preview: native Jianying drafts, isolated editing/export, and standalone Ag",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
