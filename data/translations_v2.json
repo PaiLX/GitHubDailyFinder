@@ -1888,5 +1888,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "career-ops-hq/career-ops": {
+    "cn_name": "career-ops",
+    "cn_desc": "career-ops：Open-source AI job search agent: scan job portals, evaluate listings into a structured A-H",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "KKKKhazix/AIHOT": {
+    "cn_name": "AIHOT",
+    "cn_desc": "一个自己找热点、自己写日报的网站框架。把信源和精选标准换成你的，它就是你的行业热点站。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "yetone/magpie": {
+    "cn_name": "magpie",
+    "cn_desc": "magpie：Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
