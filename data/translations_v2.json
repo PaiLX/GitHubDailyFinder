@@ -2140,5 +2140,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ARahim3/DigUp": {
+    "cn_name": "DigUp",
+    "cn_desc": "DigUp：Search your computer by what's in your files: photos, PDFs, documents, recordings, videos ",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "yihui-dev/awesome-opus5-5-videos": {
+    "cn_name": "awesome-opus5-5-videos",
+    "cn_desc": "awesome-opus5-5-videos：A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
