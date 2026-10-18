@@ -2158,5 +2158,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "tangency-labs/solidcraft": {
+    "cn_name": "solidcraft",
+    "cn_desc": "solidcraft：SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web,",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "alchaincyf/huashu-art-motion": {
+    "cn_name": "huashu-art-motion",
+    "cn_desc": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
