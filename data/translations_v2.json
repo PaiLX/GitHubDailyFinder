@@ -2203,5 +2203,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "DeusData/codebase-memory-mcp": {
+    "cn_name": "codebase-memory-mcp",
+    "cn_desc": "codebase-memory-mcp：Local code intelligence for developers and AI agents. Connect code, docs and infrastructur",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "deepseek-ai/DeepInfer": {
+    "cn_name": "DeepInfer",
+    "cn_desc": "DeepInfer：DeepInfer: High-performance, large-scale inference framework for DeepSeek models",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }

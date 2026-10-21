@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-10-20T05:45:43.064861",
+  "generated_at": "2026-10-21T05:50:00.345883",
   "categories": {
     "dev": {
       "title": "开发工具",
       "count": 24,
       "sub_counts": {
-        "ai-coding": 24
+        "ai-coding": 23,
+        "automation": 1
       }
     },
     "design": {
