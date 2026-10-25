@@ -2248,5 +2248,14 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "lemomo-ai/lemo-opuscar": {
+    "cn_name": "lemo-opuscar",
+    "cn_desc": "A toolbox of film styles made in code for Claude Code: 59 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：59 种现成风格，也能做出你自己的",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
