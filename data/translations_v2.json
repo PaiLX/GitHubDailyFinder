@@ -2284,5 +2284,23 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "pbakaus/impeccable": {
+    "cn_name": "impeccable",
+    "cn_desc": "impeccable：The design vocabulary for your coding agent. Steer with polish and bolder, review with cri",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "jhaizhou-ops/d2r-mobile": {
+    "cn_name": "d2r-mobile",
+    "cn_desc": "Open-source compatibility layer for Diablo II: Resurrected with the Reign of the Warlock expansion. Runs your own Switch copy natively on iPhone, iPad, Mac, Android and HarmonyOS — full touch controls, 60 fps, new endgame modes. Bring your own game files. 开源的《暗黑破坏神 II：狱火重生》术士君临 iOS / macOS / 安卓 / 鸿蒙兼容层",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
