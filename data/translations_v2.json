@@ -2302,5 +2302,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "xiaoyang111222/cn-math-taxonomy": {
+    "cn_name": "cn-math-taxonomy",
+    "cn_desc": "数学（小学到高中）、英语（三年级到高中）、初中物理的知识图谱：1644 个知识点、2403 条先修边、6723 道题，对齐课标，附自适应前置诊断。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "HeyPuter/everything": {
+    "cn_name": "everything",
+    "cn_desc": "everything：We're rebuilding and open-sourcing the world’s software from scratch.",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "T-Auto/dsh-ops": {
+    "cn_name": "dsh-ops",
+    "cn_desc": "A toolkit for low-level operations in DSH, designed to reduce token usage and task execution time / DSH 底层操作工具插件，旨在减少 Token 消耗与任务耗时",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
