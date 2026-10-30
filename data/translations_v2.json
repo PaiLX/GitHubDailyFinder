@@ -2329,5 +2329,41 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "sickn33/agentic-awesome-skills": {
+    "cn_name": "agentic-awesome-skills",
+    "cn_desc": "agentic-awesome-skills：2,877+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core ad",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "unclebob/ub-mode": {
+    "cn_name": "ub-mode",
+    "cn_desc": "优质开源项目，适合进一步研究和试用。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    "cn_name": "android-ad-cleaner",
+    "cn_desc": "关掉国产安卓手机系统里的广告、热搜、资讯推荐和营销推送。不 root，可还原，支持 AI 智能体一键执行。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "JustAResearcher/gpu-unlock-ada": {
+    "cn_name": "gpu-unlock-ada",
+    "cn_desc": "gpu-unlock-ada：GPU tensor unlock source for RTX 4090 and experimental RTX 4070 Ti SUPER; firmware generat",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
