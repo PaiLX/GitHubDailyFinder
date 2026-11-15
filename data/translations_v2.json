@@ -2635,5 +2635,32 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "KKKKhazix/agent-autoloop": {
+    "cn_name": "agent-autoloop",
+    "cn_desc": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Lee-xeo/Claude-Cage": {
+    "cn_name": "Claude-Cage",
+    "cn_desc": "Cage：为 Claude 特化的轻量化虚拟机，彻底杜绝网络泄露。多平台适配，支持多账号管理、远程部署、移动端操控。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "qybaihe/bla": {
+    "cn_name": "bla",
+    "cn_desc": "bla：🛡️ BLA (bla-agents / Blind LLM Agents) — Open-source Blue Defense MCP server & CLI protect",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
