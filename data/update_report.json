@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T08:45:09.469630",
+  "generated_at": "2026-11-24T10:45:16.823316",
   "categories": {
     "dev": {
       "title": "开发工具",
@@ -24,9 +24,11 @@
     },
     "test": {
       "title": "测试安全",
-      "count": 14,
+      "count": 24,
       "sub_counts": {
-        "automation": 14
+        "security": 20,
+        "privacy": 2,
+        "testing": 2
       }
     }
   },

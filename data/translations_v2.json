@@ -2779,5 +2779,239 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "trickest/cve": {
+    "cn_name": "cve",
+    "cn_desc": "cve：Gather and update all available and newest CVEs with their PoC.",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "nealbridges/VulnHunter": {
+    "cn_name": "VulnHunter",
+    "cn_desc": "VulnHunter：Agentic AI security scanner that hunts exploitable vulnerabilities like an adversary, prov",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "nomi-sec/PoC-in-GitHub": {
+    "cn_name": "PoC-in-GitHub",
+    "cn_desc": "PoC-in-GitHub：📡 PoC auto collect from GitHub. ⚠️ Be careful Malware.",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "aw-junaid/bug-bounty": {
+    "cn_name": "bug-bounty",
+    "cn_desc": "bug-bounty：Documenting my security research journey: This repository contains detailed vulnerability ",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "AjayAntoIsDev/WaSonar": {
+    "cn_name": "WaSonar",
+    "cn_desc": "WaSonar：WhatsApp Intelligence & Resource Exhaustion Tool. Features real-time device tracking, sile",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "XiaomingX/data-cve-poc": {
+    "cn_name": "data-cve-poc",
+    "cn_desc": "这个仓库收集了所有在 GitHub 上能找到的 CVE 漏洞利用工具。 This repository collects all CVE exploits found on GitHub. ",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "k8gege/PowerLadon": {
+    "cn_name": "PowerLadon",
+    "cn_desc": "PowerLadon：Ladon hacking Scanner for PowerShell, vulnerability / exploit / detection / MS17010/SmbGho",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "kYildirim74768/free-vpn-unlimited": {
+    "cn_name": "free-vpn-unlimited",
+    "cn_desc": "free-vpn-unlimited：Unlimited free VPN on your own WireGuard config.",
+    "purpose": "用于测试安全场景下的隐私与网络需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "privacy",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "trickest/find-gh-poc": {
+    "cn_name": "find-gh-poc",
+    "cn_desc": "find-gh-poc：Find CVE PoCs on GitHub",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Threekiii/CVE": {
+    "cn_name": "CVE",
+    "cn_desc": "一个 CVE 漏洞预警知识库，无 exp/poc，部分包含修复方案。A knowledge base of CVE security vulnerability, no PoCs/exploits.",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "joshuavanderpoll/CVE-2021-3129": {
+    "cn_name": "CVE-2021-3129",
+    "cn_desc": "CVE-2021-3129：Laravel RCE Exploit PoC - CVE-2021-3129 (user-friendly with automatic log path detection)",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "fankh/vulnerability-poc": {
+    "cn_name": "vulnerability-poc",
+    "cn_desc": "vulnerability-poc：CVE proof-of-concept labs, exploit scripts, and detection/prevention rules (Nginx, Apache,",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Exploit-Garbage/0day-Rubbish": {
+    "cn_name": "0day-Rubbish",
+    "cn_desc": "0day-Rubbish：Redefining vulnerability disclosure in the AI era. We mass-produce exploitable 0days and d",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Chocapikk/CVE-2026-21858": {
+    "cn_name": "CVE-2026-21858",
+    "cn_desc": "CVE-2026-21858：n8n Ni8mare - Unauthenticated Arbitrary File Read to RCE Chain (CVSS 10.0)",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "EQSTLab/CVE-2024-5932": {
+    "cn_name": "CVE-2024-5932",
+    "cn_desc": "CVE-2024-5932：GiveWP PHP Object Injection exploit",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "EQSTLab/CVE-2024-46538": {
+    "cn_name": "CVE-2024-46538",
+    "cn_desc": "CVE-2024-46538：PfSense Stored XSS lead to Arbitrary Code Execution exploit",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "wioui/n8n-CVE-2025-68613-exploit": {
+    "cn_name": "n8n-CVE-2025-68613-exploit",
+    "cn_desc": "n8n-CVE-2025-68613-exploit：CVE-2025-68613: n8n RCE vulnerability exploit and documentation",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "RenataJaved54/wireguard-easy": {
+    "cn_name": "wireguard-easy",
+    "cn_desc": "wireguard-easy：Your configs, one click.",
+    "purpose": "用于测试安全场景下的隐私与网络需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "privacy",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ivan-sincek/malware-apk": {
+    "cn_name": "malware-apk",
+    "cn_desc": "malware-apk：As a bug hunter, are your bug bounty reports getting rejected because you don't use a \"mal",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "tintinweb/pub": {
+    "cn_name": "pub",
+    "cn_desc": "pub：Vulnerability Notes, PoC Exploits and Write-Ups for security issues disclosed by tintinweb",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "erkamyaman/safe-anything": {
+    "cn_name": "safe-anything",
+    "cn_desc": "safe-anything：Find the holes before someone else does. A fast, 100% Rust vulnerability scanner: XSS, SQL",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "google/mobly": {
+    "cn_name": "mobly",
+    "cn_desc": "mobly：E2E test framework for tests with complex environment requirements.",
+    "purpose": "用于测试安全场景下的测试与质量需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "testing",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ShaftHQ/SHAFT_ENGINE": {
+    "cn_name": "SHAFT_ENGINE",
+    "cn_desc": "SHAFT_ENGINE：Java test automation framework for web, mobile, API, CLI, database, and desktop E2E testin",
+    "purpose": "用于测试安全场景下的测试与质量需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "testing",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "0xMarcio/pocindex": {
+    "cn_name": "pocindex",
+    "cn_desc": "pocindex：Search public CVE proof-of-concept exploits from GitHub, Nuclei, ExploitDB, Metasploit and",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Marvisak/VIctory": {
+    "cn_name": "VIctory",
+    "cn_desc": "VIctory：An attempt at running GTA VI on PC",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "ivall/xcl": {
+    "cn_name": "xcl",
+    "cn_desc": "xcl：Xbox Series compatibility layer for Windows - runs console game code natively, reimplement",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
