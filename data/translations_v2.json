@@ -3013,5 +3013,41 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "JaxujaXe58/vpn-tunnel-tool": {
+    "cn_name": "vpn-tunnel-tool",
+    "cn_desc": "vpn-tunnel-tool：One-click WireGuard tunnel manager: unlimited traffic, no accounts. | vpn wireguard tunnel",
+    "purpose": "用于测试安全场景下的隐私与网络需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "privacy",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "eness/php2shell-CVE-2026-109618-CVE-2026-109619-PoC": {
+    "cn_name": "php2shell-CVE-2026-109618-CVE-2026-109619-PoC",
+    "cn_desc": "php2shell-CVE-2026-109618-CVE-2026-109619-PoC：Proof-of-Concept (PoC) exploit for php2shell (CVE-2026-109618 / CVE-2026-109619), demonstr",
+    "purpose": "用于测试安全场景下的安全研究需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "security",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "xcl-dev/xcl": {
+    "cn_name": "xcl",
+    "cn_desc": "xcl：Xbox Series compatibility layer for Windows - runs console game code natively, reimplement",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "Hut-hzf/ung220z-tool": {
+    "cn_name": "ung220z-tool",
+    "cn_desc": "ung220z-tool 是一个针对 UNG220Z，另含中兴/烽火/华为/九联多厂商适配、固件指纹识别与分家族排障建议的一键凭据提取工具，仅限在你自己的设备上用于找回忘记的管理密码、迁移宽带配置或安全自查。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
