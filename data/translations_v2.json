@@ -3049,5 +3049,50 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "multica-ai/multica": {
+    "cn_name": "multica",
+    "cn_desc": "multica：Shared task board where people and AI coding agents work as teammates. Source-available, s",
+    "purpose": "用于开发工具场景下的AI 编程需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "ai-coding",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "rronto671/free-vpn-unlimited": {
+    "cn_name": "free-vpn-unlimited",
+    "cn_desc": "free-vpn-unlimited：Unlimited free VPN on your own WireGuard config.",
+    "purpose": "用于测试安全场景下的隐私与网络需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "test",
+    "sub_category": "privacy",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "4lwayz/portwatch-vi": {
+    "cn_name": "portwatch-vi",
+    "cn_desc": "portwatch-vi：Does GTA VI run on PC yet? A live tracker of community recompilation and emulation efforts",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "XinaTian/MROffice": {
+    "cn_name": "MROffice",
+    "cn_desc": "MROffice：MR Office — the open-source editors of the AI office suite closest to Microsoft Office: do",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "simplexai-labs/linger": {
+    "cn_name": "linger",
+    "cn_desc": "linger：Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big T",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
