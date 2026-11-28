@@ -3094,5 +3094,86 @@
     "parent_category": "dev",
     "sub_category": "automation",
     "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "trustno1-coder/VIctory-NVIDIA": {
+    "cn_name": "VIctory-NVIDIA",
+    "cn_desc": "VIctory-NVIDIA：VIctory (Xbox Series compatibility layer) tuned for NVIDIA RTX cards: Series X at 2560x144",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "EL4CTEO/fast-anything": {
+    "cn_name": "fast-anything",
+    "cn_desc": "fast-anything：Don't rewrite it in Rust. Rewrite the 5% that's slow: profile your app, port the hot funct",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "AFK-surf/xnulinux": {
+    "cn_name": "xnulinux",
+    "cn_desc": "xnulinux：XNU as a loadable kernel module inside Linux (macOS personality for arm64 Linux)",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "FrigadeHQ/yogurt": {
+    "cn_name": "yogurt",
+    "cn_desc": "yogurt：Private AI meeting notes that stay on your computer. No meeting bot. Free and open source ",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "JenkinWoo/sheeridVerify": {
+    "cn_name": "sheeridVerify",
+    "cn_desc": "优质开源项目，适合进一步研究和试用。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "tangerineturtle1/NX2navi": {
+    "cn_name": "NX2navi",
+    "cn_desc": "优质开源项目，适合进一步研究和试用。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "expo/exact": {
+    "cn_name": "exact",
+    "cn_desc": "exact：Agent Native, Rust based, high performance way to build apps on web, iOS, macOS, Android, ",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "jhaizhou-ops/S2Arm": {
+    "cn_name": "S2Arm",
+    "cn_desc": "Run your own Switch games natively on iPhone, iPad and Mac: game code rewritten to ARM64, graphics direct to Metal, one app for the whole library. Bring your own games and keys. 把你自己的 Switch 游戏原生带到 iPhone / iPad / Mac。",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
+  },
+  "mromidev/claude-animated-shorts": {
+    "cn_name": "claude-animated-shorts",
+    "cn_desc": "claude-animated-shorts：Free Claude skill: viral animated story shorts (2D characters in a 3D world) with three.js",
+    "purpose": "用于开发工具场景下的自动化与效率需求，帮助用户快速验证项目能力。",
+    "value": "可通过 README、Releases 或示例快速判断可用性，适合收藏、试跑或二次开发。",
+    "parent_category": "dev",
+    "sub_category": "automation",
+    "category_reason": "基于仓库名称、描述、语言和 topics 的规则分类。"
   }
 }
